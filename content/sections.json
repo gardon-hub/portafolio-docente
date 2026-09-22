@@ -1,0 +1,1680 @@
+{
+  "secciones": [
+    {
+      "id": "presentacion",
+      "numero": 0,
+      "slug": "presentacion",
+      "titulo": "Presentación del portafolio",
+      "resumen": "Propósito, alcance y criterios con los que se organizó esta versión del portafolio.",
+      "icono": "libro",
+      "evidencias": [],
+      "bloques": [
+        {
+          "tipo": "destacado",
+          "etiqueta": "Propósito",
+          "texto": "Sistematizar el quehacer académico de 2026 y ofrecer una base verificable para la reflexión, la evaluación docente, el aseguramiento de la calidad y la mejora continua, en coherencia con el Modelo Educativo Institucional de la UNAG."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Este portafolio presenta de forma integrada la identidad profesional, la filosofía de enseñanza, la actividad docente, la evaluación del aprendizaje, la innovación educativa, la investigación, la vinculación con la sociedad, la gestión académica, el desarrollo profesional y la reflexión sobre la práctica del profesor Gustavo Alonso Ardón. Esta versión integra la narrativa central con dos fuentes verificadas: el currículo actualizado al 7 de abril de 2026, del que provienen los cargos, la formación recibida y los reconocimientos más recientes, y el expediente digital compilado en enero de 2020, cuyos títulos, constancias laborales y reconocimientos se consultan en el anexo documental."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La selección de evidencias prioriza su pertinencia, autenticidad y capacidad para demostrar resultados. Los documentos históricos se utilizan para acreditar la trayectoria, pero no sustituyen las constancias vigentes que requiere el periodo 2026. En cada apartado se identifica el respaldo disponible, el dato todavía pendiente y su relación con la matriz maestra, evitando duplicidades y manteniendo trazabilidad."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Criterios de organización",
+          "items": [
+            "Alineación con los once apartados establecidos por DASDIE.",
+            "Énfasis en resultados de aprendizaje, metodologías activas y evaluación auténtica.",
+            "Integración de docencia, investigación, innovación, gestión y vinculación.",
+            "Protección de datos personales de estudiantes y terceros en las evidencias anexas.",
+            "Uso de códigos de evidencia para facilitar la revisión y actualización del portafolio."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "informacion-general",
+      "numero": 1,
+      "slug": "informacion-general",
+      "titulo": "Información general",
+      "resumen": "Identidad profesional, hoja de vida, formación académica y trayectoria institucional documentada.",
+      "icono": "identidad",
+      "evidencias": [
+        "E1.1",
+        "E1.2",
+        "E1.3",
+        "E1.4"
+      ],
+      "bloques": [
+        {
+          "tipo": "destacado",
+          "etiqueta": "Identidad profesional",
+          "texto": "Profesor-investigador con más de 30 años de experiencia docente, especializado en avicultura, producción animal, gestión académica, métodos cuantitativos e innovación educativa digital."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Hoja de vida resumida",
+          "columnas": [
+            "Dato",
+            "Información"
+          ],
+          "filas": [
+            [
+              "Nombre completo",
+              "Gustavo Alonso Ardón"
+            ],
+            [
+              "Institución",
+              "Universidad Nacional de Agricultura (UNAG)"
+            ],
+            [
+              "Unidad académica",
+              "Facultad de Medicina Veterinaria y Zootecnia"
+            ],
+            [
+              "Cargo actual",
+              "Profesor-investigador y Coordinador del Centro Integral de Aprendizaje Avícola (CIAA)"
+            ],
+            [
+              "Lugar de trabajo",
+              "Catacamas, Olancho, Honduras"
+            ],
+            [
+              "Adscripción documentada",
+              "Departamento Académico de Producción Animal, FMVZ; constancia de RR. HH. del 15/01/2020"
+            ],
+            [
+              "Categoría docente",
+              "Categoría escalafonaria pendiente de constancia institucional vigente"
+            ],
+            [
+              "Correo de contacto",
+              "gardon@unag.edu.hn"
+            ],
+            [
+              "Currículo de referencia",
+              "Actualizado al 7 de abril de 2026; sustituye al del expediente de enero de 2020"
+            ],
+            [
+              "Periodo del portafolio",
+              "Año académico 2026"
+            ]
+          ],
+          "nota": "El currículo consigna además la dirección particular y el teléfono celular; ambos se omiten de la versión pública conforme a la política de privacidad de este sitio."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Perfil profesional",
+          "texto": "Profesor-investigador de la Universidad Nacional de Agricultura con una trayectoria superior a 30 años en docencia, producción animal y gestión universitaria. Su práctica se caracteriza por vincular los fundamentos científicos y cuantitativos con problemas reales de la producción pecuaria, especialmente en el campo avícola. Como coordinador del CIAA, integra la enseñanza con la operación de la granja avícola y la planta de incubación, la supervisión de prácticas profesionales, la investigación aplicada, la vinculación comunitaria y la gestión de recursos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "En años recientes ha impulsado herramientas digitales orientadas al aprendizaje, la formulación de dietas, el análisis estadístico, la comparación de líneas genéticas y la organización de información productiva. Estas iniciativas reflejan una visión de la docencia como proceso de diseño, experimentación y mejora continua, con énfasis en soluciones accesibles y pertinentes para estudiantes, productores y docentes."
+        },
+        {
+          "tipo": "linea-tiempo",
+          "referencia": "formacion"
+        },
+        {
+          "tipo": "linea-tiempo",
+          "referencia": "trayectoria"
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Experiencia profesional y académica relevante",
+          "items": [
+            "Profesor universitario en las áreas de producción avícola, sistemas pecuarios, métodos cuantitativos, investigación de operaciones y ambientes pecuarios.",
+            "Director Presidente de la Junta de Dirección Universitaria de la UNAG entre 2020 y 2021, y Director del mismo órgano entre 2020 y 2022.",
+            "Coordinador del Centro Integral de Aprendizaje Avícola, con responsabilidad sobre la granja avícola y la planta de incubación.",
+            "Responsable de procesos de planificación, abastecimiento, bioseguridad, producción, formación práctica y vinculación asociados al CIAA.",
+            "Experiencia institucional previa como Jefe de Avicultura, Jefe y Subjefe de Producción Animal y Secretario General de la UNAG.",
+            "Tutor y asesor de prácticas profesionales supervisadas, anteproyectos, tesis y trabajos de investigación en el área agropecuaria."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "titulo": "Líneas de trabajo",
+          "items": [
+            {
+              "titulo": "Producción avícola",
+              "texto": "Ponedoras, pollitas de reemplazo, reproductoras, incubación y calidad del huevo."
+            },
+            {
+              "titulo": "Nutrición animal",
+              "texto": "Nutrición animal y formulación de dietas."
+            },
+            {
+              "titulo": "Estadística aplicada",
+              "texto": "Análisis de uniformidad y métodos cuantitativos."
+            },
+            {
+              "titulo": "Gestión de operaciones",
+              "texto": "Toma de decisiones en sistemas agropecuarios."
+            },
+            {
+              "titulo": "Innovación educativa",
+              "texto": "Analítica de datos y desarrollo de aplicaciones de apoyo docente."
+            },
+            {
+              "titulo": "Vinculación social",
+              "texto": "Seguridad alimentaria mediante iniciativas relacionadas con el huevo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filosofia",
+      "numero": 2,
+      "slug": "filosofia-de-ensenanza",
+      "titulo": "Filosofía o modelo de enseñanza",
+      "resumen": "Concepción del proceso de enseñanza-aprendizaje, estrategias didácticas y principios que orientan la práctica.",
+      "icono": "brujula",
+      "evidencias": [
+        "E2.1",
+        "E2.2",
+        "E2.3"
+      ],
+      "bloques": [
+        {
+          "tipo": "destacado",
+          "etiqueta": "Declaración central",
+          "texto": "Enseñar es crear condiciones para que el estudiante comprenda, aplique, cuestione y transforme la realidad productiva; el profesor orienta, modela el razonamiento y convierte la experiencia en aprendizaje."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Concepción del proceso de enseñanza-aprendizaje",
+          "texto": "Mi práctica docente se sustenta en un enfoque constructivista, centrado en el estudiante y orientado al desarrollo de competencias. Considero que el aprendizaje adquiere mayor profundidad cuando el estudiante relaciona los conceptos con situaciones reales, analiza información, formula alternativas y justifica sus decisiones. Por ello, procuro que el aula, la granja, el laboratorio, las bases de datos y las herramientas digitales funcionen como ambientes articulados de aprendizaje."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El papel del profesor no se limita a transmitir contenidos. Implica seleccionar experiencias relevantes, plantear preguntas, ofrecer modelos de análisis, retroalimentar oportunamente y acompañar al estudiante hasta que pueda actuar con autonomía. Esta mediación debe reconocer la diversidad de ritmos, conocimientos previos y formas de participación presentes en cada grupo."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Estrategias didácticas empleadas",
+          "items": [
+            "Aprendizaje basado en problemas y casos tomados de granjas, plantas de incubación y empresas agropecuarias.",
+            "Aprendizaje basado en proyectos, especialmente para investigaciones, planes productivos y aplicaciones prácticas.",
+            "Prácticas demostrativas y supervisadas en unidades de producción.",
+            "Resolución guiada de ejercicios cuantitativos, seguida de aplicación independiente y análisis de sensibilidad.",
+            "Aprendizaje colaborativo, discusión de resultados y comparación de alternativas.",
+            "Uso de simuladores, hojas de cálculo y aplicaciones desarrolladas para apoyar la toma de decisiones.",
+            "Producción de informes, presentaciones y videos breves para comunicar hallazgos con rigor y claridad."
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Compromiso con la formación integral",
+          "texto": "La formación profesional debe integrar conocimientos técnicos, juicio ético, sensibilidad social, capacidad de comunicación y disposición para trabajar con otros. En el campo agropecuario, cada decisión afecta el bienestar animal, la inocuidad, la sostenibilidad, la economía de las familias y la seguridad alimentaria. Por ello, promuevo la responsabilidad, el uso honesto de los datos, el respeto a la evidencia y la búsqueda de soluciones que generen valor social."
+        },
+        {
+          "tipo": "tarjetas",
+          "titulo": "Principios que orientan la práctica",
+          "items": [
+            {
+              "titulo": "Pertinencia",
+              "texto": "Conectar cada contenido con decisiones profesionales reales."
+            },
+            {
+              "titulo": "Rigor",
+              "texto": "Fundamentar cálculos, argumentos y recomendaciones en datos confiables."
+            },
+            {
+              "titulo": "Participación",
+              "texto": "Otorgar al estudiante un papel activo en la construcción del aprendizaje."
+            },
+            {
+              "titulo": "Inclusión",
+              "texto": "Ofrecer rutas diversas para comprender, practicar y demostrar competencias."
+            },
+            {
+              "titulo": "Reflexión",
+              "texto": "Revisar resultados y transformar la práctica cuando la evidencia lo exige."
+            },
+            {
+              "titulo": "Servicio",
+              "texto": "Poner el conocimiento universitario al alcance de la sociedad."
+            }
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Ejemplo comentado: formulación de raciones con NutriMono",
+          "texto": "Estrategia: resolución guiada de ejercicios cuantitativos, seguida de aplicación independiente y análisis de sensibilidad, con apoyo de una aplicación desarrollada por el docente. Formular una ración es una decisión profesional con consecuencias inmediatas: de ella dependen el desempeño de los animales y buena parte del costo de producción. En el aula suele enseñarse como un cálculo; en la granja es una elección entre ingredientes disponibles, precios que cambian y requerimientos que no admiten déficit. Para acercar ambas cosas trabajo la formulación con NutriMono, el programa de balanceo de raciones para monogástricos que desarrollé en la Universidad Nacional de Agricultura con fines de enseñanza e investigación."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Secuencia de trabajo",
+          "items": [
+            "Planteamiento del caso. Se definen la especie y la etapa fisiológica —gallinas de postura o pollos de engorde en una fase concreta, por ejemplo— y con ellas los requerimientos que la ración debe cumplir.",
+            "Resolución guiada. Con todo el grupo elijo los ingredientes, construyo el mix inicial y ejecuto la formulación, explicando cada decisión: por qué entra un ingrediente, qué restricción limita la mezcla y cómo se lee el resultado.",
+            "Validación. Antes de dar por buena una ración se revisa su validación: qué nutrientes quedan justos, cuáles sobran y a qué costo. El programa calcula; el estudiante interpreta.",
+            "Aplicación independiente. Cada estudiante resuelve un caso distinto —otra especie, otra etapa, otros precios o ingredientes propios con su análisis bromatológico— y documenta su procedimiento en el informe de ejercicios del modo docente.",
+            "Análisis de sensibilidad. Se modifica una condición, como el precio o la disponibilidad de un ingrediente, y se discute cómo cambian la ración y su costo. En ese momento el ejercicio deja de ser un cálculo y se convierte en una decisión."
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La estrategia responde a tres de los principios que declaro en este apartado. A la pertinencia, porque el problema es el mismo que enfrenta un técnico en una granja. Al rigor, porque la ración se valida contra los requerimientos y no se acepta solo porque el programa entregó una respuesta. Y a la participación, porque el estudiante pasa de observar el procedimiento a ejecutarlo y justificarlo por sí mismo. Que el programa funcione sin conexión a internet no es un detalle técnico: permite trabajar en el aula o en la granja aunque la conectividad falle."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El riesgo que conviene vigilar es que la herramienta sustituya al razonamiento. Por eso la validación y el análisis de sensibilidad no son pasos opcionales: obligan a explicar por qué una ración es adecuada, y no solo a obtenerla. La valoración sistemática de esta estrategia —el desempeño de los estudiantes en los ejercicios y su percepción sobre la herramienta— corresponde a las evidencias E4.4 y E5.4, todavía en preparación. El manual de uso de NutriMono, con el flujo completo y el modo docente, está publicado en la evidencia E5.2."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Reflexión breve: una semana de exámenes proyectados",
+          "texto": "En septiembre de 2026 apliqué tres pruebas objetivas en dos asignaturas —dos en Sistemas de Producción Avícola, de la carrera de Ingeniería en Zootecnia, y una en Investigación de Operaciones, de Administración de Empresas Agropecuarias— con un instrumento de proyección que preparé para ese fin. Cada prueba reunía treinta preguntas de selección múltiple y veinte de verdadero o falso; en la pantalla aparecía una sola pregunta a la vez, con su propia cuenta atrás, y las respuestas se escribían en una hoja impresa."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Lo significativo de la experiencia no estuvo en el contenido de las pruebas, sino en sus condiciones. Con un cuadernillo impreso, cada estudiante administra su tiempo: unos se detienen en las primeras preguntas y apuran las últimas, otros vuelven atrás, otros terminan antes. Al proyectar una pregunta por vez con el mismo tiempo para todos, el ritmo de la prueba pasa a ser el del grupo entero y la exposición a cada reactivo se iguala. Preparar el instrumento me obligó a decidir algo que el cuadernillo deja implícito: cuánto tiempo merece cada pregunta."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Esa decisión abre una pregunta que todavía no he respondido. Un tiempo uniforme —cuarenta y cinco segundos para selección múltiple, veinticinco para verdadero o falso— supone que todos los reactivos exigen un esfuerzo parecido y que todos los estudiantes leen a un ritmo similar, y ninguna de las dos cosas es del todo cierta. El instrumento permite pausar y sumar o quitar tiempo sobre la marcha, pero el valor de partida es el mismo para todos, y eso tensiona el principio de inclusión que declaro en este apartado: igualar la exposición no equivale necesariamente a ofrecer las mismas oportunidades."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El paso siguiente es mirar los resultados reactivo por reactivo, como plantea la evidencia E4.4, para identificar si hay preguntas en las que el tiempo, y no el conocimiento, explica los errores. Hay además una consecuencia práctica: al publicarse las tres pruebas en este portafolio, sus reactivos deberán renovarse antes de volver a aplicarlas, y esa renovación es una ocasión para construir un banco más amplio y calibrar mejor los tiempos."
+        }
+      ]
+    },
+    {
+      "id": "actividad-docente",
+      "numero": 3,
+      "slug": "actividad-docente",
+      "titulo": "Actividad docente",
+      "resumen": "Carga académica de referencia, planificación, recursos didácticos y plataformas educativas.",
+      "icono": "aula",
+      "evidencias": [
+        "E3.1",
+        "E3.2",
+        "E3.3",
+        "E3.4",
+        "E3.5"
+      ],
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Durante 2026, la actividad docente se ha organizado alrededor de asignaturas de producción animal y métodos cuantitativos, combinando el trabajo de aula con actividades prácticas, recursos digitales y análisis de situaciones reales. La siguiente relación debe validarse con la carga académica oficial de cada periodo."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Carga académica de referencia",
+          "columnas": [
+            "Asignatura",
+            "Área",
+            "Orientación de la práctica"
+          ],
+          "filas": [
+            [
+              "Sistemas de Producción Avícola",
+              "Producción animal",
+              "Manejo, indicadores, bioseguridad y decisiones técnicas"
+            ],
+            [
+              "Introducción a Sistemas Pecuarios",
+              "Formación básica",
+              "Comprensión sistémica y revisión de literatura"
+            ],
+            [
+              "Métodos Cuantitativos",
+              "Analítica",
+              "Regresión, ANOVA, series y decisiones basadas en datos"
+            ],
+            [
+              "Investigación de Operaciones",
+              "Gestión",
+              "Productividad, PERT/CPM, asignación, transporte y localización"
+            ],
+            [
+              "Ambientes Pecuarios",
+              "Producción animal",
+              "Condiciones ambientales y bienestar en instalaciones pecuarias"
+            ]
+          ],
+          "nota": "Repertorio de asignaturas que el docente ha impartido, tomado del documento fuente. La carga efectivamente asignada en cada periodo la fija el reporte oficial de horario: en el periodo 3 de 2026 corresponden dos de estas asignaturas, según se detalla a continuación."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Carga académica oficial · Año 2026, periodo 3",
+          "columnas": [
+            "Asignatura",
+            "Carrera",
+            "Sección",
+            "Día",
+            "Bloques horarios"
+          ],
+          "filas": [
+            [
+              "Sistemas de Producción Avícola",
+              "Ingeniería en Zootecnia",
+              "9A",
+              "Miércoles",
+              "07:50–08:40, 08:40–09:30, 09:30–10:20"
+            ],
+            [
+              "Investigación de Operaciones",
+              "Administración de Empresas Agropecuarias",
+              "8A",
+              "Miércoles",
+              "17:20–18:10, 18:10–19:00, 19:00–19:50, 20:00–20:50"
+            ]
+          ],
+          "nota": "Tomado del reporte de horario docente del Departamento de Vicerrectoría, emitido el 20 de septiembre de 2026 (evidencia E3.1). El reporte consigna la carrera AEA en sus dos filas; Sistemas de Producción Avícola corresponde a Ingeniería en Zootecnia, según confirma el docente y coinciden los encabezados de los exámenes del periodo. A estas dos asignaturas se suma la dirección de nueve prácticas profesionales supervisadas en curso, que la plataforma de carga académica registra aparte y se detallan en el apartado 6."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Programas, sílabos y planificación",
+          "texto": "Cada asignatura tiene un expediente mínimo: el programa oficial, el plan de unidad y la jornalización. La evidencia E3.2 publica los programas de cuatro asignaturas —el sílabo de Sistemas de Producción Avícola y los programas analíticos de Introducción a los Sistemas de Producción Pecuaria, Métodos Cuantitativos y Especies Menores I— y la evidencia E3.3, los planes de unidad y las jornalizaciones de Sistemas de Producción Avícola y Métodos Cuantitativos, con dos unidades desarrolladas como ejemplo de cómo se encadenan resultados de aprendizaje, actividades, instrumentos y porcentaje de evaluación. Investigación de Operaciones y Ambientes Pecuarios no cuentan todavía con programa ni planificación formal en el expediente; se incorporarán cuando estén disponibles."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Recursos y materiales didácticos desarrollados",
+          "items": [
+            "Guías de trabajo, ejercicios y presentaciones para producción avícola y sistemas pecuarios.",
+            "Materiales sobre productividad, PERT/CPM, asignación, transporte, centro de gravedad y carga-distancia.",
+            "Orientaciones para investigaciones documentales, presentaciones y videos académicos.",
+            "Reportes técnicos y casos derivados de la operación del CIAA.",
+            "Prompts y guías de uso responsable de inteligencia artificial para apoyar la investigación y la redacción académica."
+          ]
+        },
+        {
+          "tipo": "recursos",
+          "titulo": "Actividades interactivas de elaboración propia",
+          "nota": "Son recursos abiertos: se consultan sin registro y sin recoger datos de quien los resuelve. Se usan como repaso y autoevaluación antes de las pruebas formales.",
+          "items": [
+            {
+              "titulo": "Pollos de engorde: claves de manejo, crecimiento y sacrificio",
+              "plataforma": "Educaplay",
+              "formato": "Cuestionario interactivo",
+              "descripcion": "Veintiocho preguntas sobre manejo y productividad del pollo de engorde: control de amoníaco y ventilación en las primeras semanas, programas de iluminación, punto óptimo de sacrificio y cálculo de la conversión alimenticia.",
+              "detalle": "Asignatura de producción avícola. Formato Froggy Jumps.",
+              "enlace": "https://es.educaplay.com/recursos-educativos/28323429-pollos_de_engorde_claves_de_manejo.html"
+            },
+            {
+              "titulo": "Manejo de aves ponedoras I",
+              "plataforma": "Educaplay",
+              "formato": "Cuestionario interactivo",
+              "descripcion": "Veintisiete preguntas sobre producción y sanidad en aves ponedoras: diferencia entre nutrición y alimentación, rango térmico óptimo, calendario de vacunación y etapas de levante.",
+              "detalle": "Asignatura de producción avícola. Formato Froggy Jumps.",
+              "enlace": "https://es.educaplay.com/recursos-educativos/28440636-huevos_y_manejo_avicola.html"
+            },
+            {
+              "titulo": "Gestión de operaciones: verdadero o falso",
+              "plataforma": "Educaplay",
+              "formato": "Actividad de verdadero o falso",
+              "descripcion": "Veinte afirmaciones sobre estructura organizacional, funciones del gerente de operaciones, procesos operativos y control estadístico de procesos, que el estudiante debe validar o rechazar.",
+              "detalle": "Asignatura de gestión y métodos cuantitativos.",
+              "enlace": "https://es.educaplay.com/recursos-educativos/24024367-gestion_de_operaciones_verdadero_o_falso.html"
+            }
+          ]
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Plataformas y tecnologías educativas",
+          "items": [
+            "Moodle para organizar instrucciones, entregas, rúbricas y seguimiento de actividades.",
+            "Muros colaborativos en línea, empleados en el módulo de Ambientes Pecuarios de Ingeniería en Zootecnia, organizados por secciones: presentación del grupo, mapas mentales, investigaciones grupales sobre aves, cerdos y bovinos, videos y fotografía técnica. El muro permite que cada estudiante publique su trabajo y vea el de sus compañeros, y deja constancia del proceso además del resultado. Su estructura puede verse, sin datos de los estudiantes, en la evidencia E3.5.",
+            "Hojas de cálculo y software estadístico para resolver, verificar e interpretar ejercicios.",
+            "Aplicaciones educativas propias o en desarrollo para simulación, analítica y apoyo a la toma de decisiones.",
+            "Herramientas de presentación y producción audiovisual para comunicar resultados."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evaluacion-aprendizaje",
+      "numero": 4,
+      "slug": "evaluacion-del-aprendizaje",
+      "titulo": "Evaluación del aprendizaje",
+      "resumen": "Instrumentos, retroalimentación, análisis de resultados y criterios de evaluación auténtica.",
+      "icono": "regla",
+      "evidencias": [
+        "E4.1",
+        "E4.2",
+        "E4.3",
+        "E4.4"
+      ],
+      "bloques": [
+        {
+          "tipo": "destacado",
+          "etiqueta": "Enfoque de evaluación",
+          "texto": "La evaluación se concibe como un proceso continuo para producir evidencia, orientar la mejora y verificar el desarrollo de competencias, no únicamente como un mecanismo de calificación."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Instrumentos utilizados",
+          "items": [
+            "Exámenes escritos y pruebas cortas para comprobar comprensión conceptual y capacidad de cálculo.",
+            "Ejercicios y estudios de caso para evaluar la aplicación de métodos a situaciones productivas.",
+            "Proyectos de investigación, informes técnicos, presentaciones y videos.",
+            "Registros de prácticas y productos elaborados durante el trabajo de campo.",
+            "Rúbricas analíticas con criterios de contenido, metodología, interpretación, comunicación y responsabilidad académica."
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Las rúbricas y su aplicación",
+          "texto": "La evidencia E4.2 publica cuatro rúbricas analíticas —revisión de literatura, boletín informativo, boletín de gira de campo y prácticas de campo— y muestra cómo se aplicaron en 2024 a los trabajos grupales de III año de Ingeniería en Zootecnia: cada revisión de literatura y cada boletín recibió una valoración escrita que recorre los criterios de la rúbrica y termina con lo que el grupo debe hacer para subir de nivel. Los análisis se publican sin nombres ni calificaciones por grupo. El criterio con más observaciones fue el análisis crítico —la falta de profundidad se señala en la mayoría de los quince trabajos—, seguido de la aplicación de las normas APA."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Exámenes proyectados en aula presencial",
+          "texto": "Las pruebas objetivas se aplican con un instrumento de proyección desarrollado por el docente. Muestra una pregunta por pantalla con cuenta atrás individual —45 segundos para las de selección múltiple y 25 para las de verdadero o falso, ajustables antes de empezar—, barra de avance, aviso de color en los últimos diez y cinco segundos, pausa, navegación hacia atrás y adelante, pantalla completa y modo claro u oscuro. Las respuestas se registran únicamente en la hoja impresa. El propósito es igualar el tiempo de exposición de todo el grupo y marcar el ritmo de la prueba, en lugar de dejar que cada estudiante administre el suyo sobre un cuadernillo completo."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Pruebas del periodo",
+          "columnas": [
+            "Prueba",
+            "Asignatura y carrera",
+            "Aplicación",
+            "Estructura y valor"
+          ],
+          "filas": [
+            [
+              "Examen I · Sistemas de Producción Avícola",
+              "Sistemas de Producción Avícola · Ingeniería en Zootecnia",
+              "Septiembre de 2026 (aplicada)",
+              "30 de selección múltiple y 20 de verdadero o falso"
+            ],
+            [
+              "Examen 2 · Anatomía de las aves",
+              "Sistemas de Producción Avícola · Ingeniería en Zootecnia",
+              "Programada para la semana del 21 de septiembre de 2026",
+              "30 y 20; 100 puntos, 2 puntos cada pregunta"
+            ],
+            [
+              "Primer examen · Investigación de Operaciones",
+              "Investigación de Operaciones · Administración de Empresas Agropecuarias",
+              "Septiembre de 2026 (aplicada)",
+              "30 y 20; 50 puntos, 1 punto cada pregunta"
+            ]
+          ],
+          "nota": "Las tres comparten el mismo instrumento de proyección, adaptado en cada asignatura al valor de los reactivos y a la consigna de la hoja de respuestas. Las tres pueden consultarse completas y en funcionamiento en la evidencia E4.1, que incluye además una versión de demostración del instrumento con cinco preguntas."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Retroalimentación",
+          "texto": "La retroalimentación procura ser específica, comprensible y orientada a la acción. Además de señalar errores, explica qué criterio no se alcanzó, por qué importa y cómo puede mejorarse el producto. En actividades complejas, se favorecen entregas parciales, revisión de avances y oportunidades de corrección antes de la versión final."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Un ejemplo de retroalimentación",
+          "texto": "La evidencia E4.3 recoge, anonimizada, la devolución a un anteproyecto de práctica profesional supervisada sobre la calidad del huevo fértil en reproductoras pesadas: cuatro comentarios al margen en la primera versión, de junio de 2026, y el informe de revisión de UNAG Proyecta sobre la versión siguiente, en agosto. Las dos primeras entregan un esquema completo —los elementos de la introducción y los ocho apartados de la revisión de literatura— porque en un anteproyecto la primera dificultad suele ser de estructura, y una lista es más útil que un adjetivo. La cuarta observación es la que más importa formativamente: no se limita a pedir «revisar las referencias», sino que señala una cita concreta con la autoría equivocada y muestra cómo se comprobó. Verificar quién firma un artículo antes de citarlo es responsabilidad académica, y se aprende viendo el caso."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La retroalimentación tuvo efecto comprobable. El control de cambios del documento registra que la estudiante trabajó sobre él entre el 25 de junio y el 9 de agosto, con más de setecientas modificaciones; la revisión de literatura de la versión corregida adopta los ocho apartados propuestos, y el título se reformuló para precisar el objeto de estudio. Las observaciones sobre el planteamiento del problema y la justificación siguen abiertas para la siguiente revisión."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Análisis de resultados y mejora",
+          "texto": "Los resultados de evaluación deben analizarse por resultado de aprendizaje y tipo de dificultad. Cuando se observan patrones de error, se ajustan las explicaciones, se incorporan nuevos ejemplos, se redistribuye el tiempo o se ofrecen ejercicios adicionales. En los cursos cuantitativos resulta especialmente importante distinguir entre errores de procedimiento, interpretación y comunicación de resultados."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Resultados de las pruebas de septiembre de 2026",
+          "texto": "Las hojas de calificación registran la respuesta de cada estudiante a cada reactivo, lo que permite ir más allá de la nota: saber qué preguntas fallaron y agrupar los errores por tema y por tipo de dificultad. Todo lo que sigue son cifras de conjunto; los nombres, las cuentas y la clave de respuestas no forman parte de esta evidencia. En Avícola el promedio fue 90.8 % y ningún estudiante quedó por debajo de 70 %; 22 de 33 superaron el 90 %. El acierto medio fue de 88.9 % en selección múltiple y 93.8 % en verdadero o falso. La prueba resultó fácil para el grupo, y eso también es un dato: la parte de selección múltiple discriminó más que la de verdadero o falso. En Investigación de Operaciones, con 7 estudiantes, el promedio fue 86.6 % y todos quedaron entre 76 y 96 %. El acierto medio fue de 83.8 % en selección múltiple y 92.5 % en verdadero o falso. Aquí aparecen reactivos que fallaron más de la mitad de los estudiantes, algo que no ocurrió en Avícola."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Resumen de resultados por prueba",
+          "columnas": [
+            "Prueba",
+            "n",
+            "Media",
+            "Mediana",
+            "Rango",
+            "Distribución por bandas (%)"
+          ],
+          "filas": [
+            [
+              "Examen I · Sistemas de Producción Avícola",
+              "33",
+              "90.8 %",
+              "92 %",
+              "72 – 98 %",
+              "70-79: 2 · 80-89: 9 · 90-100: 22"
+            ],
+            [
+              "Primer examen · Investigación de Operaciones",
+              "7",
+              "86.6 %",
+              "82 %",
+              "76 – 96 %",
+              "70-79: 1 · 80-89: 3 · 90-100: 3"
+            ]
+          ],
+          "nota": "Nota en porcentaje sobre 50 puntos. La desviación es la del grupo calificado. El detalle por reactivo cubre las 33 calificaciones de Avícola —de 35 estudiantes inscritos, dos no presentaron la prueba— y las 7 de Investigación de Operaciones, que son todos los estudiantes del curso. En Investigación de Operaciones cada hoja de respuestas equivale a 14 puntos porcentuales, así que las cifras de acierto se leen como tendencia, no como medida fina."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Patrones por tipo de dificultad",
+          "texto": "Los errores se concentran en dos grupos. El primero es la terminología de la anatomía externa —cálamo, vexilo, glándula uropígea, remeras, timoneras, filoplumas, plumaje barrado—: siete de los diez reactivos con menor acierto pertenecen a ese tema, que ocupa las preguntas 25 a 30 de la prueba. El segundo son las cifras del documento del curso —humedad de incubación, inclusión de maíz, proteína de la carne—, que exigen recordar un número exacto. En ambos casos la dificultad es de memoria, no de razonamiento: las preguntas de cadena productiva, incubación y postura, que piden entender un proceso, se respondieron casi sin error."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los reactivos que fallaron se parecen entre sí: piden distinguir categorías —tipos de organización, criterios de clasificación, niveles de decisión, insumos frente a productos— o situar un caso en el continuo entre manufactura y servicios. Son preguntas de clasificación conceptual, y el grupo las resolvió peor que las de definición directa, que rondaron el 100 % de acierto. El reactivo 29, con menos de un tercio de aciertos, merece además revisión propia: cuando una pregunta falla tanto puede estar mal planteada y no solo mal aprendida."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Acciones de mejora",
+          "columnas": [
+            "Asignatura",
+            "Acción",
+            "Estado"
+          ],
+          "filas": [
+            [
+              "Sistemas de Producción Avícola",
+              "Dedicar la segunda prueba del periodo a la anatomía de las aves, el tema con más errores.",
+              "En curso: el Examen 2 · Anatomía de las aves quedó preparado el 20 de septiembre, tres días después de calificar el primero, con cincuenta reactivos sobre ese único tema (evidencia E4.1), y se aplica la semana del 21 de septiembre."
+            ],
+            [
+              "Sistemas de Producción Avícola",
+              "Apoyar el estudio de la anatomía con material interactivo en lugar de listas de términos: las cuatro simulaciones de Anatomía de las aves y el juego de Pterilografía Aviar, con modos de exploración, localización y examen cronometrado.",
+              "Disponible: los dos recursos estaban publicados antes del primer examen (evidencia E5.1). Su uso dirigido al repaso del tema queda por documentar."
+            ],
+            [
+              "Investigación de Operaciones",
+              "Trabajar la distinción entre manufactura y servicios como un continuo y no como dos casillas, con el simulador correspondiente de OPTIAULA IO, y volver sobre los criterios de clasificación de las organizaciones y los niveles de decisión con casos del sector agropecuario.",
+              "Derivada del análisis; su aplicación en clase queda por registrar."
+            ],
+            [
+              "Investigación de Operaciones",
+              "Revisar la redacción y las opciones del reactivo 29 antes de reutilizarlo, y contrastar la clave de los reactivos con acierto inferior al 50 %.",
+              "Derivada del análisis; corresponde a la renovación del banco de reactivos que ya exige su publicación."
+            ],
+            [
+              "Ambas asignaturas",
+              "Repetir este análisis con el Examen 2 de Anatomía y con las pruebas siguientes, para comprobar si el refuerzo del tema se refleja en el acierto.",
+              "Programada."
+            ]
+          ],
+          "nota": "El detalle reactivo por reactivo está en la evidencia E4.4. No se publican las hojas de calificación ni la clave de respuestas."
+        },
+        {
+          "tipo": "acordeon",
+          "titulo": "Criterios de una evaluación auténtica",
+          "items": [
+            {
+              "titulo": "La tarea reproduce o simula decisiones propias del desempeño profesional",
+              "contenido": [
+                "El producto solicitado se parece a lo que el egresado tendrá que resolver en una granja, una planta de incubación o una empresa del sector."
+              ]
+            },
+            {
+              "titulo": "Los criterios se comunican antes de la entrega",
+              "contenido": [
+                "El estudiante conoce la rúbrica y los criterios de logro desde el inicio de la actividad."
+              ]
+            },
+            {
+              "titulo": "El estudiante utiliza datos, procedimientos y argumentos verificables",
+              "contenido": [
+                "Se exige trazabilidad de los datos y de los procedimientos aplicados."
+              ]
+            },
+            {
+              "titulo": "El producto exige interpretar, decidir y comunicar, no solo recordar información",
+              "contenido": [
+                "La actividad se orienta a la toma de decisiones y a su justificación técnica."
+              ]
+            },
+            {
+              "titulo": "La retroalimentación permite mejorar el desempeño futuro",
+              "contenido": [
+                "La devolución señala el criterio no alcanzado, su importancia y la vía de mejora."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "innovacion-educativa",
+      "numero": 5,
+      "slug": "innovacion-educativa",
+      "titulo": "Innovación educativa",
+      "resumen": "Proyectos y recursos digitales, metodologías activas asociadas y criterios para valorar su impacto.",
+      "icono": "chispa",
+      "evidencias": [
+        "E5.1",
+        "E5.2",
+        "E5.3",
+        "E5.4"
+      ],
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La innovación educativa se ha orientado a resolver dificultades concretas de enseñanza y desempeño profesional: comprender cálculos, interpretar datos productivos, comparar alternativas, generar reportes y acercar información técnica especializada a estudiantes y productores. Las herramientas citadas se presentan como iniciativas en distintos niveles de desarrollo y deberán acompañarse de capturas, manuales, registros de uso y resultados."
+        },
+        {
+          "tipo": "proyectos",
+          "titulo": "Proyectos y recursos digitales"
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "NutriMono: de la herramienta al material de clase",
+          "texto": "NutriMono es el proyecto con documentación de uso más desarrollada. Es un programa de escritorio para formular y balancear raciones de animales monogástricos —cerdos, pollos de engorde, gallinas de postura y codornices—, construido con fines de enseñanza e investigación en la Universidad Nacional de Agricultura. Reúne una base de 129 ingredientes con su composición nutricional y precio de referencia, los requerimientos por especie y etapa fisiológica, y dos motores de optimización que calculan la mezcla de mínimo costo que cumple esos requerimientos; funciona sin conexión a internet, condición necesaria para usarlo en aulas y granjas con conectividad intermitente. Su manual de uso, en versión 2.15.0 de 2026, desarrolla en catorce secciones el flujo completo de trabajo —especie y etapa, ingredientes, mix inicial, formulación, validación, lote y reportes— y documenta funciones pensadas para la docencia: restricciones de nutrientes, objetivo nutricional por línea genética, aminoácidos totales frente a digestibles, análisis de sensibilidad, calculadora de premezcla y un modo docente con informe de ejercicios. La herramienta se ha ofrecido además en jornadas de capacitación a otras universidades, según consta en la evidencia E9.3."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Actividad de aprendizaje con NutriMono",
+          "texto": "La herramienta se lleva al aula con una actividad diseñada para Sistemas de Producción Avícola: formular, validar y defender una ración con NutriMono. Al terminar la actividad, el estudiante formula una ración de mínimo costo para aves que cumple los requerimientos de la especie y la etapa, valida su adecuación nutricional y explica cómo cambian la fórmula y su costo cuando varían los precios de los ingredientes. Se desarrolla en tres momentos y se evalúa con el informe que genera el propio programa y una hoja de respuestas."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Momentos de la actividad",
+          "items": [
+            "Resolución guiada: el docente resuelve en pantalla un ejercicio básico de pollo de engorde y usa «¿Por qué esta mezcla?» para discutir qué nutriente gobierna el costo de la fórmula.",
+            "Aplicación independiente: cada estudiante resuelve un ejercicio intermedio de pollo de engorde o de gallina de postura, valida la ración, proyecta un lote de 1000 kg y genera el informe del ejercicio.",
+            "Análisis de sensibilidad: identifica el nutriente limitante y su precio sombra, el precio hasta el que conviene el maíz y el efecto de encarecer un 15 % la pasta de soya."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Criterios de evaluación de la actividad",
+          "columnas": [
+            "Criterio",
+            "Qué se valora",
+            "Peso"
+          ],
+          "filas": [
+            [
+              "Ración que cumple los criterios del ejercicio",
+              "Calificación del informe PDF del modo docente, proporcional a los criterios cumplidos.",
+              "40 %"
+            ],
+            [
+              "Validación e interpretación",
+              "Lee correctamente la validación nutricional y justifica los ajustes realizados.",
+              "20 %"
+            ],
+            [
+              "Análisis de sensibilidad",
+              "Identifica el nutriente limitante, interpreta el precio sombra y el rango de precio, y compara con acierto el escenario de la soya.",
+              "25 %"
+            ],
+            [
+              "Criterio técnico y comunicación",
+              "Responde con precisión y reconoce los límites de la herramienta frente al juicio profesional.",
+              "15 %"
+            ]
+          ],
+          "nota": "La guía completa, con los pasos y las preguntas del entregable, se descarga en la evidencia E5.3."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Metodologías activas asociadas",
+          "items": [
+            "Casos productivos construidos con datos de granja y guías genéticas.",
+            "Simulación de escenarios y análisis de sensibilidad.",
+            "Proyectos de diseño de soluciones digitales o técnicas.",
+            "Aprendizaje basado en retos vinculados con la producción y la gestión.",
+            "Comparación entre resultados calculados manualmente y resultados generados por herramientas digitales."
+          ]
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Criterios para valorar el impacto",
+          "items": [
+            "Claridad conceptual lograda por el estudiante.",
+            "Reducción de errores de cálculo o interpretación.",
+            "Capacidad para explicar y justificar decisiones.",
+            "Frecuencia y calidad de uso de la herramienta.",
+            "Percepción de utilidad por estudiantes y docentes."
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Valoración del impacto",
+          "texto": "Lo que todavía no puedo afirmar es lo que más importa: si su uso mejora el aprendizaje. No he recogido de forma sistemática datos sobre la claridad conceptual de los estudiantes, sus errores o su percepción de utilidad, y sin esos datos cualquier afirmación sobre el impacto sería una impresión. Tampoco sirven las métricas automáticas: las visitas a los registros de Zenodo o la actividad de los repositorios no distinguen el uso en el aula y no dicen nada sobre lo que el estudiante comprendió. Por eso esta evidencia no presenta resultados, sino el modo en que se van a obtener. El plan se organiza según los cinco criterios de impacto que declara este apartado y aprovecha instrumentos que ya existen: la actividad de la evidencia E5.3 y los informes que genera el modo docente de NutriMono, que registran para cada estudiante los criterios cumplidos, el número de formulaciones y la duración del ejercicio. Los resultados agregados se incorporarán a esta misma evidencia al terminar el periodo."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Plan de valoración del impacto",
+          "columnas": [
+            "Criterio",
+            "Qué se observa",
+            "Instrumento",
+            "Momento"
+          ],
+          "filas": [
+            [
+              "Claridad conceptual",
+              "Calidad de la explicación del resultado",
+              "Preguntas de la hoja de respuestas de la actividad E5.3, valoradas con su criterio de interpretación",
+              "Al cerrar cada actividad"
+            ],
+            [
+              "Reducción de errores",
+              "Errores de cálculo e interpretación, antes y después de usar la herramienta",
+              "Un mismo ejercicio resuelto primero a mano y luego con la herramienta; se cuentan y clasifican los errores",
+              "En la misma sesión"
+            ],
+            [
+              "Justificación de decisiones",
+              "Capacidad de defender la ración o la decisión obtenida",
+              "Criterio «criterio técnico y comunicación» de la actividad E5.3",
+              "Al cerrar cada actividad"
+            ],
+            [
+              "Frecuencia y calidad de uso",
+              "Criterios cumplidos, formulaciones realizadas y tiempo empleado",
+              "Informes del modo docente de NutriMono, analizados de forma agregada",
+              "Por actividad"
+            ],
+            [
+              "Percepción de utilidad",
+              "Valoración de estudiantes, y de docentes cuando corresponda",
+              "Encuesta anónima de este documento",
+              "Al terminar el periodo"
+            ]
+          ],
+          "nota": "La encuesta anónima de percepción y el detalle del plan están en la evidencia E5.4."
+        }
+      ]
+    },
+    {
+      "id": "investigacion",
+      "numero": 6,
+      "slug": "investigacion",
+      "titulo": "Investigación",
+      "resumen": "Líneas de trabajo, dirección de tesis y PPS, y estado de la producción y divulgación académica.",
+      "icono": "microscopio",
+      "evidencias": [
+        "E6.1",
+        "E6.2",
+        "E6.3",
+        "E6.4",
+        "E6.5"
+      ],
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La investigación se articula con la avicultura, la gestión productiva, la analítica de datos y el desarrollo de herramientas aplicadas. El CIAA ofrece un espacio para estudiar procesos de incubación, crecimiento, uniformidad, alimentación, calidad del huevo, eficiencia y sostenibilidad. A la vez, los sistemas de información en desarrollo permiten integrar fuentes estadísticas y formular preguntas de relevancia sectorial."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Líneas y proyectos de referencia",
+          "items": [
+            "Indicadores de productividad, competitividad y consumo en la industria avícola hondureña.",
+            "Incubabilidad, calidad del huevo fértil y operación de plantas de incubación.",
+            "Manejo y desempeño productivo de pollitas de reemplazo durante el levante.",
+            "Uniformidad de peso y uso de métodos estadísticos en producción animal.",
+            "Nutrición y formulación de dietas con apoyo de herramientas digitales.",
+            "Analítica aplicada a decisiones agropecuarias y educativas."
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Proyectos de investigación con documento",
+          "texto": "Tres proyectos constan con documento en la evidencia E6.1: la tesis doctoral en curso en el Doctorado en Economía y Empresa de UNITEC, sobre la competitividad de la industria avícola hondureña, con los capítulos de marco y metodología escritos y los de hallazgos en elaboración; la propuesta presentada en 2024 a la Asociación Latinoamericana de Avicultura para evaluar sistemas de bioseguridad integrados en granjas hondureñas; y la unidad de investigación aplicada de 28 unidades experimentales propuesta para el CIAA en junio de 2026. De la tesis derivan el observatorio AVICOMPETITIVA AI, la biblioteca coordinate-reconciler y un manuscrito en preparación."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Dirección de tesis, PPS y trabajos de investigación",
+          "texto": "El currículo actualizado al 7 de abril de 2026 registra la dirección de más de 50 trabajos de investigación de tesis en el área avícola y en empresas agropecuarias. El acompañamiento a estudiantes comprende la delimitación del problema, formulación de objetivos, construcción del marco metodológico, diseño de instrumentos, análisis de datos, verificación de citas y redacción técnica. Se ha priorizado que las prácticas profesionales supervisadas respondan a situaciones reales de granjas, plantas de incubación y empresas del sector, con productos útiles para la institución receptora y para la formación del estudiante."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El expediente histórico aporta relaciones nominales de trabajos de investigación y prácticas profesionales supervisadas. Los registros de tesis abarcan temas de densidad, alimentación, calidad de agua, cama, residuos y desempeño de pollos de engorde y gallinas ponedoras; los de PPS documentan experiencias en incubación, huevo fértil, reproductoras, ponedoras y engorde en empresas de Honduras y Ecuador, con registros comprendidos entre 1997 y 2019. Estas relaciones constituyen el respaldo base para consolidar la dirección y asesoría estudiantil."
+        },
+        {
+          "tipo": "nota",
+          "texto": "Las relaciones del expediente registran, junto a cada trabajo, el nombre del estudiante que lo realizó. Los dos registros siguientes reproducen esas relaciones sin la columna de nombres: acreditan la dirección sin exponer datos de terceros que no consintieron su publicación. Las relaciones nominales completas permanecen fuera de la versión pública."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Registro de tesis dirigidas, 1997-2016",
+          "columnas": [
+            "N.º",
+            "Título",
+            "Año"
+          ],
+          "filas": [
+            [
+              "1",
+              "Evaluación de cuatro densidades de población en pollos de engorda",
+              "1997"
+            ],
+            [
+              "2",
+              "Estudio del comportamiento productivo de gallinas criollas y especializadas en la producción de huevos a nivel del pequeño productor",
+              "1998"
+            ],
+            [
+              "3",
+              "Evaluación de tres niveles de melaza de caña de azúcar en dieta final de pollos de engorde",
+              "2001"
+            ],
+            [
+              "4",
+              "Evaluación del tiempo de suministro de dos dietas en pollos de engorda",
+              "2003"
+            ],
+            [
+              "5",
+              "Utilización de fitasas en la alimentación de gallinas ponedoras",
+              "2005"
+            ],
+            [
+              "6",
+              "Utilización de fitasa en la alimentación de pollos de engorde",
+              "2005"
+            ],
+            [
+              "7",
+              "Evaluación de diferentes niveles de inclusión de harina de camarón en dietas de aves de postura",
+              "2005"
+            ],
+            [
+              "8",
+              "Comportamiento productivo de pollos de engorde de segunda calidad a nivel de granjas",
+              "2007"
+            ],
+            [
+              "9",
+              "Comparación de métodos de captura en pollos de engorda y su efecto en la calidad física de la canal",
+              "2007"
+            ],
+            [
+              "10",
+              "Evaluación de la calidad química del agua de bebida y su efecto en el desempeño biológico y el índice de productividad europeo en pollo de engorde",
+              "2007"
+            ],
+            [
+              "11",
+              "Evaluación de diferentes niveles de harina de pulpa de naranja en dietas de aves ponedoras",
+              "2009"
+            ],
+            [
+              "12",
+              "Uso de cama reutilizable en pollos de engorde",
+              "2012"
+            ],
+            [
+              "13",
+              "Utilización de harina de sangre en la alimentación de pollos de engorde",
+              "2012"
+            ],
+            [
+              "14",
+              "Uso de diferentes niveles de harina de sangre en dietas de gallinas de postura",
+              "2012"
+            ],
+            [
+              "15",
+              "Fitasa en la alimentación de pollos de engorde",
+              "2013"
+            ],
+            [
+              "16",
+              "Evaluación de la suplementación de propionato de cromo en la dieta de pollos de engorde",
+              "2013"
+            ],
+            [
+              "17",
+              "Evaluación de dos métodos de cosecha de pollos de engorde",
+              "2013"
+            ],
+            [
+              "18",
+              "Efecto de dos productos antiestresantes en el comportamiento biológico de pollos de engorde",
+              "2013"
+            ],
+            [
+              "19",
+              "Efecto de cobertura de cama con papel sobre el comportamiento productivo de pollos de engorde",
+              "2013"
+            ],
+            [
+              "20",
+              "Comportamiento productivo en pollos de engorda utilizando dos fuentes de harina de carne y hueso",
+              "2014"
+            ],
+            [
+              "21",
+              "Evaluación de parámetros productivos en pollos de engorde Arbor Acres Plus provenientes de reproductoras de cuatro edades diferentes",
+              "2014"
+            ],
+            [
+              "22",
+              "Diagnóstico de pre inversión para la instalación de una planta de incubación de huevos de aves de traspatio en la Universidad Nacional de Agricultura",
+              "2014"
+            ],
+            [
+              "23",
+              "Evaluación del comportamiento productivo en pollos de engorda utilizando cuatro dietas comerciales",
+              "2014"
+            ],
+            [
+              "24",
+              "Evaluación del comportamiento productivo de aves de traspatio en gallinero móviles",
+              "2015"
+            ],
+            [
+              "25",
+              "Diagnóstico socioeconómico del sector agroalimentario de la zona de Cuyamel, Catacamas, Olancho",
+              "2016"
+            ]
+          ],
+          "nota": "Transcrito de la relación de tesis del expediente de enero de 2020, omitiendo la columna del nombre del tesista. La numeración y los títulos se conservan tal como figuran en el original."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Registro de prácticas profesionales supervisadas dirigidas, 2013-2019",
+          "columnas": [
+            "N.º",
+            "Título",
+            "Año"
+          ],
+          "filas": [
+            [
+              "1",
+              "Nivel de satisfacción de los usuarios de la clínica de salud familiar Buen Samaritano de Catacamas, Olancho",
+              "2013"
+            ],
+            [
+              "2",
+              "Producción de pollos de engorde con tres tipos de balanceados en la provincia El Oro, Machala, Ecuador",
+              "2014"
+            ],
+            [
+              "3",
+              "Proceso de incubación y engorda de pollos en la empresa avícola El Cortijo S.A.",
+              "2014"
+            ],
+            [
+              "4",
+              "Producción de huevo fértil en la empresa Cargill Honduras",
+              "2016"
+            ],
+            [
+              "5",
+              "Manejo de reproductoras en periodos de levante y postura en la empresa avícola CADECA, Siguatepeque, Comayagua",
+              "2016"
+            ],
+            [
+              "6",
+              "Producción y comercialización de pollo de engorde en la empresa Granjas Avícolas Olanchanas",
+              "2016"
+            ],
+            [
+              "7",
+              "Explotación de aves ponedoras en jaulas y túnel en la empresa Avícola Las Delicias",
+              "2016"
+            ],
+            [
+              "8",
+              "Manejo de gallinas reproductoras en etapa de recría en la empresa Cargill de Honduras, en Siguatepeque, Comayagua",
+              "2016"
+            ],
+            [
+              "9",
+              "Manejo de aves ponedoras en el periodo de levante en Ceda Comayagua",
+              "2016"
+            ],
+            [
+              "10",
+              "Manejo de planta incubadora en la empresa Cargill de Honduras",
+              "2016"
+            ],
+            [
+              "11",
+              "Producción de huevo fértil en la empresa Cargill Honduras",
+              "2016"
+            ],
+            [
+              "12",
+              "Producción de huevos fértil de pollo de engorda en la empresa AVIANHALZER S.A. Ecuador",
+              "2018"
+            ],
+            [
+              "13",
+              "Manejo de la planta incubadora de la empresa avícola San Antonio, Copán, Honduras",
+              "2019"
+            ],
+            [
+              "14",
+              "Acompañamiento técnico en la producción de pollos de engorde, empresa avícola San Antonio, Copán, Honduras",
+              "2019"
+            ]
+          ],
+          "nota": "Transcrito de la relación de PPS del expediente de enero de 2020, omitiendo la columna del practicante. Las filas 4 y 11 aparecen repetidas en el original, con el mismo título, el mismo año y el mismo practicante; se conservan ambas en lugar de corregir el documento fuente."
+        },
+        {
+          "tipo": "nota",
+          "texto": "Estos dos registros suman 39 trabajos dirigidos y llegan hasta 2019. El currículo de 2026 declara más de 50, y en el equipo del docente hay expedientes de prácticas profesionales de 2024 a 2026 que todavía no se han consolidado en un registro. Completar la serie hasta 2026 es el paso pendiente de esta evidencia."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Prácticas profesionales supervisadas en curso · Año 2026, periodo 3",
+          "columnas": [
+            "Concepto",
+            "Cantidad"
+          ],
+          "filas": [
+            [
+              "Estudiantes con PPS asignada",
+              "9"
+            ],
+            [
+              "Como asesor principal",
+              "7"
+            ],
+            [
+              "Como asesor secundario",
+              "2"
+            ],
+            [
+              "Trabajos en fase de anteproyecto",
+              "8"
+            ],
+            [
+              "Trabajos en fase de informe final",
+              "1"
+            ]
+          ],
+          "nota": "Cifras de la plataforma institucional de carga académica, consultadas el 20 de septiembre de 2026. Se publican agregadas: los nombres de los estudiantes y los títulos en curso no se incorporan al portafolio. Estas nueve prácticas son adicionales a los 39 trabajos ya concluidos que recogen los dos registros anteriores."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Producción y divulgación",
+          "texto": "La producción publicada hasta la fecha son herramientas de software académico depositadas en Zenodo, cada una con su identificador persistente y su archivo de cita. Se relacionan a continuación con referencia normalizada, año, tipo e identificador verificable."
+        },
+        {
+          "tipo": "publicaciones",
+          "titulo": "Producción académica publicada",
+          "items": [
+            {
+              "referencia": "Ardón, G. A. (2026). Avimétrica Pro (versión 0.7.1) [software]. Centro Integral de Aprendizaje Avícola, Universidad Nacional de Agricultura.",
+              "clase": "Software",
+              "anio": "2026",
+              "identificador": "10.5281/zenodo.22005611",
+              "enlace": "https://doi.org/10.5281/zenodo.22005611",
+              "nota": "Analítica de peso, uniformidad y desempeño avícola. Versión archivada en Zenodo el 19 de agosto de 2026 bajo licencia MIT. El identificador es el DOI de concepto: resuelve siempre a la versión más reciente archivada."
+            },
+            {
+              "referencia": "Ardón, G. A. (2026). LayerGenetics Pro: plataforma educativa de genética avícola de postura (versión 1.0) [software]. Universidad Nacional de Agricultura.",
+              "clase": "Software",
+              "anio": "2026",
+              "identificador": "10.5281/zenodo.21753562",
+              "enlace": "https://doi.org/10.5281/zenodo.21753562",
+              "nota": "Compara ocho líneas comerciales de postura sobre 795 registros semanales verificados uno a uno contra los manuales de cada casa genética. Publicado el 2 de agosto de 2026 bajo licencia CC BY 4.0."
+            },
+            {
+              "referencia": "Ardón, G. A. (2026). BreederGenetics Pro: plataforma de análisis y comparación de reproductoras pesadas (versión 1.0.0) [software]. Universidad Nacional de Agricultura.",
+              "clase": "Software",
+              "anio": "2026",
+              "identificador": "10.5281/zenodo.21704802",
+              "enlace": "https://doi.org/10.5281/zenodo.21704802",
+              "nota": "Objetivos de rendimiento de Cobb 500 Slow Feather y Ross 308 Fast Feather, con trazabilidad documental de cada cifra. Publicado el 29 de julio de 2026 bajo licencia MIT."
+            },
+            {
+              "referencia": "Ardón, G. A. (2026). coordinate-reconciler: recovery of heterogeneous coordinate encodings in agricultural census data (versión 1.0.0) [software].",
+              "clase": "Software",
+              "anio": "2026",
+              "identificador": null,
+              "enlace": "https://github.com/gardon-hub/coordinate-reconciler",
+              "nota": "Recuperación determinista de codificaciones de coordenadas mezcladas en censos agropecuarios. Publicado el 16 de julio de 2026 bajo licencia MIT. Es el código acompañante de un artículo que sigue en preparación."
+            }
+          ],
+          "nota": "Referencias tomadas del archivo CITATION.cff de cada repositorio. Los tres DOI se comprobaron contra doi.org el 20 de septiembre de 2026 y resuelven a su registro en Zenodo."
+        },
+        {
+          "tipo": "nota",
+          "texto": "Todavía no hay artículos en revistas. El artículo «Not missing, unparsed: deterministic recovery of heterogeneous coordinate formats in agricultural census data» figura como en preparación en la cita del repositorio, y en el equipo del docente hay varios manuscritos en versiones sucesivas, entre ellos uno derivado de la tesis doctoral. Ninguno se relaciona aquí como publicación hasta que aparezca con su referencia definitiva."
+        }
+      ]
+    },
+    {
+      "id": "vinculacion",
+      "numero": 7,
+      "slug": "vinculacion-y-extension",
+      "titulo": "Vinculación con la sociedad y extensión",
+      "resumen": "Lunes de Huevito, asistencia técnica, educación continua e indicadores de resultado sugeridos.",
+      "icono": "manos",
+      "evidencias": [
+        "E7.1",
+        "E7.2",
+        "E7.3",
+        "E7.4"
+      ],
+      "bloques": [
+        {
+          "tipo": "destacado",
+          "etiqueta": "Función social",
+          "texto": "La vinculación transforma conocimiento, capacidades e infraestructura universitaria en acciones concretas para la educación, la seguridad alimentaria y el fortalecimiento del sector productivo."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Lunes de Huevito",
+          "texto": "La iniciativa Lunes de Huevito brinda desayuno a niños y niñas de centros educativos de Catacamas y promueve el valor nutricional del huevo. Las actividades de 2026 comenzaron el lunes 16 de marzo con dos centros educativos, Héctor Jiménez Cardona y Álvaro Contreras, a los que se sumaron después República de Honduras y Gustavo Rosa. Al 20 de agosto de 2026 la iniciativa atiende cuatro centros educativos, con una matrícula beneficiaria registrada de 447 niñas y niños, y destina 17 cartones —510 huevos— cada lunes. Además del aporte alimentario, la actividad fortalece el vínculo entre la universidad, las escuelas y la comunidad, y es un espacio de aprendizaje y servicio para los estudiantes de la UNAG, que apoyan la preparación del desayuno e imparten las charlas sobre el valor nutricional del huevo."
+        },
+        {
+          "tipo": "indicadores",
+          "titulo": "Resultados al 20 de agosto de 2026",
+          "items": [
+            {
+              "valor": "4",
+              "etiqueta": "centros educativos atendidos",
+              "nota": "República de Honduras, Héctor Jiménez Cardona, Álvaro Contreras y Gustavo Rosa."
+            },
+            {
+              "valor": "447",
+              "etiqueta": "niñas y niños beneficiados",
+              "nota": "Matrícula beneficiaria registrada: 219 niñas (49,0 %) y 228 niños (51,0 %)."
+            },
+            {
+              "valor": "510",
+              "etiqueta": "huevos cada lunes",
+              "nota": "Equivalentes a 17 cartones por jornada."
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Matrícula beneficiaria registrada por centro educativo",
+          "columnas": [
+            "Centro educativo",
+            "Cobertura",
+            "Niñas",
+            "Niños",
+            "Total"
+          ],
+          "filas": [
+            [
+              "República de Honduras",
+              "1.º a 6.º",
+              "18",
+              "24",
+              "42"
+            ],
+            [
+              "Héctor Jiménez Cardona",
+              "1.º a 3.º (parcial)",
+              "109",
+              "97",
+              "206"
+            ],
+            [
+              "Álvaro Contreras",
+              "1.º a 9.º",
+              "49",
+              "71",
+              "120"
+            ],
+            [
+              "Gustavo Rosa",
+              "5 a 15 años",
+              "43",
+              "36",
+              "79"
+            ],
+            [
+              "Total (4 centros)",
+              "",
+              "219",
+              "228",
+              "447"
+            ]
+          ],
+          "nota": "Fuente: informe de vinculación del 20 de agosto de 2026, que a su vez cita el consolidado de matrícula proporcionado por los centros educativos. La versión anterior de este portafolio reportaba tres centros y 371 niños, cifras de una etapa previa de la iniciativa."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Identidad y mensaje de la campaña",
+          "texto": "La iniciativa cuenta con material gráfico propio, firmado por la Universidad Nacional de Agricultura y por el Centro Integral de Aprendizaje Avícola de la Facultad de Medicina Veterinaria y Zootecnia. El cartel de la campaña se organiza alrededor del lema «Nutrimos hoy, construimos mañana» y de la idea que la encabeza: «Pequeñas acciones, grandes cambios». Su texto central sostiene que cada huevo compartido es más que alimento —«es salud, es educación, es esperanza»— y cierra con la fórmula que resume el propósito institucional: «Educamos, nutrimos, transformamos vidas». El material muestra las tres caras de la actividad: la preparación comunitaria del desayuno, la jornada educativa en el aula y la entrega a los escolares."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "¿Por qué un huevo? Justificación nutricional de la campaña",
+          "items": [
+            "Rico en proteína de alta calidad.",
+            "Favorece el desarrollo físico y mental.",
+            "Fortalece el sistema inmunológico.",
+            "Fácil de preparar, accesible y delicioso."
+          ]
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Asistencia técnica y educación continua",
+          "items": [
+            "Orientación técnica sobre manejo de ponedoras, pollitas, bioseguridad, incubación y calidad de huevo.",
+            "Capacitaciones sobre formulación de dietas, análisis productivo y uso de aplicaciones especializadas.",
+            "Acompañamiento a estudiantes y empresas en prácticas profesionales supervisadas.",
+            "Participación en conferencias, ferias y actividades de divulgación relacionadas con la avicultura y el huevo."
+          ]
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Resultados e indicadores sugeridos",
+          "items": [
+            "Número de personas, centros educativos, productores o instituciones atendidos.",
+            "Cantidad y tipo de insumos o servicios aportados.",
+            "Temas impartidos, materiales entregados y horas de asistencia técnica.",
+            "Satisfacción de participantes y cambios observables después de la intervención.",
+            "Continuidad, alianzas y posibilidades de réplica de la actividad."
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "Las fotografías de la actividad muestran a menores de edad. La evidencia E7.2 se mantiene restringida: solo se publicará con autorización expresa de madres, padres o tutores y de los centros educativos."
+        }
+      ]
+    },
+    {
+      "id": "gestion-academica",
+      "numero": 8,
+      "slug": "gestion-academica",
+      "titulo": "Gestión académica",
+      "resumen": "Coordinación del CIAA, aseguramiento de la calidad y experiencia institucional acumulada.",
+      "icono": "engranaje",
+      "evidencias": [
+        "E8.1",
+        "E8.2",
+        "E8.3",
+        "E8.4",
+        "E8.5"
+      ],
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La gestión académica se concreta en la coordinación del CIAA, la planificación de recursos, la supervisión de personal y estudiantes, la preparación de planes operativos, la gestión de insumos y la articulación con autoridades, empresas y otras unidades universitarias. Estas responsabilidades crean las condiciones para que la docencia, la investigación y la vinculación se desarrollen con continuidad y calidad."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Coordinación del CIAA",
+          "items": [
+            "Organización de la granja avícola y la planta de incubación como espacios de aprendizaje y producción.",
+            "Planificación de población avícola, alimento, vacunas, equipos, mantenimiento y bioseguridad.",
+            "Coordinación de docentes, operarios, estudiantes y practicantes vinculados con el centro.",
+            "Preparación y seguimiento del Plan Operativo Anual del CIAA.",
+            "Elaboración de informes, solicitudes de compra y justificaciones técnicas.",
+            "Articulación de actividades de docencia, investigación, vinculación y servicios."
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Lo que el CIAA aporta a la institución",
+          "texto": "El 22 de septiembre de 2026 el coordinador entregó a la Gerencia de Producción y Comercialización el documento técnico «Aportes institucionales del Centro Integral de Aprendizaje Avícola» (evidencia E8.3). Recoge las capacidades documentadas del centro en 2026 —una unidad de ponedoras de unas 1 950 aves con registros de producción, alimentación, sanidad y comercialización; una incubadora de 31 000 huevos y una nacedora de 7 500, con cargas semanales previstas de 10 300 huevos; prácticas para Agronomía, Zootecnia, Medicina Veterinaria y áreas administrativas; y Lunes de Huevito—, ordena siete competencias dominantes con sus procesos, evidencias y resultados, propone la estructura mínima del manual operativo en nueve capítulos con doce registros prioritarios, y describe la vinculación con la SAG, que apoyó la planta de incubación, y con SENASA, cuyas recomendaciones de cloración, calidad de agua y bioseguridad se aplican."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Aseguramiento de la calidad",
+          "texto": "La gestión de calidad requiere documentar procesos, responsabilidades, resultados e incidencias. En el CIAA, esto implica mantener registros productivos, protocolos de manejo, inventarios, programación de actividades, evidencia de bioseguridad y reportes que permitan evaluar desempeño y tomar decisiones. Para el ámbito docente, el portafolio cumple una función equivalente al hacer visible el ciclo de planificación, ejecución, evaluación y mejora."
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Experiencia institucional acumulada",
+          "texto": "La trayectoria en cargos como Jefe de Avicultura, Jefe y Subjefe de Producción Animal y Secretario General aporta una comprensión amplia de los procesos universitarios. Esta experiencia fortalece la capacidad para coordinar equipos, resolver problemas operativos, comunicar necesidades y vincular decisiones académicas con la misión institucional."
+        }
+      ]
+    },
+    {
+      "id": "desarrollo-profesional",
+      "numero": 9,
+      "slug": "desarrollo-profesional-continuo",
+      "titulo": "Desarrollo profesional continuo",
+      "resumen": "Áreas prioritarias de actualización, formación recibida e impartida y transferencia del aprendizaje.",
+      "icono": "escalera",
+      "evidencias": [
+        "E9.1",
+        "E9.2",
+        "E9.3",
+        "E9.4"
+      ],
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "El desarrollo profesional se entiende como actualización disciplinar, pedagógica, tecnológica y de gestión. La experiencia acumulada se complementa con la participación en cursos, congresos, diplomados, conferencias y espacios de intercambio, así como con la formación impartida a estudiantes, docentes y actores del sector productivo."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Áreas prioritarias de actualización",
+          "items": [
+            "Producción avícola, genética, nutrición, incubación, bienestar y bioseguridad.",
+            "Estadística aplicada, analítica de datos y métodos cuantitativos.",
+            "Diseño curricular, evaluación por competencias e innovación educativa.",
+            "Inteligencia artificial, desarrollo de aplicaciones y uso responsable de tecnologías digitales.",
+            "Gestión universitaria, liderazgo, calidad y formulación de proyectos."
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Formación recibida e impartida",
+          "texto": "El expediente de 2020 contiene diplomas, constancias y reconocimientos de formación pedagógica, producción y sanidad avícola, formulación y evaluación de proyectos, gestión de calidad, congresos avícolas, cooperación y actividades de extensión; sus imágenes se consultan en el anexo documental. El currículo actualizado al 7 de abril de 2026 cierra el registro cronológico que faltaba: la tabla siguiente recoge la formación posterior al expediente. Queda pendiente reunir las constancias de estas actividades y añadir de cada una la duración, la modalidad y una nota sobre su aplicación en la práctica docente."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Formación y participación académica registrada entre 2020 y 2026",
+          "columnas": [
+            "Año",
+            "Actividad",
+            "Institución o sede"
+          ],
+          "filas": [
+            [
+              "2020",
+              "Gestión para Resultados en Gobiernos Subnacionales",
+              "Banco Interamericano de Desarrollo, Washington"
+            ],
+            [
+              "2020",
+              "Economía del comportamiento para mejores políticas públicas",
+              "Banco Interamericano de Desarrollo e Instituto Interamericano para el Desarrollo Económico y Social, Washington"
+            ],
+            [
+              "2021",
+              "Diplomado de didáctica de las ciencias",
+              "Universidad Nacional de Agricultura, Catacamas, Olancho"
+            ],
+            [
+              "2022",
+              "Diplomado en diseño de espacios virtuales de aprendizaje y asesoría en línea",
+              "SAG, IICA y UNAG"
+            ],
+            [
+              "2022",
+              "Certificado en docencia universitaria en ambientes virtuales",
+              "LASPAU, Cambridge, Massachusetts"
+            ],
+            [
+              "2022",
+              "XXVII Congreso Latinoamericano de Avicultura (Ovum 2022)",
+              "San Pedro Sula, Honduras"
+            ],
+            [
+              "2023",
+              "Exposición Internacional de Producción y Procesamiento (IPPE) y Cumbre Avícola Latinoamérica",
+              "Atlanta, Georgia"
+            ],
+            [
+              "2023",
+              "XXVI Congreso Centroamericano y del Caribe de Avicultura",
+              "San José, Costa Rica"
+            ],
+            [
+              "2024",
+              "Exposición Internacional de Producción y Procesamiento (IPPE) y Cumbre Avícola Latinoamérica",
+              "Atlanta, Georgia"
+            ],
+            [
+              "2024",
+              "XXVIII Congreso Latinoamericano de Avicultura (Ovum 2024)",
+              "Punta del Este, Uruguay"
+            ],
+            [
+              "2025",
+              "LPN Congress & Expo",
+              "Miami"
+            ],
+            [
+              "2026",
+              "Exposición Internacional de Producción y Procesamiento (IPPE) y Cumbre Avícola Latinoamérica",
+              "Atlanta, Georgia"
+            ]
+          ],
+          "nota": "Tomado del apartado «Cursos recibidos» del currículo actualizado al 7 de abril de 2026. Las constancias correspondientes aún no se han incorporado al anexo documental."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Respaldos históricos incorporados",
+          "items": [
+            "Diplomado en Formación Pedagógica en Educación Superior, UPNFM, 2000.",
+            "Formación especializada en sanidad y producción avícola y orientación lingüística, EICA, Egipto, 2006.",
+            "Participación recurrente en congresos centroamericanos, del Caribe y latinoamericanos de avicultura, documentada en el currículo y en constancias del expediente.",
+            "Cursos y seminarios sobre formulación y evaluación de proyectos, gestión de calidad, análisis estadístico, cooperativismo y administración.",
+            "Reconocimientos por exposición, proyección social, colaboración institucional, formación académica y acompañamiento de prácticas profesionales.",
+            "Reconocimiento por la charla «Desarrollo de la avicultura, caso Honduras» en el ciclo de pláticas virtuales «Egresados Contigo» de la Universidad Autónoma Chapingo, México, 2020.",
+            "Reconocimiento por el taller de capacitación sobre manejo de aves ponedoras y pollos de engorde, modalidad virtual, DICTA Honduras, 2022.",
+            "Reconocimiento por destacada labor como docente otorgado por la Clase 2000, Catacamas, 2025."
+          ]
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Transferencia del aprendizaje",
+          "items": [
+            "Incorporación de nuevos contenidos o casos en las asignaturas.",
+            "Diseño o mejora de instrumentos de evaluación.",
+            "Creación de recursos y aplicaciones educativas.",
+            "Actualización de protocolos, guías o procedimientos del CIAA.",
+            "Capacitación a colegas, estudiantes o productores."
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Reflexión breve: de la formación en entornos virtuales al aula",
+          "texto": "En 2022 cursé el Diplomado en diseño de espacios virtuales de aprendizaje y asesoría en línea, de ciento veinte horas en modalidad virtual, ofrecido por la Universidad Nacional de Agricultura y el IICA, y obtuve el Certificado en docencia universitaria en ambientes virtuales de LASPAU. Ambos se ocupaban de lo mismo desde ángulos distintos: cómo diseñar un espacio de aprendizaje en línea y cómo acompañar en él al estudiante."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Ese aprendizaje se ve hoy en mi práctica. Organizo en Moodle las instrucciones, las entregas, las rúbricas y el seguimiento de las actividades. Construí un muro colaborativo para el módulo de Ambientes Pecuarios del grupo de Ingeniería en Zootecnia 2024, con nueve secciones que van de la presentación del grupo a los mapas mentales, las investigaciones grupales sobre aves, cerdos y bovinos, los videos y la fotografía técnica. He elaborado actividades interactivas propias en Educaplay, y en septiembre de 2026 apliqué las pruebas objetivas con un instrumento de proyección. Lo que tienen en común es la idea que el diplomado me dejó más clara: un entorno virtual no es un depósito de archivos, sino un lugar donde el estudiante hace algo —publica, responde, compara— y donde ese hacer queda a la vista."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La práctica me enseñó también algo que la formación no resolvía por sí sola. Que el trabajo quede a la vista tiene un costo: el muro de Ambientes Pecuarios, abierto a cualquiera que tenga el enlace, reúne los nombres, la procedencia y las fotografías de los estudiantes, y por eso este portafolio lo describe sin enlazarlo. Diseñar un espacio colaborativo exige decidir desde el principio quién puede verlo y qué datos se piden, y no solo cómo se organizan sus secciones."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La transferencia, además, no es inmediata. Mi aprendizaje más reciente, la participación en la IPPE 2026 y la Cumbre Avícola Latinoamericana en enero de este año, está todavía en camino: el informe del viaje identifica material técnico sobre incubación, sensores ambientales, ventilación de túnel y automatización de galpones para fortalecer Sistemas de Producción Avícola, Ambientes Pecuarios y Reproducción y Mejoramiento Animal. Incorporarlo a esos cursos es el paso siguiente, y conviene documentarlo a medida que ocurra y no después."
+        }
+      ]
+    },
+    {
+      "id": "reflexion-docente",
+      "numero": 10,
+      "slug": "evaluacion-y-reflexion-docente",
+      "titulo": "Evaluación y reflexión docente",
+      "resumen": "Autoevaluación, fortalezas, áreas de mejora, plan 2026-2027 y metas de desarrollo profesional.",
+      "icono": "espejo",
+      "evidencias": [
+        "E10.1",
+        "E10.2",
+        "E10.3",
+        "E10.4"
+      ],
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "titulo": "Autoevaluación",
+          "texto": "Mi principal fortaleza es la capacidad de conectar la enseñanza con problemas reales de producción, gestión y análisis. La experiencia profesional y académica permite contextualizar los contenidos, anticipar errores frecuentes y orientar al estudiante hacia decisiones técnicamente justificadas. También constituye una fortaleza la disposición para crear herramientas y materiales cuando los recursos existentes no responden plenamente a las necesidades del curso."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Entre las áreas de mejora se encuentra la necesidad de consolidar la medición del impacto de las innovaciones, sistematizar de forma más uniforme las evidencias de retroalimentación y fortalecer la documentación de resultados por competencia. Asimismo, es conveniente integrar en un solo repositorio los programas, planificaciones, instrumentos, productos y evidencias generados en distintos periodos."
+        },
+        {
+          "tipo": "nota",
+          "texto": "La autoevaluación y el plan de mejora que siguen los redactó el propio docente. Faltan las dos piezas que no dependen de él: los resultados institucionales de la evaluación docente (E10.1) y la evaluación de pares u observación de clase (E10.2). Ninguna de las dos obra en sus archivos; las solicitudes a la Vicerrectoría Académica y a la Decanatura de la FMVZ están redactadas en esas evidencias. Hasta que lleguen, este apartado se apoya solo en la mirada del propio docente sobre su práctica."
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Fortalezas identificadas",
+          "items": [
+            "Amplia experiencia disciplinar, docente y de gestión.",
+            "Aprendizaje contextualizado mediante el CIAA y situaciones productivas reales.",
+            "Capacidad para integrar estadística, producción y toma de decisiones.",
+            "Innovación mediante desarrollo de aplicaciones y recursos digitales.",
+            "Compromiso con la vinculación social y la formación práctica de estudiantes."
+          ]
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Áreas de mejora",
+          "items": [
+            "Medir sistemáticamente el efecto de las metodologías e innovaciones sobre el aprendizaje.",
+            "Fortalecer la evaluación por resultados de aprendizaje y competencias.",
+            "Documentar retroalimentación y seguimiento de acciones correctivas.",
+            "Consolidar publicaciones y productos derivados de experiencias e investigaciones aplicadas.",
+            "Organizar un repositorio digital anual con nomenclatura y control de versiones."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Plan de mejora 2026-2027",
+          "columnas": [
+            "Objetivo",
+            "Acción prioritaria",
+            "Indicador",
+            "Plazo"
+          ],
+          "filas": [
+            [
+              "Evaluación por competencias",
+              "Revisar resultados de aprendizaje y rúbricas de dos asignaturas",
+              "2 expedientes alineados",
+              "Dic. 2026"
+            ],
+            [
+              "Impacto de innovaciones",
+              "Aplicar encuesta y análisis pre/post en una herramienta",
+              "1 informe de resultados",
+              "Mar. 2027"
+            ],
+            [
+              "Evidencia docente",
+              "Crear repositorio anual con códigos y control de versión",
+              "100% de cursos con carpeta base",
+              "Dic. 2026"
+            ],
+            [
+              "Producción académica",
+              "Sistematizar una experiencia para artículo o ponencia",
+              "1 manuscrito o ponencia",
+              "Jun. 2027"
+            ],
+            [
+              "Retroalimentación",
+              "Conservar muestras anónimas y registrar acciones de mejora",
+              "2 muestras por curso",
+              "Cada periodo"
+            ]
+          ]
+        },
+        {
+          "tipo": "lista",
+          "titulo": "Metas de desarrollo profesional",
+          "items": [
+            "Consolidar un modelo de portafolio docente actualizado por periodo académico.",
+            "Publicar o presentar resultados derivados de innovación educativa o producción avícola aplicada.",
+            "Fortalecer la integración de inteligencia artificial con criterios éticos, trazabilidad y validación académica.",
+            "Desarrollar indicadores de aprendizaje y uso para las aplicaciones educativas creadas.",
+            "Ampliar alianzas para prácticas, investigación y vinculación con el sector avícola."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evidencias",
+      "numero": 11,
+      "slug": "evidencias",
+      "titulo": "Evidencias",
+      "resumen": "Uso de la matriz, inventario de fuentes incorporadas, nomenclatura y criterios de selección final.",
+      "icono": "carpeta",
+      "evidencias": [],
+      "bloques": [
+        {
+          "tipo": "destacado",
+          "etiqueta": "Uso de la matriz",
+          "texto": "Cada archivo anexo debe nombrarse con su código, año y una descripción breve. Antes de incorporar documentos o fotografías, deben ocultarse datos personales innecesarios y verificarse las autorizaciones correspondientes."
+        },
+        {
+          "tipo": "enlace-evidencias",
+          "texto": "La matriz maestra completa, con filtros por apartado, código, categoría, año y estado, se consulta en el Centro de evidencias."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Inventario de fuentes incorporadas",
+          "columnas": [
+            "Fuente",
+            "Información extraída",
+            "Código relacionado"
+          ],
+          "filas": [
+            [
+              "Currículo enero 2020",
+              "Formación, experiencia, cursos, reconocimientos y roles",
+              "E1.1, E1.4, E9.1-E9.3"
+            ],
+            [
+              "Títulos y diplomas",
+              "Maestro de primaria, Agrónomo, Ingeniería, Maestría y pedagogía",
+              "E1.2"
+            ],
+            [
+              "Constancia UNAG, 15/01/2020",
+              "Antigüedad, adscripción docente y cargos de gestión",
+              "E1.3, E1.4"
+            ],
+            [
+              "Constancia UNITEC, 13/01/2020",
+              "Estudios en Doctorado en Economía y Empresa",
+              "E1.2"
+            ],
+            [
+              "Relaciones de tesis y PPS",
+              "Temas, estudiantes, instituciones y años 1997-2019",
+              "E6.4"
+            ],
+            [
+              "Constancias y reconocimientos",
+              "Formación, congresos, extensión y méritos académicos",
+              "E7.3, E9.1-E9.3"
+            ]
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Nomenclatura sugerida",
+          "texto": "Formato: CÓDIGO_AÑO_DESCRIPCIÓN_APELLIDO. Ejemplo: E4.2_2026_Rubrica_Proyecto_Ardon.pdf. Para evidencias con varias páginas o versiones, se recomienda agregar el periodo académico y el número de versión."
+        },
+        {
+          "tipo": "tarjetas",
+          "titulo": "Criterios de selección final",
+          "items": [
+            {
+              "titulo": "Pertinencia",
+              "texto": "La evidencia responde claramente al apartado y al resultado que se desea demostrar."
+            },
+            {
+              "titulo": "Autenticidad",
+              "texto": "El documento permite identificar su origen, fecha y responsable."
+            },
+            {
+              "titulo": "Suficiencia",
+              "texto": "El conjunto demuestra la práctica sin acumular archivos repetitivos."
+            },
+            {
+              "titulo": "Confidencialidad",
+              "texto": "Se protegen calificaciones, datos de contacto e imágenes no autorizadas."
+            },
+            {
+              "titulo": "Trazabilidad",
+              "texto": "Cada afirmación relevante puede relacionarse con un código de evidencia."
+            }
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "titulo": "Cierre",
+          "texto": "Este portafolio refleja una trayectoria orientada a integrar enseñanza, producción, análisis, innovación y servicio. Su valor no reside únicamente en reunir documentos, sino en hacer visible la relación entre lo planificado, lo realizado, los resultados obtenidos y las decisiones de mejora. La versión final deberá completarse con evidencias verificables y actualizarse al cierre de cada periodo académico."
+        },
+        {
+          "tipo": "destacado",
+          "etiqueta": "Próximo paso",
+          "texto": "Actualizar el currículo a 2026, obtener la constancia de categoría docente y el correo institucional vigente, incorporar la carga académica y las evaluaciones del periodo, y seleccionar del expediente histórico únicamente los anexos más pertinentes para la versión de evaluación."
+        }
+      ]
+    }
+  ]
+}

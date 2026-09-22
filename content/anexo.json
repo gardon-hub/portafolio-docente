@@ -1,0 +1,597 @@
+{
+  "titulo": "Anexo documental",
+  "subtitulo": "Expediente digital compilado en enero de 2020",
+  "introduccion": "Este anexo reúne las imágenes del expediente que el docente compiló en enero de 2020 para el Concurso Público CI-UNAG-RH-06-2019. Cada página se enderezó, se redujo para consulta en pantalla y se agrupó por el código de evidencia que respalda. Se conservan tal como aparecen en el expediente: no se ha retocado ningún contenido, solo se han ocultado datos personales innecesarios donde se indica.",
+  "notaHistorica": "Los anexos históricos acreditan la trayectoria profesional, pero no sustituyen las constancias actualizadas requeridas para 2026.",
+  "notaPreparacion": "Los campos «girar» y «censura» los usa herramientas/preparar-anexo.ps1 para producir las imágenes publicadas. «censura» son rectángulos en píxeles sobre la página ya enderezada, en el orden x, y, ancho, alto. Un grupo con «anio» distinto de 2020 es una galería posterior: sus imágenes van en public/evidencias/anexo-<anio>/ (con carpeta miniaturas/), se muestra solo en la ficha de su evidencia y no cuenta en el anexo de 2020.",
+  "totalPaginasExpediente": 84,
+  "exclusiones": [
+    {
+      "paginas": [
+        "0075"
+      ],
+      "motivo": "Tarjeta de identidad y registro tributario nacional. Número de identidad, fotografía y código de barras.",
+      "categoria": "privacidad"
+    },
+    {
+      "paginas": [
+        "0079",
+        "0080"
+      ],
+      "motivo": "Constancia de antecedentes penales del Poder Judicial y la hoja que la acompaña. Información judicial, número de identidad, fecha de nacimiento y domicilio particular.",
+      "categoria": "privacidad"
+    },
+    {
+      "paginas": [
+        "0058",
+        "0059"
+      ],
+      "motivo": "Relaciones nominales de tesis y de prácticas profesionales supervisadas. Contienen el nombre completo de 25 estudiantes y las empresas donde realizaron su práctica; son datos de terceros que no consintieron su publicación.",
+      "categoria": "privacidad"
+    },
+    {
+      "paginas": [
+        "0001",
+        "0002",
+        "0045",
+        "0057",
+        "0062",
+        "0074",
+        "0076"
+      ],
+      "motivo": "Portadillas separadoras del expediente. No acreditan nada por sí mismas.",
+      "categoria": "sin-contenido"
+    }
+  ],
+  "grupos": [
+    {
+      "codigo": "E1.1",
+      "titulo": "Hoja de vida del expediente de 2020",
+      "descripcion": "Currículo de cinco páginas incorporado al expediente de enero de 2020. La versión vigente, del 7 de abril de 2026, se publica firmada y sin datos personales en la evidencia E1.1; esta se conserva como respaldo histórico.",
+      "paginas": [
+        {
+          "pagina": "0003",
+          "slug": "Curriculo_p1",
+          "titulo": "Currículo, página 1: estudios realizados y experiencia profesional",
+          "fecha": "Enero de 2020",
+          "nota": "Se ocultaron la dirección particular, el teléfono celular y el correo personal.",
+          "censura": [
+            [
+              880,
+              524,
+              800,
+              86
+            ]
+          ]
+        },
+        {
+          "pagina": "0004",
+          "slug": "Curriculo_p2",
+          "titulo": "Currículo, página 2: experiencias adquiridas y cursos recibidos",
+          "fecha": "Enero de 2020"
+        },
+        {
+          "pagina": "0005",
+          "slug": "Curriculo_p3",
+          "titulo": "Currículo, página 3: seminarios, congresos y capacitaciones",
+          "fecha": "Enero de 2020"
+        },
+        {
+          "pagina": "0006",
+          "slug": "Curriculo_p4",
+          "titulo": "Currículo, página 4: foros y congresos recientes",
+          "fecha": "Enero de 2020"
+        },
+        {
+          "pagina": "0007",
+          "slug": "Curriculo_p5",
+          "titulo": "Currículo, página 5: menciones honoríficas y reconocimientos",
+          "fecha": "Enero de 2020"
+        }
+      ]
+    },
+    {
+      "codigo": "E1.2",
+      "titulo": "Títulos y diplomas académicos",
+      "descripcion": "Títulos originales, sus registros y las certificaciones de grado.",
+      "paginas": [
+        {
+          "pagina": "0008",
+          "slug": "Titulo_Maestro_Educacion_Primaria",
+          "titulo": "Título de Maestro de Educación Primaria, Escuela Normal «Centro América»",
+          "fecha": "19 de noviembre de 1987"
+        },
+        {
+          "pagina": "0009",
+          "slug": "Autenticacion_Titulo_Maestro",
+          "titulo": "Autenticación del título de maestro, Secretaría de Educación Pública",
+          "fecha": "Julio de 1993"
+        },
+        {
+          "pagina": "0010",
+          "slug": "Titulo_Agronomo_ENA",
+          "titulo": "Título de Agrónomo, Escuela Nacional de Agricultura",
+          "fecha": null
+        },
+        {
+          "pagina": "0011",
+          "slug": "Autenticacion_Titulo_Agronomo",
+          "titulo": "Autenticación del título de agrónomo, Secretaría de Educación Pública",
+          "fecha": null
+        },
+        {
+          "pagina": "0012",
+          "slug": "Titulo_Ingeniero_Agronomo_Chapingo",
+          "titulo": "Título de Ingeniero Agrónomo Especialista en Zootecnia, Universidad Autónoma Chapingo",
+          "fecha": "1995"
+        },
+        {
+          "pagina": "0013",
+          "slug": "Registro_Titulo_Chapingo",
+          "titulo": "Registro del título de Chapingo, foja 151",
+          "fecha": "1995"
+        },
+        {
+          "pagina": "0014",
+          "slug": "Titulo_Master_UNICAH",
+          "titulo": "Título de Máster en Administración de Empresas, Universidad Católica de Honduras",
+          "fecha": "2003"
+        },
+        {
+          "pagina": "0015",
+          "slug": "Registro_Titulo_UNICAH",
+          "titulo": "Registro del título de máster, número 525, folio 393, tomo IV",
+          "fecha": "2003"
+        },
+        {
+          "pagina": "0016",
+          "slug": "Certificacion_Master_UNICAH",
+          "titulo": "Certificación del grado de Máster en Administración de Empresas",
+          "fecha": null
+        },
+        {
+          "pagina": "0048",
+          "slug": "Certificacion_Magna_Cum_Laude",
+          "titulo": "Certificación del reconocimiento Magna Cum Laude, Universidad Católica de Honduras",
+          "fecha": null
+        },
+        {
+          "pagina": "0046",
+          "slug": "Diploma_Cuadro_de_Honor_Chapingo",
+          "titulo": "Diploma por pertenecer al Cuadro de Honor, Universidad Autónoma Chapingo",
+          "fecha": "Año lectivo 1993-1994"
+        },
+        {
+          "pagina": "0060",
+          "slug": "Portada_Tesis_Profesional_Chapingo",
+          "titulo": "Portada de la tesis profesional: «Efecto del nivel de fósforo en la ganancia de peso de pollos de engorda»",
+          "fecha": null,
+          "nota": "Tesis presentada como requisito para obtener el título de Ingeniero Agrónomo Especialista en Zootecnia."
+        },
+        {
+          "pagina": "0071",
+          "slug": "Diplomado_UPNFM",
+          "titulo": "Diplomado otorgado por la Universidad Pedagógica Nacional Francisco Morazán",
+          "fecha": null
+        }
+      ]
+    },
+    {
+      "codigo": "E1.4",
+      "titulo": "Constancias laborales y de trayectoria",
+      "descripcion": "Documentos que acreditan la antigüedad, la adscripción docente y los cargos desempeñados.",
+      "paginas": [
+        {
+          "pagina": "0077",
+          "slug": "Constancia_Recursos_Humanos_UNA",
+          "titulo": "Constancia del Departamento de Recursos Humanos de la UNA",
+          "fecha": "15 de enero de 2020",
+          "nota": "Acredita servicio desde el 16 de mayo de 1996, la adscripción al Departamento Académico de Producción Animal y los cargos de Jefe del Departamento (2003-2006) y Secretario General (2007-2010)."
+        },
+        {
+          "pagina": "0078",
+          "slug": "Constancia_Estudios_Doctorado_UNITEC",
+          "titulo": "Constancia de estudios del Doctorado en Economía y Empresa, UNITEC",
+          "fecha": "13 de enero de 2020",
+          "nota": "Se ocultó el número de cuenta estudiantil.",
+          "censura": [
+            [
+              1372,
+              1178,
+              228,
+              58
+            ]
+          ]
+        },
+        {
+          "pagina": "0084",
+          "slug": "Acreditacion_Asociacion_Graduados_ENA",
+          "titulo": "Acreditación de la Asociación de Graduados de la Escuela Nacional de Agricultura",
+          "fecha": "15 de enero de 2020"
+        }
+      ]
+    },
+    {
+      "codigo": "E9.1",
+      "titulo": "Cursos, diplomados y capacitación",
+      "descripcion": "Formación disciplinar, pedagógica y técnica recibida entre 1995 y 2019.",
+      "paginas": [
+        {
+          "pagina": "0017",
+          "slug": "Constancia_Ovinocultura_Chapingo",
+          "titulo": "Constancia de la Asociación Mexicana de Técnicos Especialistas en Ovinocultura y el Departamento de Zootecnia de Chapingo",
+          "fecha": null
+        },
+        {
+          "pagina": "0018",
+          "slug": "Diploma_AMENA_AMTEO",
+          "titulo": "Diploma de la Asociación Mexicana de Especialistas en Nutrición Animal y AMTEO",
+          "fecha": "1995"
+        },
+        {
+          "pagina": "0019",
+          "slug": "Reconocimiento_Colegio_Postgraduados",
+          "titulo": "Reconocimiento del Colegio de Postgraduados, Programa de Ganadería",
+          "fecha": "23 de noviembre de 1995"
+        },
+        {
+          "pagina": "0020",
+          "slug": "Constancia_Guelph_ENA",
+          "titulo": "Constancia del proyecto Universidad de Guelph / Escuela Nacional de Agricultura",
+          "fecha": null,
+          "nota": "Curso «Diseños Estadísticos utilizando SAS», financiado por la Agencia Canadiense de Desarrollo Internacional."
+        },
+        {
+          "pagina": "0021",
+          "slug": "Certificado_Calidad_Total_UNICAH",
+          "titulo": "Certificado de la Universidad Católica de Honduras en administración de la calidad total",
+          "fecha": "16 de octubre de 1997"
+        },
+        {
+          "pagina": "0022",
+          "slug": "Certificado_Expositor_Jornada_Cientifica_ENA",
+          "titulo": "Certificado de participación como expositor, I Jornada Científica ENA-99",
+          "fecha": "1999"
+        },
+        {
+          "pagina": "0023",
+          "slug": "Certificado_MOPAWI",
+          "titulo": "Certificado de MOPAWI (Mosquitia Pawisa) sobre producción de aves de corral",
+          "fecha": null
+        },
+        {
+          "pagina": "0024",
+          "slug": "Certificado_Jornada_Porcina_ENA",
+          "titulo": "Certificado de asistencia, I Jornada Porcina ENA-CDPP-2000",
+          "fecha": "2000"
+        },
+        {
+          "pagina": "0025",
+          "slug": "Certificado_INFOP_Gerencia_Agroindustrial",
+          "titulo": "Certificado del INFOP por el curso «Gerencia Agroindustrial», 73 horas",
+          "fecha": "Julio de 2000"
+        },
+        {
+          "pagina": "0026",
+          "slug": "Diploma_Aves_Rusticas_USAID_Zamorano",
+          "titulo": "Diploma del Proyecto Aves Rústicas USAID / Zamorano sobre producción de gallinas",
+          "fecha": "2000"
+        },
+        {
+          "pagina": "0028",
+          "slug": "Certificado_Formulacion_Presupuestaria",
+          "titulo": "Certificado de participación en formulación y evaluación presupuestaria, Secretaría de Finanzas y UNA",
+          "fecha": "2003"
+        },
+        {
+          "pagina": "0030",
+          "slug": "Certificado_Mantenimiento_Rastros_FHIS",
+          "titulo": "Certificado de capacitación para la operación y mantenimiento de rastros, FHIS",
+          "fecha": "2005"
+        },
+        {
+          "pagina": "0031",
+          "slug": "Certificado_Capacitacion_EICA_Egipto",
+          "titulo": "Certificado de capacitación en sanidad y producción avícola, Centro Egipcio Internacional para la Agricultura",
+          "fecha": "2006",
+          "nota": "Emitido por el Ministerio de Agricultura y Bonificación de Tierras de la República Árabe de Egipto."
+        },
+        {
+          "pagina": "0032",
+          "slug": "Autenticacion_Consular_EICA",
+          "titulo": "Autenticación consular del certificado del EICA",
+          "fecha": "2006",
+          "girar": 180
+        },
+        {
+          "pagina": "0033",
+          "slug": "Diploma_CASUED_Taller_I",
+          "titulo": "Diploma de la UNAH-CASUED Juticalpa, carrera de Pedagogía y Ciencias de la Educación",
+          "fecha": "2006"
+        },
+        {
+          "pagina": "0034",
+          "slug": "Certificado_INFOP_Embutidos_Ahumados",
+          "titulo": "Certificado del INFOP por el curso de embutidos ahumados, 72 horas",
+          "fecha": "2007"
+        },
+        {
+          "pagina": "0035",
+          "slug": "Certificado_INFOP_Embutidos_Crudos",
+          "titulo": "Certificado del INFOP por el curso de embutidos crudos, 30 horas",
+          "fecha": "2007"
+        },
+        {
+          "pagina": "0068",
+          "slug": "Diploma_UCENM_Jornada_Formativa",
+          "titulo": "Diploma de reconocimiento de la Universidad Cristiana Evangélica Nuevo Milenio, Centro Regional Catacamas",
+          "fecha": "2007"
+        },
+        {
+          "pagina": "0069",
+          "slug": "Diploma_UCENM_Educacion_Superior",
+          "titulo": "Diploma de reconocimiento de la Universidad Cristiana Evangélica Nuevo Milenio sobre educación superior en Honduras",
+          "fecha": "2007"
+        },
+        {
+          "pagina": "0070",
+          "slug": "Diploma_CASUED_Juticalpa",
+          "titulo": "Diploma de la UNAH-CASUED Juticalpa",
+          "fecha": null
+        },
+        {
+          "pagina": "0072",
+          "slug": "Diploma_CASUED_Aprendizaje_Cooperativo",
+          "titulo": "Diploma de la UNAH-CASUED Juticalpa por el seminario taller sobre aprendizaje cooperativo",
+          "fecha": null
+        },
+        {
+          "pagina": "0073",
+          "slug": "Diploma_Participacion_ENA",
+          "titulo": "Diploma de participación de la Escuela Nacional de Agricultura",
+          "fecha": "1999"
+        },
+        {
+          "pagina": "0040",
+          "slug": "Certificado_Direccion_Deportiva_COI",
+          "titulo": "Certificado del Comité Olímpico Internacional por el curso de dirección deportiva",
+          "fecha": "2011",
+          "nota": "Programa para dirigentes deportivos de Solidaridad Olímpica, firmado por Jacques Rogge, presidente del COI. El currículo de 2026 lo registra en Honduras, 2011."
+        },
+        {
+          "pagina": "0067",
+          "slug": "Diploma_UNA_Reforma_Curricular_GIZ",
+          "titulo": "Diploma de la UNA, Dirección de Docencia y Reforma Curricular, con la cooperación alemana GIZ",
+          "fecha": "Octubre de 2016"
+        },
+        {
+          "pagina": "0065",
+          "slug": "Diploma_Participacion_Seminario_Permanente",
+          "titulo": "Diploma de participación en el Seminario Permanente para la Transformación Institucional",
+          "fecha": "2 de noviembre de 2017"
+        },
+        {
+          "pagina": "0066",
+          "slug": "Temario_Seminario_Permanente",
+          "titulo": "Temario del Seminario Permanente para la Transformación Institucional",
+          "fecha": "2017",
+          "girar": 180
+        },
+        {
+          "pagina": "0063",
+          "slug": "Diploma_UNA_Metodos_Estrategias_Didacticas",
+          "titulo": "Diploma de la UNA por el taller de métodos y estrategias didácticas con enfoque de competencias",
+          "fecha": "Enero de 2019"
+        },
+        {
+          "pagina": "0064",
+          "slug": "Diploma_UNA_Comision_Interventora",
+          "titulo": "Diploma de la Comisión Interventora de la UNA sobre desafíos e innovaciones ante la reforma curricular",
+          "fecha": "2019"
+        },
+        {
+          "pagina": "0081",
+          "slug": "Diploma_Ingles_Postgrado_UNITEC",
+          "titulo": "Diploma de inglés para estudiantes de postgrado, Facultad de Postgrado de UNITEC",
+          "fecha": "2018"
+        },
+        {
+          "pagina": "0082",
+          "slug": "Certificate_EICA_Egipto",
+          "titulo": "Certificate of The Egyptian International Centre for Agriculture",
+          "fecha": "2006"
+        },
+        {
+          "pagina": "0083",
+          "slug": "Autenticacion_Embajada_El_Cairo",
+          "titulo": "Autenticación de la Embajada de Honduras en El Cairo, auténtica n.º 006/2006",
+          "fecha": "30 de marzo de 2006"
+        }
+      ]
+    },
+    {
+      "codigo": "E9.2",
+      "titulo": "Congresos y conferencias",
+      "descripcion": "Participación en congresos avícolas centroamericanos, del Caribe y latinoamericanos, y en coloquios académicos.",
+      "paginas": [
+        {
+          "pagina": "0029",
+          "slug": "Diploma_Precongreso_Avicola_DISATYR",
+          "titulo": "Diploma de Disatyr y la Asociación Nacional de Avicultores de Honduras por el 1.er Precongreso Avícola",
+          "fecha": "2004"
+        },
+        {
+          "pagina": "0027",
+          "slug": "Diploma_COLPROCAH",
+          "titulo": "Diploma del Colegio de Profesionales en Ciencias Agrícolas de Honduras",
+          "fecha": null
+        },
+        {
+          "pagina": "0038",
+          "slug": "Certificado_XX_Congreso_Avicultura",
+          "titulo": "Certificado del XX Congreso de Avicultura Centroamericano y del Caribe, Nicaragua",
+          "fecha": "24 al 26 de septiembre de 2008"
+        },
+        {
+          "pagina": "0039",
+          "slug": "Certificado_Congreso_Latinoamericano_APPCA",
+          "titulo": "Certificado de APPCA, la Cámara Nacional de Avicultores de Costa Rica y FEDAVICAC",
+          "fecha": "16, 17 y 18 de junio de 2010"
+        },
+        {
+          "pagina": "0041",
+          "slug": "Certificado_XXII_Congreso_Avicultura",
+          "titulo": "Certificado de participación como congresista, XXII Congreso Centroamericano y del Caribe de Avicultura",
+          "fecha": "2012"
+        },
+        {
+          "pagina": "0043",
+          "slug": "Diploma_PROAVIH",
+          "titulo": "Diploma de la Asociación de Productores Avícolas de Honduras sobre la avicultura hondureña",
+          "fecha": null
+        },
+        {
+          "pagina": "0044",
+          "slug": "Diploma_Expositor_Jornada_Avicola_El_Paraiso",
+          "titulo": "Diploma de expositor en la Jornada Avícola de El Paraíso",
+          "fecha": "29 de junio de 2019"
+        },
+        {
+          "pagina": "0061",
+          "slug": "Diploma_Coloquio_Doctoral_CLADEA_ESAN",
+          "titulo": "Diploma de la Universidad ESAN por el Coloquio Doctoral de la Asamblea de CLADEA",
+          "fecha": "2018"
+        }
+      ]
+    },
+    {
+      "codigo": "E9.3",
+      "titulo": "Reconocimientos, extensión y proyección social",
+      "descripcion": "Distinciones recibidas de la universidad, de centros educativos y de organizaciones del sector.",
+      "paginas": [
+        {
+          "pagina": "0036",
+          "slug": "Reconocimiento_UNICAH_Gestion_Proyectos",
+          "titulo": "Diploma de reconocimiento de la I Promoción de la Maestría en Gestión de Proyectos, Campus Juticalpa",
+          "fecha": "Julio de 2007"
+        },
+        {
+          "pagina": "0037",
+          "slug": "Diploma_Reconocimiento_UNA_1",
+          "titulo": "Diploma de reconocimiento de la Universidad Nacional de Agricultura",
+          "fecha": null
+        },
+        {
+          "pagina": "0042",
+          "slug": "Reconocimiento_Summit_Fighting_World_Hunger",
+          "titulo": "Reconocimiento de la 7.ª Cumbre de Universidades contra el Hambre, Universidad Nacional de Agricultura",
+          "fecha": "Marzo de 2012"
+        },
+        {
+          "pagina": "0047",
+          "slug": "Reconocimiento_UPNFM_TESU",
+          "titulo": "Diploma de reconocimiento de la UPNFM por el Trabajo Educativo Social Universitario con mujeres campesinas",
+          "fecha": "7 de diciembre de 2000"
+        },
+        {
+          "pagina": "0049",
+          "slug": "Reconocimiento_UNICAH",
+          "titulo": "Diploma de reconocimiento de la Universidad Católica de Honduras",
+          "fecha": null
+        },
+        {
+          "pagina": "0050",
+          "slug": "Pergamino_Escuela_Hector_Jimenez_Cardona",
+          "titulo": "Pergamino del personal administrativo y docente de la Escuela «Héctor Jiménez Cardona» por su proyección con la niñez",
+          "fecha": "2005"
+        },
+        {
+          "pagina": "0051",
+          "slug": "Reconocimiento_Instituto_Alfonso_XII",
+          "titulo": "Reconocimiento del Instituto «Alfonso XII» de Trojes, El Paraíso, por su aporte a la práctica profesional supervisada",
+          "fecha": "2005"
+        },
+        {
+          "pagina": "0052",
+          "slug": "Diploma_Exposicion_Avicola",
+          "titulo": "Diploma por participación en exposición avícola",
+          "fecha": "Mayo de 2005"
+        },
+        {
+          "pagina": "0053",
+          "slug": "Pergamino_Padrino_de_Promocion",
+          "titulo": "Pergamino como Padrino de Promoción de la Escuela «Héctor Jiménez Cardona», Catacamas",
+          "fecha": "2008"
+        },
+        {
+          "pagina": "0054",
+          "slug": "Reconocimiento_Escuela_Privada_Evangelica",
+          "titulo": "Reconocimiento de la Escuela Privada Evangélica como jurado calificador",
+          "fecha": "2010"
+        },
+        {
+          "pagina": "0055",
+          "slug": "Diploma_Reconocimiento_UNA_2",
+          "titulo": "Diploma de reconocimiento de la Universidad Nacional de Agricultura",
+          "fecha": null
+        },
+        {
+          "pagina": "0056",
+          "slug": "Diploma_Reconocimiento_UNA_3",
+          "titulo": "Diploma de reconocimiento de la Universidad Nacional de Agricultura",
+          "fecha": null
+        }
+      ]
+    },
+    {
+      "codigo": "E1.1",
+      "anio": "2026",
+      "titulo": "Currículo actualizado al 7 de abril de 2026",
+      "descripcion": "Versión firmada y sellada en septiembre de 2026, sin la dirección particular ni el teléfono celular del original.",
+      "paginas": [
+        {
+          "pagina": "1",
+          "slug": "Curriculo_p1",
+          "titulo": "Currículo 2026, página 1: estudios realizados y experiencia profesional",
+          "fecha": "Abril de 2026, firmado en septiembre"
+        },
+        {
+          "pagina": "2",
+          "slug": "Curriculo_p2",
+          "titulo": "Currículo 2026, página 2: experiencia profesional (continuación) y experiencias adquiridas",
+          "fecha": "Abril de 2026, firmado en septiembre"
+        },
+        {
+          "pagina": "3",
+          "slug": "Curriculo_p3",
+          "titulo": "Currículo 2026, página 3: cursos recibidos, 1995-2004",
+          "fecha": "Abril de 2026, firmado en septiembre"
+        },
+        {
+          "pagina": "4",
+          "slug": "Curriculo_p4",
+          "titulo": "Currículo 2026, página 4: cursos recibidos, 2005-2016",
+          "fecha": "Abril de 2026, firmado en septiembre"
+        },
+        {
+          "pagina": "5",
+          "slug": "Curriculo_p5",
+          "titulo": "Currículo 2026, página 5: cursos y congresos, 2016-2023",
+          "fecha": "Abril de 2026, firmado en septiembre"
+        },
+        {
+          "pagina": "6",
+          "slug": "Curriculo_p6",
+          "titulo": "Currículo 2026, página 6: congresos recientes y menciones honoríficas",
+          "fecha": "Abril de 2026, firmado en septiembre"
+        },
+        {
+          "pagina": "7",
+          "slug": "Curriculo_p7",
+          "titulo": "Currículo 2026, página 7: reconocimientos y firma",
+          "fecha": "Abril de 2026, firmado en septiembre"
+        }
+      ]
+    }
+  ]
+}

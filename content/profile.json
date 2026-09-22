@@ -1,0 +1,82 @@
+{
+  "nombre": "Gustavo Alonso Ardón",
+  "cargo": "Profesor-investigador",
+  "cargoSecundario": "Coordinador del Centro Integral de Aprendizaje Avícola (CIAA)",
+  "unidadAcademica": "Facultad de Medicina Veterinaria y Zootecnia",
+  "departamento": "Departamento Académico de Producción Animal",
+  "institucion": "Universidad Nacional de Agricultura",
+  "siglaInstitucion": "UNAG",
+  "sede": "Catacamas, Olancho, Honduras",
+  "anio": "2026",
+  "periodo": "Periodo académico 2026",
+  "version": "Versión documentada | Septiembre de 2026",
+  "tituloPortafolio": "Portafolio Docente",
+  "lemaPortafolio": "Trayectoria, práctica pedagógica, innovación y compromiso institucional",
+  "guiaReferencia": "Elaborado conforme a la Guía Didáctica del Portafolio del Docente de DASDIE",
+  "fotografia": {
+    "archivo": "perfil.png",
+    "alt": "Fotografía profesional de Gustavo Alonso Ardón",
+    "iniciales": "GA",
+    "nota": "La imagen vive en public/imagenes/. Para cambiarla, copie la nueva ahi y escriba su nombre en este campo."
+  },
+  "identificadores": [],
+  "contacto": {
+    "correoInstitucional": "gardon@unag.edu.hn",
+    "notaCorreo": "Correo institucional vigente, consignado en el currículo actualizado al 7 de abril de 2026. El currículo de 2020 consignaba un correo personal, que no se publica.",
+    "sitio": null
+  },
+  "presentacionBreve": "Profesor-investigador de la Universidad Nacional de Agricultura con una trayectoria superior a 30 años en docencia, producción animal y gestión universitaria. Su práctica vincula los fundamentos científicos y cuantitativos con problemas reales de la producción pecuaria, especialmente en el campo avícola.",
+  "indicadores": [
+    {
+      "valor": "30+",
+      "etiqueta": "años de experiencia docente",
+      "nota": "Identidad profesional declarada en el apartado 1."
+    },
+    {
+      "valor": "1996",
+      "etiqueta": "ingreso a la UNAG",
+      "nota": "Constancia de Recursos Humanos del 15/01/2020: servicio desde el 16 de mayo de 1996."
+    },
+    {
+      "valor": "5",
+      "etiqueta": "asignaturas de referencia 2026",
+      "nota": "Carga académica de referencia, pendiente de validación oficial."
+    },
+    {
+      "valor": "6",
+      "etiqueta": "proyectos de innovación educativa",
+      "nota": "Iniciativas en distintos niveles de desarrollo."
+    },
+    {
+      "valor": "50+",
+      "etiqueta": "trabajos de tesis dirigidos",
+      "nota": "«Dirección de más de 50 trabajos de investigación de tesis en el área avícola y empresas agropecuarias», según el currículo de 2026."
+    },
+    {
+      "valor": "447",
+      "etiqueta": "niñas y niños en Lunes de Huevito",
+      "nota": "Cuatro centros educativos de Catacamas, al 20 de agosto de 2026."
+    },
+    {
+      "valor": "42",
+      "etiqueta": "códigos de evidencia definidos",
+      "nota": "Suma de las evidencias recomendadas en los diez apartados."
+    }
+  ],
+  "creditos": {
+    "linea1": "Portafolio Docente 2026 — Gustavo Alonso Ardón",
+    "linea2": "Facultad de Medicina Veterinaria y Zootecnia",
+    "linea3": "Universidad Nacional de Agricultura, Honduras"
+  },
+  "documentoFuente": {
+    "titulo": "Portafolio_Docente_2026_Gustavo_Ardon.docx",
+    "archivo": null,
+    "nota": "Para ofrecer la descarga del documento original, cópielo a public/documentos/ y escriba aquí el nombre del archivo."
+  },
+  "pdfCompleto": {
+    "archivo": "Portafolio_Docente_2026_Ardon.pdf",
+    "paginas": 33,
+    "actualizado": "22 de septiembre de 2026",
+    "nota": "Contiene los doce apartados y la matriz completa de evidencias. No incluye los archivos adjuntos ni las imágenes del anexo, que se consultan en el Centro de evidencias."
+  }
+}

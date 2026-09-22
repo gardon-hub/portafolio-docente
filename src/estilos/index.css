@@ -1,0 +1,365 @@
+@import 'tailwindcss';
+
+/* El modo oscuro se activa con el atributo data-tema en <html>, que fija el
+   conmutador del encabezado. Sin atributo, se respeta la preferencia del sistema. */
+@custom-variant oscuro (&:where([data-tema='oscuro'], [data-tema='oscuro'] *));
+
+@theme {
+  --font-sans: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+
+  --color-verde-50: #eef7f1;
+  --color-verde-100: #d5ebdd;
+  --color-verde-200: #aad7bb;
+  --color-verde-300: #77bd93;
+  --color-verde-400: #4a9f6d;
+  --color-verde-500: #2f8354;
+  --color-verde-600: #226a43;
+  --color-verde-700: #1b5436;
+  --color-verde-800: #17422c;
+  --color-verde-900: #123425;
+
+  --color-azul-50: #eef3f8;
+  --color-azul-100: #d6e2ee;
+  --color-azul-200: #adc4dc;
+  --color-azul-300: #7ea1c5;
+  --color-azul-400: #517fac;
+  --color-azul-500: #326190;
+  --color-azul-600: #244d76;
+  --color-azul-700: #1c3d5e;
+  --color-azul-800: #17324c;
+  --color-azul-900: #12263a;
+
+  --color-tinta-50: #f7f8f7;
+  --color-tinta-100: #eceeec;
+  --color-tinta-200: #dcdfdc;
+  --color-tinta-300: #bcc1bd;
+  --color-tinta-400: #8d948f;
+  --color-tinta-500: #6b736d;
+  --color-tinta-600: #525a54;
+  --color-tinta-700: #3f4641;
+  --color-tinta-800: #2a302c;
+  --color-tinta-900: #1a1f1c;
+  --color-tinta-950: #0e1512;
+}
+
+/* Fichas semanticas: un solo lugar donde cambia el color entre modo claro y oscuro. */
+:root {
+  color-scheme: light;
+  --fondo: #f7f8f6;
+  --fondo-alterno: #eef1ed;
+  --superficie: #ffffff;
+  --superficie-2: #f3f5f2;
+  --borde: #dcdfdc;
+  --borde-fuerte: #bcc1bd;
+  --texto: #1a1f1c;
+  --texto-suave: #525a54;
+  --texto-tenue: #6b736d;
+  --acento: #1b5436;
+  --acento-fuerte: #123425;
+  --acento-suave: #eef7f1;
+  --acento-borde: #aad7bb;
+  --sobre-acento: #ffffff;
+  /* La franja institucional se mantiene verde profundo en los dos modos: --acento
+     cambia a verde claro en oscuro porque alli hace de color de texto. */
+  --franja: #1b5436;
+  --sobre-franja: #ffffff;
+  --azul: #1c3d5e;
+  --azul-suave: #eef3f8;
+  --azul-borde: #adc4dc;
+  --ambar: #7a5205;
+  --ambar-suave: #fdf6e6;
+  --ambar-borde: #e8d5a3;
+  --sombra: 0 1px 2px rgb(26 31 28 / 0.05), 0 8px 24px -12px rgb(26 31 28 / 0.18);
+  --sombra-suave: 0 1px 2px rgb(26 31 28 / 0.04);
+}
+
+:root[data-tema='oscuro'] {
+  color-scheme: dark;
+  --fondo: #0e1512;
+  --fondo-alterno: #131c17;
+  --superficie: #16201b;
+  --superficie-2: #1c2721;
+  --borde: #2a352e;
+  --borde-fuerte: #3c4a41;
+  --texto: #e9efea;
+  --texto-suave: #b3bdb6;
+  --texto-tenue: #94a09a;
+  --acento: #77bd93;
+  --acento-fuerte: #aad7bb;
+  --acento-suave: #16261d;
+  --acento-borde: #2c4636;
+  --sobre-acento: #0e1512;
+  --franja: #17422c;
+  --sobre-franja: #e9efea;
+  --azul: #9dbcda;
+  --azul-suave: #141f2b;
+  --azul-borde: #2a3d52;
+  --ambar: #e3c07a;
+  --ambar-suave: #241d0f;
+  --ambar-borde: #46381f;
+  --sombra: 0 1px 2px rgb(0 0 0 / 0.4), 0 10px 28px -14px rgb(0 0 0 / 0.7);
+  --sombra-suave: 0 1px 2px rgb(0 0 0 / 0.3);
+}
+
+@theme inline {
+  --color-fondo: var(--fondo);
+  --color-fondo-alterno: var(--fondo-alterno);
+  --color-superficie: var(--superficie);
+  --color-superficie-2: var(--superficie-2);
+  --color-borde: var(--borde);
+  --color-borde-fuerte: var(--borde-fuerte);
+  --color-texto: var(--texto);
+  --color-texto-suave: var(--texto-suave);
+  --color-texto-tenue: var(--texto-tenue);
+  --color-acento: var(--acento);
+  --color-acento-fuerte: var(--acento-fuerte);
+  --color-acento-suave: var(--acento-suave);
+  --color-acento-borde: var(--acento-borde);
+  --color-sobre-acento: var(--sobre-acento);
+  --color-franja: var(--franja);
+  --color-sobre-franja: var(--sobre-franja);
+  --color-azul: var(--azul);
+  --color-azul-suave: var(--azul-suave);
+  --color-azul-borde: var(--azul-borde);
+  --color-ambar: var(--ambar);
+  --color-ambar-suave: var(--ambar-suave);
+  --color-ambar-borde: var(--ambar-borde);
+  --shadow-tarjeta: var(--sombra);
+  --shadow-leve: var(--sombra-suave);
+}
+
+@layer base {
+  * {
+    min-width: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* El encabezado fijo no debe tapar el titulo al llegar por un enlace interno. */
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    line-height: 1.25;
+    text-wrap: balance;
+    color: var(--texto);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--acento);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Ojo: esta regla vive fuera de toda @layer, y en la cascada lo no estratificado
+   gana a @layer components sin importar la especificidad. Por eso excluye a los
+   elementos con forma de boton: sin la exclusion, un enlace-boton quedaria con el
+   texto del color de su propio fondo. */
+a:not([class*='boton']) {
+  color: var(--acento);
+  text-underline-offset: 3px;
+}
+
+a:not([class*='boton']):hover {
+  color: var(--acento-fuerte);
+}
+
+@layer components {
+  .boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* 44 px de alto minimo: objetivo tactil comodo en telefono. */
+    min-height: 2.75rem;
+    padding: 0.625rem 1.125rem;
+    border-radius: 0.625rem;
+    border: 1px solid transparent;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+      background-color 0.18s ease,
+      border-color 0.18s ease,
+      color 0.18s ease,
+      transform 0.18s ease;
+  }
+
+  .boton:active {
+    transform: translateY(1px);
+  }
+
+  .boton-primario {
+    background-color: var(--acento);
+    color: var(--sobre-acento);
+  }
+
+  .boton-primario:hover {
+    background-color: var(--acento-fuerte);
+  }
+
+  .boton-secundario {
+    background-color: var(--superficie);
+    border-color: var(--borde-fuerte);
+    color: var(--texto);
+  }
+
+  .boton-secundario:hover {
+    background-color: var(--superficie-2);
+    border-color: var(--acento);
+  }
+
+  .boton-tenue {
+    background-color: transparent;
+    color: var(--texto-suave);
+  }
+
+  .boton-tenue:hover {
+    background-color: var(--superficie-2);
+    color: var(--texto);
+  }
+
+  .tarjeta {
+    background-color: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 0.875rem;
+    box-shadow: var(--sombra-suave);
+  }
+
+  .campo {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--borde-fuerte);
+    background-color: var(--superficie);
+    color: var(--texto);
+    font-size: 0.9375rem;
+    font-family: inherit;
+  }
+
+  .campo::placeholder {
+    color: var(--texto-tenue);
+  }
+
+  .aparece {
+    animation: aparece 0.35s ease both;
+  }
+}
+
+@keyframes aparece {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Version optimizada para impresion: sin cromo de navegacion, a una columna,
+   con las direcciones de los enlaces internos suprimidas para no ensuciar el papel. */
+@media print {
+  :root {
+    --fondo: #ffffff;
+    --fondo-alterno: #ffffff;
+    --superficie: #ffffff;
+    --superficie-2: #ffffff;
+    --texto: #000000;
+    --texto-suave: #333333;
+    --texto-tenue: #444444;
+    --borde: #bbbbbb;
+    --borde-fuerte: #999999;
+    --acento: #14402a;
+    --acento-suave: #ffffff;
+    --sombra: none;
+    --sombra-suave: none;
+  }
+
+  html {
+    font-size: 10.5pt;
+  }
+
+  body {
+    background: #ffffff;
+  }
+
+  .no-imprimir {
+    display: none !important;
+  }
+
+  .tarjeta {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  table,
+  figure,
+  li {
+    break-inside: avoid;
+  }
+
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.8em;
+    color: #444444;
+    word-break: break-all;
+  }
+
+  @page {
+    margin: 18mm 16mm;
+  }
+}

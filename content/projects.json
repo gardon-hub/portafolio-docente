@@ -1,0 +1,104 @@
+{
+  "nota": "Proyectos agrupados por su relación con la docencia. Las fichas técnicas completas, con propósito, funciones, estado, acceso y licencia de cada uno, están en la evidencia E5.1.",
+  "proyectos": [
+    {
+      "id": "optiaula-io",
+      "nombre": "OPTIAULA IO",
+      "descripcion": "Laboratorio de Investigación de Operaciones: 13 módulos, 87 ejercicios con contexto agropecuario, 13 laboratorios interactivos y modos de estudiante, docente, proyección y evaluación. Funciona sin conexión.",
+      "area": "Métodos cuantitativos y gestión",
+      "enlace": "https://gardon-hub.github.io/optiaula-io/",
+      "evidencias": [
+        "E5.1",
+        "E3.1"
+      ]
+    },
+    {
+      "id": "anatomia-aves",
+      "nombre": "Anatomía de las aves",
+      "descripcion": "Simulaciones de esqueleto, respiración, aparato digestivo y formación del huevo, con modos Explorar, Simular y Reto, y un juego de pterilografía. Para Sistemas de Producción Avícola.",
+      "area": "Producción avícola",
+      "enlace": "https://gardon-hub.github.io/anatomia-aves/",
+      "evidencias": [
+        "E5.1",
+        "E4.1"
+      ]
+    },
+    {
+      "id": "nutrimono-ai",
+      "nombre": "NutriMono",
+      "descripcion": "Formulación de raciones de mínimo costo para cerdos, pollos, ponedoras y codornices, con 129 ingredientes, análisis de sensibilidad y modo docente con informe de ejercicios. Funciona sin conexión.",
+      "area": "Nutrición animal",
+      "enlace": null,
+      "evidencias": [
+        "E5.1",
+        "E5.2",
+        "E5.3"
+      ]
+    },
+    {
+      "id": "avimetrica-pro",
+      "nombre": "Avimétrica Pro",
+      "descripcion": "Analítica de peso, uniformidad y desempeño avícola, clasificación de huevo y estadística para la docencia. Datos en el navegador, funciona sin conexión. DOI 10.5281/zenodo.22005611.",
+      "area": "Analítica productiva",
+      "enlace": "https://gardon-hub.github.io/avimetrica-pro/",
+      "evidencias": [
+        "E5.1",
+        "E6.2"
+      ]
+    },
+    {
+      "id": "avigenetics-360",
+      "nombre": "LayerGenetics Pro",
+      "descripcion": "Comparador y simulador de ocho líneas comerciales de ponedoras con datos de sus manuales oficiales. DOI 10.5281/zenodo.21753562.",
+      "area": "Genética avícola",
+      "enlace": "https://doi.org/10.5281/zenodo.21753562",
+      "evidencias": [
+        "E5.1",
+        "E6.2"
+      ]
+    },
+    {
+      "id": "breedergenetics-pro",
+      "nombre": "BreederGenetics Pro",
+      "descripcion": "Objetivos de rendimiento de Cobb 500 SF y Ross 308 FF con la procedencia documental de cada cifra. Funciona sin conexión. DOI 10.5281/zenodo.21704802.",
+      "area": "Genética avícola",
+      "enlace": "https://gardon-hub.github.io/breedergenetics-pro/",
+      "evidencias": [
+        "E5.1",
+        "E6.2"
+      ]
+    },
+    {
+      "id": "avicompetitiva-ai",
+      "nombre": "AVICOMPETITIVA AI",
+      "descripcion": "Observatorio de competitividad avícola: datos de FAOSTAT, INE y Censo Agropecuario 2024, índice ICAH 2.0 de 6 pilares y 19 indicadores, y análisis validados contra R. Soporte de la tesis doctoral.",
+      "area": "Observatorio sectorial",
+      "enlace": "https://avicompetitiva.lovable.app",
+      "evidencias": [
+        "E5.1",
+        "E6.1"
+      ]
+    },
+    {
+      "id": "herramientas-pps-tesis",
+      "nombre": "UNAG Proyecta",
+      "descripcion": "Revisión de anteproyectos de tesis y PPS según el Reglamento de la PPS de la UNAG: estructura, redacción, referencias y coherencia. Local y de uso exclusivo del docente.",
+      "area": "Acompañamiento a la investigación estudiantil",
+      "enlace": null,
+      "evidencias": [
+        "E5.1",
+        "E6.4"
+      ]
+    },
+    {
+      "id": "asistencia-ia",
+      "nombre": "Asistencia IA",
+      "descripcion": "Registro de asistencia, importación de datos y reportes académicos. En desarrollo; no se publica porque maneja datos de estudiantes.",
+      "area": "Gestión docente",
+      "enlace": null,
+      "evidencias": [
+        "E5.1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+Coloque aqui los archivos de evidencia (PDF o imagenes) cuyo campo "visibility" sea "public".
+Los archivos con visibilidad "restricted" o "private" NO deben copiarse a esta carpeta.

@@ -1,0 +1,412 @@
+{
+  "titulo": "Documentos del periodo 2026",
+  "introduccion": "Documentos de trabajo del periodo académico 2026 localizados en el ordenador y en el disco portátil del docente, incorporados como evidencia del apartado que les corresponde. Los que estaban en Word se convirtieron a PDF; el resto se publican tal como estaban.",
+  "notaPreparacion": "El campo «origen» es la ruta local del archivo. «censura»: true indica que herramientas/preparar-documentos.ps1 debe sustituir cadenas antes de convertir; las cadenas están en herramientas/censura.json, que no se publica ni se versiona, porque este archivo se incluye en el paquete del sitio.",
+  "grupos": [
+    {
+      "codigo": "E4.1",
+      "documentos": [
+        {
+          "slug": "Examen_1_Sistemas_de_Produccion_Avicola",
+          "titulo": "Examen I · Sistemas de Producción Avícola (prueba completa)",
+          "descripcion": "Primera prueba objetiva de Sistemas de Producción Avícola, de la carrera de Ingeniería en Zootecnia, aplicada en septiembre de 2026 en aula presencial: 30 preguntas de selección múltiple y 20 de verdadero o falso. Recorre el clúster de la industria avícola y el papel de sus actores, la historia y los factores de desarrollo del sector, las cadenas productivas de carne y huevo, la incubación y la anatomía externa del ave. Se publica el cuestionario tal como se proyectó, sin la clave de respuestas.",
+          "nota": "Publicado íntegro a petición del docente. Sus 50 reactivos quedan en abierto y conviene renovarlos antes de volver a aplicarlos.",
+          "origen": "C:\\Users\\gusta\\Downloads\\Examen_1_Avicola_proyeccion.html",
+          "extension": "html"
+        },
+        {
+          "slug": "Examen_2_Anatomia_de_las_Aves",
+          "titulo": "Examen 2 · Anatomía de las aves (prueba completa)",
+          "descripcion": "Segunda prueba objetiva de Sistemas de Producción Avícola, preparada el 20 de septiembre de 2026 para aplicarse en aula presencial la semana siguiente: 30 preguntas de selección múltiple y 20 de verdadero o falso, con valor de 100 puntos a razón de 2 puntos cada una. Se publica el cuestionario tal como se proyectó, sin la clave de respuestas.",
+          "nota": "Publicado íntegro a petición del docente. Sus 50 reactivos quedan en abierto y conviene renovarlos antes de volver a aplicarlos.",
+          "origen": "C:\\Users\\gusta\\Downloads\\Examen_2_Anatomia_Aves_proyeccion.html",
+          "extension": "html"
+        },
+        {
+          "slug": "Primer_Examen_Investigacion_de_Operaciones",
+          "titulo": "Primer examen · Investigación de Operaciones (prueba completa)",
+          "descripcion": "Primera prueba objetiva de Investigación de Operaciones, de la carrera de Administración de Empresas Agropecuarias, aplicada en septiembre de 2026 en aula presencial: 30 preguntas de selección múltiple y 20 de verdadero o falso, con valor de 50 puntos a razón de un punto cada una. Cubre los fundamentos de la gestión de operaciones: concepto y alcance, tipos de organización, funciones del gerente de operaciones y procesos operativos. Se publica el cuestionario tal como se proyectó, sin la clave de respuestas.",
+          "nota": "Publicado íntegro a petición del docente. Sus 50 reactivos quedan en abierto y conviene renovarlos antes de volver a aplicarlos.",
+          "origen": "C:\\Users\\gusta\\Downloads\\Examen_1_Investigacion_Operaciones_proyeccion.html",
+          "extension": "html"
+        }
+      ]
+    },
+    {
+      "codigo": "E3.2",
+      "documentos": [
+        {
+          "slug": "Silabo_Sistemas_Produccion_Avicola",
+          "titulo": "Sílabo de Sistemas de Producción Avícola (PA-362)",
+          "descripcion": "Programa oficial de la asignatura para la carrera de Ingeniería en Zootecnia: requisitos, unidades valorativas, horas, ejes transversales, descripción y sistema de evaluación.",
+          "origen": "C:\\Users\\gusta\\Downloads\\SILABO. CLASE SISTEMAS DE PRODUCCION AVICOLA..docx"
+        },
+        {
+          "slug": "Programa_Analitico_Introduccion_Sistemas_Produccion_Pecuaria",
+          "titulo": "Programa analítico de Introducción a los Sistemas de Producción Pecuaria",
+          "descripcion": "Programa analítico de la asignatura para la carrera de Ingeniería en Zootecnia, con sus unidades, competencias y sistema de evaluación.",
+          "origen": "C:\\Users\\gusta\\Downloads\\PROGRAMA ANALÍTICO INTRODUCCIÓN A LOS SISTEMAS DE PRODUCCIÓN PECUARIA. IZ.docx"
+        },
+        {
+          "slug": "Programa_Analitico_Metodos_Cuantitativos",
+          "titulo": "Programa analítico de Métodos Cuantitativos (MC-341)",
+          "descripcion": "Programa analítico de la asignatura para la carrera de Administración de Empresas Agropecuarias: requisitos, unidades valorativas, horas, descripción y siete unidades, de la estadística descriptiva a la regresión múltiple y su aplicación integrada en hoja de cálculo.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\METODOS CUANTITATIVOS\\Programa_Analitico_Metodos_Cuantitativos 02.docx"
+        },
+        {
+          "slug": "Programa_Analitico_Especies_Menores_I",
+          "titulo": "Programa analítico de Especies Menores I (EM-468)",
+          "descripcion": "Programa analítico de la asignatura, con sus requisitos, unidades valorativas, horas y dos unidades: avicultura y porcicultura.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\ESPECIES MENORES\\PROGRAMA ANALITICO ESPECIES MENORES   I (Revisado) (1) (1) (1).docx"
+        }
+      ]
+    },
+    {
+      "codigo": "E3.4",
+      "documentos": [
+        {
+          "slug": "Ejercicios_Productividad",
+          "titulo": "Ejercicios de productividad",
+          "descripcion": "Serie de ejercicios de la asignatura Investigación de Operaciones sobre medición de la productividad en sistemas agropecuarios.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\Investigación de operaciones\\Ejercicios de productividad.pdf"
+        },
+        {
+          "slug": "Ejercicios_PERT",
+          "titulo": "Ejercicios de PERT",
+          "descripcion": "Ejercicios de programación y control de proyectos por el método PERT, aplicados a actividades del sector agropecuario.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\Investigación de operaciones\\Ejercicios de Pert.pdf"
+        },
+        {
+          "slug": "Ejercicios_Asignacion",
+          "titulo": "Ejercicios de asignación",
+          "descripcion": "Once problemas del modelo de asignación en empresas agropecuarias, agosto de 2025. Versión sin los nombres de los estudiantes a los que se asignó cada problema.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\Investigación de operaciones\\Ejercicios de Asignación.pdf"
+        },
+        {
+          "slug": "Ejercicios_Transporte",
+          "titulo": "Ejercicios de transporte",
+          "descripcion": "Once problemas del modelo de transporte en empresas agropecuarias, agosto de 2025. Versión sin los nombres de los estudiantes a los que se asignó cada problema.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\Investigación de operaciones\\Ejercicios de Transporte.pdf"
+        },
+        {
+          "slug": "Tarea_1_Sistemas_de_Produccion",
+          "titulo": "Tarea 1 de Introducción a los Sistemas de Producción Pecuaria",
+          "descripcion": "Consigna de la primera semana de la asignatura, con las preguntas de trabajo y los criterios de entrega.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Introduccion Sistemas de Producción\\Tarea1 Semana_1_Sistemas_de_Produccion.pdf"
+        },
+        {
+          "slug": "Tarea_2_Sistemas_de_Produccion",
+          "titulo": "Tarea 2 de Introducción a los Sistemas de Producción Pecuaria",
+          "descripcion": "Segunda consigna de la asignatura, con las preguntas de análisis sobre sistemas de producción.",
+          "origen": "C:\\Users\\gusta\\Downloads\\Tarea 2 Sistemas.pdf"
+        },
+        {
+          "slug": "Temas_de_Avicultura_para_Zootecnia",
+          "titulo": "Banco de temas de avicultura para estudiantes de Zootecnia",
+          "descripcion": "Cuarenta temas para investigación documental en siete grupos: producción y manejo, genética y reproducción, nutrición y alimentación, sanidad y enfermedades, ambientales y sociales, economía y comercialización, innovadores y tecnológicos.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Temas de avicultura para estudiantes de zootecnia.docx"
+        },
+        {
+          "slug": "Temas_de_Ambientes_Pecuarios",
+          "titulo": "Banco de temas de Ambientes Pecuarios",
+          "descripcion": "Veintiún temas de investigación de la asignatura, cada uno con su objetivo y sus palabras clave: bienestar animal, estrés térmico, ventilación, manejo de pasturas, densidad animal y más.",
+          "origen": "C:\\Users\\gusta\\Documents\\Temas Ambientes Pecuarios.docx"
+        },
+        {
+          "slug": "Presentacion_Decisiones_Gerente_de_Operaciones",
+          "titulo": "Presentación: decisiones del gerente de operaciones",
+          "descripcion": "Presentación de clase de Investigación de Operaciones sobre el papel y las decisiones del gerente de operaciones en sistemas de producción pecuaria.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\Presentaciones\\INVESTIGACION DE OPERACIONES\\Investigacion de operaciones comprimido\\clase 1 y 2\\decisiones del gerente de operaciones SPP.pptx"
+        },
+        {
+          "slug": "Presentacion_Punto_de_Equilibrio",
+          "titulo": "Presentación: punto de equilibrio",
+          "descripcion": "Presentación de clase sobre el cálculo e interpretación del punto de equilibrio aplicado a empresas agropecuarias.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\Sistemas de Produccion Pecuaria\\Punto de Equilibrio.pptx"
+        }
+      ]
+    },
+    {
+      "codigo": "E3.3",
+      "documentos": [
+        {
+          "slug": "Plan_Unidad_Sistemas_Produccion_Avicola",
+          "titulo": "Plan de unidad de Sistemas de Producción Avícola",
+          "descripcion": "Planificación por unidades didácticas de la asignatura PA-362, con competencias, contenidos y evaluación.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\Sistemas de Produccion Avicola\\PLAN DE UNIDAD SISTEMAS DE PRODUCCIÓN AVÍCOLA.docx"
+        },
+        {
+          "slug": "Jornalizacion_Sistemas_Produccion_Avicola",
+          "titulo": "Jornalización de Sistemas de Producción Avícola (PA-362), año 2026",
+          "descripcion": "Distribución de las siete unidades en las quince semanas de septiembre a diciembre de 2026, 3 horas por semana, con los tres exámenes parciales en las semanas 6, 12 y 15.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\Sistemas de Produccion Avicola\\JORNALIZACIÓN SISTEMAS DE PRODUCCIÓN AVÍCOLA_1.docx"
+        },
+        {
+          "slug": "Plan_Unidad_Metodos_Cuantitativos",
+          "titulo": "Plan de unidad de Métodos Cuantitativos",
+          "descripcion": "Planificación completa de las siete unidades didácticas de la asignatura, con competencias genéricas y específicas.",
+          "origen": "C:\\Users\\gusta\\Downloads\\PLAN DE UNIDAD Métodos Cuantitativos - COMPLETO.docx"
+        },
+        {
+          "slug": "Jornalizacion_Metodos_Cuantitativos",
+          "titulo": "Jornalización de Métodos Cuantitativos (MC-341)",
+          "descripcion": "Distribución de las siete unidades en 15 semanas y 60 horas, con las actividades de enseñanza-aprendizaje y la evaluación de cada semana.",
+          "origen": "C:\\Users\\gusta\\Downloads\\Jornalizacion_Metodos_Cuantitativos.docx"
+        }
+      ]
+    },
+    {
+      "codigo": "E4.2",
+      "documentos": [
+        {
+          "slug": "Rubrica_Boletin_Informativo",
+          "titulo": "Rúbrica de evaluación de boletín informativo",
+          "descripcion": "Rúbrica de cinco niveles (33, 28, 23, 18 y 13 %) con los criterios de calidad del boletín, originalidad y aplicación de normas APA.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Centro Integral de Aprendizaje Avícola\\Rubricas de clase y modulo de campo\\Rúbrica de Evaluación de Boletín  ultima.pdf"
+        },
+        {
+          "slug": "Rubrica_Revisiones_Literatura",
+          "titulo": "Rúbrica para evaluar revisiones de literatura",
+          "descripcion": "Rúbrica de siete niveles con seis criterios ponderados: selección de fuentes (25 %), síntesis (25 %), análisis crítico (30 %), claridad y organización (10 %), estilo y lenguaje (5 %) y formato APA (5 %).",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Centro Integral de Aprendizaje Avícola\\Rubricas de clase y modulo de campo\\Rubrica para evaluar revisiones de literatura.pdf"
+        },
+        {
+          "slug": "Rubrica_Modulo_de_Campo",
+          "titulo": "Rúbrica de evaluación para prácticas de campo",
+          "descripcion": "Rúbrica de cinco niveles (20, 15, 12, 8 y 3 %) con los criterios de asistencia, trabajo en equipo, espíritu de trabajo, disciplina y habilidad técnica; incluye la variante para la creación de video sobre avicultura.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Centro Integral de Aprendizaje Avícola\\Rubricas de clase y modulo de campo\\Rubrica modulo de campo.pdf"
+        },
+        {
+          "slug": "Rubrica_Boletin_Gira",
+          "titulo": "Rúbrica para evaluar un boletín (gira de campo)",
+          "descripcion": "Rúbrica de diez niveles y seis criterios: estructura y organización, contenido, estilo y redacción, presentación visual, impacto en el lector y aspectos técnicos.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Centro Integral de Aprendizaje Avícola\\Rubricas de clase y modulo de campo\\Rubrica de boletin informativo gira.pdf"
+        },
+        {
+          "slug": "Analisis_Trabajos_Seccion_A",
+          "titulo": "Análisis de trabajos grupales presentados, III Zootecnia sección A (2024)",
+          "descripcion": "Valoración escrita, criterio por criterio, de ocho revisiones de literatura y tres boletines informativos, agosto de 2024. Sin nombres de estudiantes; las calificaciones por grupo se retiraron.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Centro Integral de Aprendizaje Avícola\\Rubricas de clase y modulo de campo\\Trabajos presentados por alumnos III Zootecnia Sección A.docx"
+        },
+        {
+          "slug": "Analisis_Trabajos_Seccion_B",
+          "titulo": "Análisis de trabajos grupales presentados, III Zootecnia sección B (2024)",
+          "descripcion": "Valoración escrita, criterio por criterio, de siete revisiones de literatura y tres boletines informativos, agosto de 2024. Sin nombres de estudiantes; las calificaciones por grupo se retiraron.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Centro Integral de Aprendizaje Avícola\\Rubricas de clase y modulo de campo\\Trabajos presentados por alumnos III Zootecnia Sección B.docx"
+        }
+      ]
+    },
+    {
+      "codigo": "E6.3",
+      "documentos": [
+        {
+          "slug": "Memoria_Conferencia_Magistral_Semana_Zootecnista",
+          "titulo": "Memoria de la conferencia magistral «Retos, innovación y oportunidades en los sistemas de producción de aves»",
+          "descripcion": "Memoria escrita de la conferencia magistral «¿Cómo será una granja avícola en 2035?», dictada en la Semana del Zootecnista 2026 el 23 de julio de 2026.",
+          "origen": "C:\\Users\\gusta\\Downloads\\Memoria_Conferencia_Ardon_2026_v2.pdf"
+        }
+      ]
+    },
+    {
+      "codigo": "E7.1",
+      "documentos": [
+        {
+          "slug": "Informe_Lunes_de_Huevito",
+          "titulo": "Informe de la actividad de vinculación Lunes de Huevito 2026",
+          "descripcion": "Informe institucional del 20 de agosto de 2026 dirigido a la Gerencia Administrativa y Financiera: cobertura, período, actividades, actores participantes y matrícula beneficiaria por centro educativo.",
+          "origen": "C:\\Users\\gusta\\Downloads\\Informe_Lunes_de_Huevito_2026.pdf"
+        }
+      ]
+    },
+    {
+      "codigo": "E8.2",
+      "documentos": [
+        {
+          "slug": "POA_CIAA",
+          "titulo": "Plan Operativo Anual 2026 del CIAA",
+          "descripcion": "Plan operativo del Centro Integral de Aprendizaje Avícola para el periodo 2026.",
+          "origen": "C:\\Users\\gusta\\Downloads\\POA_2026_CIAA.docx"
+        },
+        {
+          "slug": "Cuadro_Evaluacion_POA_I_Trimestre",
+          "titulo": "Cuadro de evaluación del POA, I trimestre de 2026",
+          "descripcion": "Seguimiento trimestral del cumplimiento del Plan Operativo Anual del CIAA.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Informe\\CUADRO EVALUACIÓN POA I TRIMESTRE 2026 - GPC CIAA.docx"
+        },
+        {
+          "slug": "Cuadro_Evaluacion_POA_II_Trimestre",
+          "titulo": "Cuadro de evaluación del POA, II trimestre de 2026",
+          "descripcion": "Seguimiento trimestral del cumplimiento del Plan Operativo Anual del CIAA.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Informe\\CUADRO EVALUACIÓN POA II TRIMESTRE 2026 - CIAA.docx"
+        }
+      ]
+    },
+    {
+      "codigo": "E8.3",
+      "documentos": [
+        {
+          "slug": "Plan_Mejora_Planta_Incubacion",
+          "titulo": "Plan de mejora de la planta de incubación del CIAA, 2026",
+          "descripcion": "Diagnóstico y plan de mejora de la planta de incubación del Centro Integral de Aprendizaje Avícola.",
+          "origen": "C:\\Users\\gusta\\Downloads\\Plan_Mejora_Planta_Incubacion_CIAA_2026.docx",
+          "nota": "Se omitió el número de teléfono personal que figuraba en el pie del documento.",
+          "censura": true
+        },
+        {
+          "slug": "Plan_Mejora_Investigacion_Avicola",
+          "titulo": "Plan de mejora de la investigación avícola del CIAA, 2026",
+          "descripcion": "Diagnóstico y plan de mejora de la línea de investigación avícola del Centro Integral de Aprendizaje Avícola.",
+          "origen": "C:\\Users\\gusta\\Downloads\\Plan_Mejora_Investigacion_Avicola_CIAA_2026.docx",
+          "nota": "Se omitió el número de teléfono personal que figuraba en el pie del documento.",
+          "censura": true
+        },
+        {
+          "slug": "Aportes_Institucionales_CIAA",
+          "titulo": "Aportes institucionales del Centro Integral de Aprendizaje Avícola (22 de septiembre de 2026)",
+          "descripcion": "Documento técnico para la Gerencia de Producción y Comercialización, firmado y sellado: propósito y funciones del CIAA, capacidades documentadas en 2026, matriz de competencias dominantes, aporte para el manual operativo, registros prioritarios, vinculación con SAG y SENASA e indicadores de reporte, con un anexo fotográfico de las instalaciones y las actividades del centro.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Centro Integral de Aprendizaje Avícola\\Aportes Institucionales CIAA 2026.pdf",
+          "nota": "Se publica completo, con el anexo fotográfico, por decisión del docente; en la página 9 se difuminó el nombre de una estudiante que aparecía en una diapositiva proyectada."
+        }
+      ]
+    },
+    {
+      "codigo": "E9.2",
+      "documentos": [
+        {
+          "slug": "Informe_Viaje_IPPE_2026",
+          "titulo": "Informe de viaje a la IPPE 2026 y la Cumbre Avícola Latinoamericana",
+          "descripcion": "Informe institucional del viaje a Atlanta, Georgia, del 25 al 30 de enero de 2026: eventos visitados, reuniones técnicas, gestión de alianzas para prácticas profesionales y oportunidades de investigación.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\Informes\\Informe IPPE 2026.pdf"
+        },
+        {
+          "slug": "Certificado_Cumbre_Avicola_Latinoamericana_2023",
+          "titulo": "Cumbre Avícola Latinoamericana 2023, Atlanta",
+          "descripcion": "Certificado de participación en la Cumbre Avícola Latinoamericana celebrada en Atlanta, Georgia, en el marco de la IPPE.",
+          "origen": "F:\\Documentos\\Diplomas\\Cumbre avicola latinoamericana.pdf"
+        },
+        {
+          "slug": "Diploma_XXVII_Congreso_Latinoamericano_Avicultura_Ovum_2022",
+          "titulo": "XXVII Congreso Latinoamericano de Avicultura, Ovum 2022",
+          "descripcion": "Diploma de participación en el congreso, dirigido a MSc. Gustavo Alonso Ardón.",
+          "origen": "F:\\Documentos\\Diplomas\\diploma ovum 2022.pdf"
+        },
+        {
+          "slug": "Certificado_II_Simposio_Ingenieria_de_Procesos",
+          "titulo": "2.º Simposio de Ingeniería de Procesos, UNAG",
+          "descripcion": "Certificado de participación en el simposio «Ciencia, procesos, biotecnología e innovación», celebrado en la Universidad Nacional de Agricultura el 27 y 28 de junio de 2022, con una duración de 6 horas.",
+          "origen": "F:\\Documentos\\Diplomas\\Simposio de ingenieria en procesos.pdf"
+        }
+      ]
+    },
+    {
+      "codigo": "E9.1",
+      "documentos": [
+        {
+          "slug": "Certificado_Docencia_Universitaria_Ambientes_Virtuales_LASPAU",
+          "titulo": "Certificado en Docencia Universitaria en Ambientes Virtuales, LASPAU",
+          "descripcion": "Certificate of Completion otorgado por LASPAU por el programa de certificación en docencia universitaria en ambientes virtuales.",
+          "origen": "F:\\Documentos\\Diplomas\\certificate de docencia universitaria en ambientes virtuales LASPAu.pdf"
+        },
+        {
+          "slug": "Certificado_Diplomado_Espacios_Virtuales_Aprendizaje",
+          "titulo": "Diplomado en Diseño de Espacios Virtuales de Aprendizaje y Asesoría en Línea",
+          "descripcion": "Certificado de la UNAG y el IICA por haber aprobado el diplomado en modalidad e-learning, con una duración de 120 horas, el 17 de febrero de 2022.",
+          "origen": "F:\\Documentos\\Diplomas\\Diplomado_en_DiseÃ±o_de_Espacios_Virtuales_de_Aprendizaje_y_AsesorÃ_a_en_LÃ_nea-Certificado_Final_9.pdf"
+        },
+        {
+          "slug": "Certificado_Economia_del_Comportamiento_BID",
+          "titulo": "Economía del Comportamiento para Mejores Políticas Públicas, BID",
+          "descripcion": "Certificado del Banco Interamericano de Desarrollo, a través del INDES y su Grupo de Economía del Comportamiento, por haber aprobado el curso.",
+          "origen": "F:\\Documentos\\Diplomas\\ECPMPP_ES_05_Certificado de finalización de curso (1).pdf"
+        },
+        {
+          "slug": "Certificado_Gestion_por_Resultados_BID",
+          "titulo": "Gestión por Resultados, BID e INDES",
+          "descripcion": "Certificado del INDES del Banco Interamericano de Desarrollo y la Escuela de Alta Gerencia Pública de Honduras por haber aprobado satisfactoriamente el curso.",
+          "origen": "F:\\Documentos\\Diplomas\\IDB1x-INDES-Certificate.pdf"
+        },
+        {
+          "slug": "Certificado_Integracion_Economica_CSUCA_SIECA",
+          "titulo": "Programa de Formación Virtual en Materia de Integración Económica",
+          "descripcion": "Constancia del CSUCA y la SIECA por la participación activa en el programa, realizado de junio a noviembre de 2022 en once módulos y un foro final.",
+          "origen": "F:\\Documentos\\Diplomas\\Programa de formacion virtual en materia de integracion economica.pdf"
+        }
+      ]
+    },
+    {
+      "codigo": "E9.3",
+      "documentos": [
+        {
+          "slug": "Programas_Capacitaciones_en_Avicultura",
+          "titulo": "Programas de las capacitaciones en avicultura, 2024",
+          "descripcion": "Diseño de los cursos de capacitación impartidos: objetivos generales y específicos, módulos, contenidos, metodología y evaluación, para el manejo de gallinas de engorde y el manejo de aves ponedoras en modalidad virtual.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Capacitaciones en Avicultura.pdf"
+        },
+        {
+          "slug": "Certificado_DICTA_Taller_Aves_Ponedoras",
+          "titulo": "Certificado de reconocimiento de DICTA por el taller de capacitación",
+          "descripcion": "Reconocimiento de la Dirección de Ciencia y Tecnología Agropecuaria por su colaboración en el taller «Manejo de aves ponedoras y pollos de engorde», del 8 de diciembre de 2022, en modalidad virtual y con cuatro horas de duración.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\ondrive gmail\\OneDrive\\Imágenes\\diploma dicta.jpg",
+          "extension": "jpg"
+        },
+        {
+          "slug": "Invitacion_Capacitacion_NutriMono_Zamorano",
+          "titulo": "Invitación a la jornada de capacitación sobre NutriMono, Universidad Zamorano",
+          "descripcion": "Carta del 18 de septiembre de 2026 invitando a la Universidad Zamorano a una jornada gratuita de capacitación sobre el uso de NutriMono, el programa de formulación de raciones para monogástricos desarrollado por el docente.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Gerencia de Produccion y Comercializacion\\Invitacion Capacitacion Nutrimono.pdf"
+        },
+        {
+          "slug": "Invitacion_Capacitacion_NutriMono_USAP",
+          "titulo": "Invitación a la jornada de capacitación sobre NutriMono, USAP",
+          "descripcion": "Carta del 18 de septiembre de 2026 dirigida a la Escuela de Ciencias Agronómicas de la Universidad de San Pedro Sula.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Gerencia de Produccion y Comercializacion\\Invitacion Capacitacion Nutrimono USAP.pdf"
+        },
+        {
+          "slug": "Invitacion_Capacitacion_NutriMono_UNAH",
+          "titulo": "Invitación a la jornada de capacitación sobre NutriMono, UNAH-Atlántida",
+          "descripcion": "Carta del 18 de septiembre de 2026 dirigida a la UNAH Campus Atlántida, con copia al Departamento de Producción Animal y a la asignatura de Nutrición y Alimentación Animal.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Gerencia de Produccion y Comercializacion\\Invitacion Capacitacion Nutrimono UNAH.pdf"
+        }
+      ]
+    },
+    {
+      "codigo": "E6.1",
+      "documentos": [
+        {
+          "slug": "Propuesta_Investigacion_Bioseguridad_ALA_2024",
+          "titulo": "Propuesta de iniciativa para proyecto de investigación en avicultura, presentada a la Asociación Latinoamericana de Avicultura (2024)",
+          "descripcion": "Evaluación del impacto de sistemas de bioseguridad integrados en granjas avícolas de Honduras: resumen, equipo, objetivos, antecedentes y matriz de marco lógico. Sin teléfono ni correos electrónicos.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Propuesta de Iniciativa para Proyecto de Investigación en Avicultura.docx"
+        },
+        {
+          "slug": "Proyecto_Unidad_Investigacion_Aplicada_2026",
+          "titulo": "Proyecto de Investigación Aplicada en Producción Avícola: unidad experimental del CIAA (2026)",
+          "descripcion": "Readecuación de un galpón como unidad de 28 unidades experimentales, equipamiento, metas de investigación y de servicios a empresas.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Centro Integral de Aprendizaje Avícola\\Plan de negocios\\Proyecto de Investigación Aplicada en Producción Avícola.docx"
+        }
+      ]
+    },
+    {
+      "codigo": "E7.4",
+      "documentos": [
+        {
+          "slug": "Respuesta_Pasantia_Clinica_CIAA_2025",
+          "titulo": "Respuesta de aprobación de pasantía clínica en el CIAA (2025)",
+          "descripcion": "Carta del 26 de marzo de 2025 al Decano de la FMVZ aprobando una pasantía de Clínica de Aves I y II en el CIAA. Sin el nombre ni la cuenta del estudiante ni el nombre de la responsable designada.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\ondrive gmail\\OneDrive\\Respuesta solicitud de pasantia .docx"
+        }
+      ]
+    },
+    {
+      "codigo": "E8.1",
+      "documentos": [
+        {
+          "slug": "Perfil_Puesto_Coordinador_CIAA_2024",
+          "titulo": "Perfil de puesto: Coordinador del Centro Integral de Aprendizaje Avícola (2024)",
+          "descripcion": "Identificación, estructura, relaciones, misión, responsabilidades, condiciones y competencias del puesto, con el nombre del ocupante y de su jefe inmediato.",
+          "origen": "C:\\Users\\gusta\\Documents\\Para nueva computadora\\AVICULTURA\\Centro Integral de Aprendizaje Avícola\\Perfil de puesto junio 2024\\Coordinador del CIAA.docx"
+        }
+      ]
+    }
+  ]
+}

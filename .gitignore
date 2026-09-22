@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+*.local
+node_modules/.tmp
+# Cadenas privadas que se tapan al preparar documentos (datos personales)
+/herramientas/censura.json
+/herramientas/NOTAS-PRIVADAS.md

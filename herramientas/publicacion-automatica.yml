@@ -1,0 +1,74 @@
+# PLANTILLA, todavia inactiva.
+#
+# Este flujo publica el sitio solo en cada envio a main, pero para que funcione
+# hay que moverlo a .github/workflows/publicar.yml, y eso exige que el token de
+# gh tenga el permiso "workflow". El README explica los dos pasos, en la seccion
+# "Como publicarlo".
+#
+# Mientras siga aqui, no hace nada: GitHub solo mira dentro de .github/workflows/.
+
+name: Publicar el portafolio
+
+# Cada envío a main compila el sitio y lo publica. Si la comprobación de tipos,
+# el linter o la compilación fallan, no se publica nada: la página en línea se
+# queda con la última versión que sí estaba bien.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Si se envían dos cambios seguidos, se publica el último y se cancela el anterior.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  compilar:
+    name: Comprobar y compilar
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Comprobar tipos
+        run: npm run typecheck
+
+      - name: Pasar el linter
+        run: npm run lint
+
+      # Va antes de compilar porque de aquí sale la dirección real del sitio,
+      # que el script del mapa del sitio necesita.
+      - uses: actions/configure-pages@v5
+        id: pages
+
+      - name: Compilar el sitio
+        run: npm run build
+        env:
+          SITIO_URL: ${{ steps.pages.outputs.base_url }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  publicar:
+    name: Publicar en GitHub Pages
+    needs: compilar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - id: despliegue
+        uses: actions/deploy-pages@v4

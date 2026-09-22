@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examen 2 · Anatomía de las aves</title>
+<style>
+:root{
+  --bg:#fbfaf6; --panel:#ffffff; --ink:#15181d; --muted:#5b6270; --line:#dcd8cc;
+  --accent:#1f5f3f; --accent-soft:#e3efe7; --warn:#b86a00; --danger:#b3261e;
+}
+[data-theme="dark"]{
+  --bg:#101312; --panel:#181c1b; --ink:#f2f1ec; --muted:#a3aaa6; --line:#2d3432;
+  --accent:#6fcf97; --accent-soft:#1d2e25; --warn:#f2b24c; --danger:#ff7b72;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}
+button{font:inherit;cursor:pointer}
+.screen{position:fixed;inset:0;display:none;flex-direction:column}
+.screen.on{display:flex}
+
+/* ---------- Inicio ---------- */
+#start{align-items:center;justify-content:center;padding:4vh 16px;overflow:auto}
+.card{width:min(860px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,4vw,48px)}
+.kicker{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+h1{font-size:clamp(28px,4vw,46px);line-height:1.1;margin:8px 0 6px}
+.sub{color:var(--muted);font-size:clamp(15px,1.6vw,19px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:28px 0}
+.field{border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.field label{display:block;color:var(--muted);font-size:14px;margin-bottom:6px}
+.field .row{display:flex;align-items:baseline;gap:8px}
+.field input{width:90px;font-size:28px;font-weight:700;border:0;border-bottom:2px solid var(--line);background:transparent;color:var(--ink);padding:2px 0}
+.field input:focus{outline:none;border-color:var(--accent)}
+.total{font-size:28px;font-weight:700}
+.keys{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:14px;margin-bottom:26px}
+kbd{display:inline-block;min-width:24px;text-align:center;border:1px solid var(--line);border-bottom-width:2px;border-radius:6px;padding:1px 6px;font-family:inherit;font-size:13px;color:var(--ink);background:var(--bg)}
+.btn{background:var(--accent);color:var(--bg);border:0;border-radius:12px;padding:16px 30px;font-size:20px;font-weight:700}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---------- Examen ---------- */
+#exam{padding:3vh 4vw 0}
+.top{display:flex;align-items:center;justify-content:space-between;gap:2vw}
+.section{font-size:clamp(14px,1.7vw,26px);font-weight:700;color:var(--accent);letter-spacing:.04em;text-transform:uppercase}
+.count{font-size:clamp(14px,1.5vw,22px);color:var(--muted);font-variant-numeric:tabular-nums}
+.timer{display:flex;align-items:center;gap:.6vw;font-variant-numeric:tabular-nums;font-weight:800;font-size:clamp(28px,4.4vw,72px);line-height:1;color:var(--ink);transition:color .3s}
+.timer small{font-size:.35em;font-weight:600;color:var(--muted)}
+.timer.warn{color:var(--warn)} .timer.crit{color:var(--danger);animation:pulse 1s infinite}
+@keyframes pulse{50%{opacity:.45}}
+.paused-tag{display:none;font-size:clamp(12px,1.2vw,18px);font-weight:700;background:var(--warn);color:var(--bg);padding:4px 10px;border-radius:6px;letter-spacing:.06em}
+body.paused .paused-tag{display:inline-block}
+
+.stage{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0;padding:2vh 0}
+.qnum{font-size:clamp(20px,2.6vw,42px);font-weight:800;color:var(--muted);margin-bottom:1.2vh}
+.qnum b{color:var(--ink)}
+.qtext{font-size:clamp(24px,3.5vw,60px);line-height:1.22;font-weight:600;max-width:78ch;text-wrap:pretty}
+.opts{list-style:none;margin-top:4.5vh;display:grid;gap:1.8vh}
+.opts li{display:flex;align-items:center;gap:1.6vw;font-size:clamp(20px,3vw,50px);line-height:1.2}
+.opts .l{flex:none;width:1.6em;height:1.6em;display:grid;place-items:center;border-radius:50%;border:3px solid var(--accent);color:var(--accent);font-weight:800;font-size:.8em}
+.vf{display:flex;gap:3vw;margin-top:5vh}
+.vf span{font-size:clamp(22px,3vw,48px);font-weight:800;border:3px solid var(--line);border-radius:14px;padding:1.2vh 2.4vw;color:var(--muted)}
+.intro .qtext{font-weight:400;color:var(--muted)}
+.intro h2{font-size:clamp(34px,5.5vw,92px);line-height:1.05;margin-bottom:3vh}
+.fade{animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.bar{height:1.4vh;min-height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:100%;background:var(--accent);transform-origin:left;transition:background .3s}
+.bar.warn i{background:var(--warn)} .bar.crit i{background:var(--danger)}
+.foot{display:flex;align-items:center;gap:1.5vw;padding:1.6vh 0 2.4vh}
+.dots{flex:1;display:flex;gap:3px}
+.dots i{flex:1;height:6px;border-radius:3px;background:var(--line)}
+.dots i.done{background:var(--accent);opacity:.45}
+.dots i.now{background:var(--accent)}
+.dots i.gap{flex:0 0 10px;background:transparent}
+.hint{font-size:13px;color:var(--muted);white-space:nowrap;transition:opacity .6s}
+body.idle .hint{opacity:0}
+body.idle{cursor:none}
+
+/* ---------- Fin ---------- */
+#end{align-items:center;justify-content:center;text-align:center;padding:16px}
+#end h2{font-size:clamp(40px,7vw,120px);line-height:1}
+#end p{font-size:clamp(20px,2.6vw,44px);color:var(--muted);margin:3vh 0 5vh}
+
+@media (max-width:700px){
+  .hint{display:none}
+  .top{flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+
+<!-- Inicio -->
+<section id="start" class="screen on">
+  <div class="card">
+    <div class="kicker">UNAG · Facultad de Medicina Veterinaria y Zootecnia · Ingeniería en Zootecnia</div>
+    <h1>Examen 2 · Anatomía de las aves</h1>
+    <p class="sub">Sistemas de Producción Avícola · 30 preguntas de selección múltiple y 20 de verdadero o falso (100 puntos, 2 puntos cada una). Las respuestas se registran únicamente en la hoja impresa.</p>
+
+    <div class="grid">
+      <div class="field">
+        <label for="tMC">Segundos por pregunta · Selección múltiple</label>
+        <div class="row"><input id="tMC" type="number" min="5" max="600" value="45"><span>s</span></div>
+      </div>
+      <div class="field">
+        <label for="tVF">Segundos por pregunta · Verdadero o falso</label>
+        <div class="row"><input id="tVF" type="number" min="5" max="600" value="25"><span>s</span></div>
+      </div>
+      <div class="field">
+        <label>Duración total aproximada</label>
+        <div class="total" id="totalTime">—</div>
+      </div>
+    </div>
+
+    <div class="keys">
+      <span><kbd>Espacio</kbd> pausar / reanudar</span>
+      <span><kbd>←</kbd> <kbd>→</kbd> pregunta anterior / siguiente</span>
+      <span><kbd>+</kbd> <kbd>−</kbd> sumar / quitar 10 s</span>
+      <span><kbd>F</kbd> pantalla completa</span>
+      <span><kbd>S</kbd> sonido</span>
+      <span><kbd>T</kbd> tema claro / oscuro</span>
+    </div>
+
+    <div class="actions">
+      <button class="btn" id="go">Iniciar examen</button>
+      <button class="btn ghost" id="themeBtn">Tema oscuro</button>
+    </div>
+  </div>
+</section>
+
+<!-- Examen -->
+<section id="exam" class="screen">
+  <div class="top">
+    <div>
+      <div class="section" id="secLabel"></div>
+      <div class="count" id="count"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:1.2vw">
+      <span class="paused-tag">EN PAUSA</span>
+      <div class="timer" id="timer">0<small>s</small></div>
+    </div>
+  </div>
+  <div class="stage" id="stage"></div>
+  <div class="bar" id="bar"><i id="barFill"></i></div>
+  <div class="foot">
+    <div class="dots" id="dots"></div>
+    <div class="hint">Espacio pausa · ← → navegar · +/− tiempo · F pantalla completa</div>
+  </div>
+</section>
+
+<!-- Fin -->
+<section id="end" class="screen">
+  <div>
+    <h2>Fin del examen</h2>
+    <p>Revise que su nombre, cuenta y sección estén en la hoja, y entréguela al docente.</p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn ghost" id="backBtn">Volver a la última pregunta</button>
+      <button class="btn ghost" id="restartBtn">Volver al inicio</button>
+    </div>
+  </div>
+</section>
+
+<script>
+const DATA = {"mc": [{"n": 1, "q": "¿Qué estructura pertenece al esqueleto axial?", "o": ["Escápula", "Fémur", "Esternón", "Coracoides"]}, {"n": 2, "q": "¿Cuál conjunto corresponde a la cintura escapular?", "o": ["Ilion, isquion y pubis", "Clavículas, coracoides y escápulas", "Fémur, tibia y tarso", "Cráneo, costillas y esternón"]}, {"n": 3, "q": "¿Qué región vertebral se describe con 14 vértebras fusionadas?", "o": ["Cervical", "Torácica", "Caudal", "Lumbosacra"]}, {"n": 4, "q": "¿Qué huesos forman la cintura pélvica?", "o": ["Ilion, isquion y pubis", "Clavícula, escápula y coracoides", "Costillas, esternón y atlas", "Húmero, radio y cúbito"]}, {"n": 5, "q": "¿Qué estructura protege, junto con las costillas y vértebras torácicas, el corazón y los pulmones?", "o": ["Pubis", "Esternón", "Fémur", "Clavícula"]}, {"n": 6, "q": "¿Qué característica del pubis favorece el paso del huevo?", "o": ["Está unido al esternón", "Forma la siringe", "Sus lados no están fusionados", "Contiene sacos aéreos"]}, {"n": 7, "q": "¿Cómo se llama la primera vértebra cervical?", "o": ["Atlas", "Pigóstilo", "Quilla", "Coracoides"]}, {"n": 8, "q": "¿Cuál es la función principal de la siringe?", "o": ["Almacenar aire", "Absorber oxígeno", "Triturar alimento", "Producir sonidos"]}, {"n": 9, "q": "¿Dónde se ubica la siringe?", "o": ["En el extremo del intestino", "En la bifurcación de tráquea y bronquios", "En el ovario", "En la quilla"]}, {"n": 10, "q": "¿Qué estructura realiza el intercambio gaseoso?", "o": ["Sacos aéreos", "Tráquea", "Pulmones", "Siringe"]}, {"n": 11, "q": "¿Cómo se encuentran los pulmones aviares según el documento?", "o": ["Adheridos a la región dorsal", "Suspendidos libremente en la cavidad abdominal", "Dentro del buche", "Fusionados con el esternón"]}, {"n": 12, "q": "¿Qué sucede durante la inspiración?", "o": ["Se expulsa exclusivamente dióxido de carbono", "Se forma el cascarón", "Se tritura el alimento", "Entra aire oxigenado al cuerpo"]}, {"n": 13, "q": "¿Qué ocurre durante la espiración según el material?", "o": ["El aire deja de circular por los pulmones", "El aire de los sacos aéreos puede pasar a los pulmones", "El oxígeno se convierte en bilis", "Se cierran los bronquios permanentemente"]}, {"n": 14, "q": "¿Qué función adicional se atribuye a los sacos aéreos?", "o": ["Producir albúmina", "Secretar jugo gástrico", "Participar en la regulación térmica", "Formar membranas del cascarón"]}, {"n": 15, "q": "¿Cuál de los siguientes es un saco aéreo mencionado en el documento?", "o": ["Abdominal", "Pancreático", "Ovárico", "Gástrico"]}, {"n": 16, "q": "¿Cuál es la función principal del buche?", "o": ["Secretar bilis", "Absorber aminoácidos", "Formar el cascarón", "Almacenar temporalmente alimento"]}, {"n": 17, "q": "¿En qué órgano se secretan ácido clorhídrico y jugo gástrico?", "o": ["Molleja", "Proventrículo", "Buche", "Cloaca"]}, {"n": 18, "q": "¿Qué órgano realiza la trituración mecánica del alimento?", "o": ["Hígado", "Esófago", "Molleja", "Páncreas"]}, {"n": 19, "q": "¿Dónde ocurre principalmente la absorción de nutrientes?", "o": ["Intestino delgado", "Buche", "Proventrículo", "Cloaca"]}, {"n": 20, "q": "¿Qué órgano produce la bilis?", "o": ["Páncreas", "Molleja", "Intestino grueso", "Hígado"]}, {"n": 21, "q": "¿Cuál es la función digestiva de la bilis descrita en el material?", "o": ["Triturar granos", "Emulsionar grasas", "Producir ácido clorhídrico", "Almacenar alimento"]}, {"n": 22, "q": "¿Qué órgano secreta tripsina, amilasa y lipasa?", "o": ["Buche", "Cloaca", "Páncreas", "Esternón"]}, {"n": 23, "q": "¿Cuál es el orden correcto del alimento tras pasar por el buche?", "o": ["Proventrículo → molleja → intestino delgado", "Molleja → proventrículo → esófago", "Intestino grueso → proventrículo → molleja", "Cloaca → molleja → intestino delgado"]}, {"n": 24, "q": "¿Qué enzima salival menciona el documento para iniciar la digestión de carbohidratos?", "o": ["Lipasa", "Tripsina", "Pepsina", "Amilasa"]}, {"n": 25, "q": "¿Qué estructuras reproductivas se desarrollan normalmente en la gallina?", "o": ["Ovario y oviducto derechos", "Ovario y oviducto izquierdos", "Ambos ovarios sin oviductos", "Solo ambos oviductos"]}, {"n": 26, "q": "¿Qué hormona desencadena la ovulación según el material?", "o": ["FSH", "Insulina", "LH", "Amilasa"]}, {"n": 27, "q": "¿En qué zona se rompe el folículo durante la ovulación?", "o": ["Estigma", "Istmo", "Magno", "Útero"]}, {"n": 28, "q": "¿Qué segmento del oviducto captura la yema liberada?", "o": ["Vagina", "Útero", "Istmo", "Infundíbulo"]}, {"n": 29, "q": "¿Dónde se incorpora principalmente la albúmina al huevo?", "o": ["Útero", "Magno", "Vagina", "Istmo"]}, {"n": 30, "q": "¿Dónde se forman las dos membranas del cascarón?", "o": ["Infundíbulo", "Magno", "Istmo", "Ovario"]}], "vf": [{"n": 1, "q": "El esqueleto apendicular incluye las extremidades y las cinturas escapular y pélvica."}, {"n": 2, "q": "Las apófisis de las costillas se superponen con las costillas adyacentes y fortalecen la caja torácica."}, {"n": 3, "q": "El fémur se describe como el hueso más largo del ave."}, {"n": 4, "q": "Las escápulas corren paralelas a las vértebras torácicas."}, {"n": 5, "q": "Los bronquios se subdividen en secundarios y terciarios a nivel pulmonar."}, {"n": 6, "q": "Los sacos aéreos son el sitio principal del intercambio de oxígeno con la sangre."}, {"n": 7, "q": "Durante la espiración se contrae la caja torácica."}, {"n": 8, "q": "El sistema respiratorio descrito permite mantener un flujo de aire eficiente y continuo."}, {"n": 9, "q": "El intestino grueso se describe como el principal sitio de absorción de nutrientes."}, {"n": 10, "q": "Los sacos ciegos participan en la absorción de agua y algunos productos de fermentación."}, {"n": 11, "q": "El tránsito digestivo indicado en el documento puede variar de 4 a 12 horas."}, {"n": 12, "q": "Según el material, las partículas grandes atraviesan el tubo digestivo más rápido que las pequeñas."}, {"n": 13, "q": "Los carbohidratos se transforman en glucosa y las proteínas en aminoácidos durante la digestión."}, {"n": 14, "q": "La FSH participa en la activación ovárica descrita en el documento."}, {"n": 15, "q": "Las sustancias lipoproteicas que forman la yema se producen en el hígado."}, {"n": 16, "q": "La formación del cascarón ocurre principalmente en el magno."}, {"n": 17, "q": "El huevo permanece en el útero aproximadamente entre 18 y 20 horas, según el material."}, {"n": 18, "q": "La fecundación se sitúa en el infundíbulo, antes de formarse la albúmina y el cascarón."}, {"n": 19, "q": "Los huevos de doble yema se originan por la liberación casi simultánea de dos yemas."}, {"n": 20, "q": "La protoporfirina se relaciona con la pigmentación azul del cascarón."}]};
+const INTRO_SECONDS = 12;
+
+/* ---- construir la secuencia ---- */
+function buildSlides(){
+  const s = [];
+  s.push({type:"intro", sec:"I. Selección múltiple", title:"I. Selección múltiple", text:"Seleccione una sola opción correcta y márquela exclusivamente en la hoja de respuestas. Cada pregunta vale 2 puntos.", kind:"mc"});
+  DATA.mc.forEach(q => s.push({type:"mc", sec:"I. Selección múltiple", ...q}));
+  s.push({type:"intro", sec:"II. Verdadero o falso", title:"II. Verdadero o falso", text:"Determine si cada afirmación es verdadera o falsa. Registre V o F únicamente en la hoja de respuestas. Cada pregunta vale 2 puntos.", kind:"vf"});
+  DATA.vf.forEach(q => s.push({type:"vf", sec:"II. Verdadero o falso", ...q}));
+  return s;
+}
+const slides = buildSlides();
+const $ = id => document.getElementById(id);
+
+let idx = 0, duration = 0, remaining = 0, lastTick = 0, paused = false, raf = null, sound = true;
+
+function secs(type){
+  if(type === "intro") return INTRO_SECONDS;
+  const v = parseInt($(type === "mc" ? "tMC" : "tVF").value, 10);
+  return Math.min(600, Math.max(5, isNaN(v) ? (type === "mc" ? 45 : 25) : v));
+}
+function fmt(t){
+  t = Math.max(0, Math.ceil(t));
+  const m = Math.floor(t/60), s = t % 60;
+  return m ? `${m}:${String(s).padStart(2,"0")}` : `${s}`;
+}
+function updateTotal(){
+  const total = slides.reduce((a,s) => a + secs(s.type), 0);
+  const m = Math.floor(total/60), s = total % 60;
+  $("totalTime").textContent = `${m} min ${s ? s + " s" : ""}`.trim();
+}
+["tMC","tVF"].forEach(id => $(id).addEventListener("input", updateTotal));
+updateTotal();
+
+/* ---- puntos de progreso ---- */
+function buildDots(){
+  const d = $("dots"); d.innerHTML = "";
+  slides.forEach((s,i) => {
+    if(s.type === "intro"){ if(i) { const g = document.createElement("i"); g.className = "gap"; d.appendChild(g); } return; }
+    const e = document.createElement("i"); e.dataset.i = i; d.appendChild(e);
+  });
+}
+function paintDots(){
+  document.querySelectorAll("#dots i[data-i]").forEach(e => {
+    const i = +e.dataset.i;
+    e.className = i < idx ? "done" : i === idx ? "now" : "";
+  });
+}
+
+/* ---- render ---- */
+function esc(t){ return t.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+function render(){
+  const s = slides[idx];
+  $("secLabel").textContent = s.sec;
+  const st = $("stage");
+  st.classList.remove("fade"); void st.offsetWidth; st.classList.add("fade");
+  st.classList.toggle("intro", s.type === "intro");
+  if(s.type === "intro"){
+    const n = s.kind === "mc" ? DATA.mc.length : DATA.vf.length;
+    $("count").textContent = `${n} preguntas · ${secs(s.kind)} s cada una · 2 puntos c/u`;
+    st.innerHTML = `<h2>${esc(s.title)}</h2><p class="qtext">${esc(s.text)}</p>`;
+  } else {
+    const n = s.type === "mc" ? DATA.mc.length : DATA.vf.length;
+    const overall = slides.slice(0, idx+1).filter(x => x.type !== "intro").length;
+    const all = DATA.mc.length + DATA.vf.length;
+    $("count").textContent = `${s.type === "mc" ? "60 puntos" : "40 puntos"} · 2 puntos c/u · ${overall} de ${all}`;
+    let html = `<div class="qnum">Pregunta <b>${s.n}</b> <span style="font-weight:600">/ ${n}</span></div><p class="qtext">${esc(s.q)}</p>`;
+    if(s.type === "mc"){
+      html += `<ol class="opts">${s.o.map((o,k) => `<li><span class="l">${"abcd"[k]}</span><span>${esc(o)}</span></li>`).join("")}</ol>`;
+    } else {
+      html += `<div class="vf"><span>V · Verdadero</span><span>F · Falso</span></div>`;
+    }
+    st.innerHTML = html;
+  }
+  paintDots();
+}
+
+function go(i, silent){
+  if(i < 0) i = 0;
+  if(i >= slides.length){ finish(); return; }
+  idx = i;
+  duration = remaining = secs(slides[idx].type);
+  lastTick = performance.now();
+  render();
+  paintTimer();
+  if(!silent) chime();
+}
+
+function paintTimer(){
+  const frac = duration ? remaining / duration : 0;
+  $("barFill").style.transform = `scaleX(${Math.max(0, frac)})`;
+  $("timer").innerHTML = `${fmt(remaining)}<small>${remaining >= 60 ? "" : "s"}</small>`;
+  const q = slides[idx] && slides[idx].type !== "intro";
+  const crit = q && remaining <= 5, warn = q && !crit && remaining <= 10;
+  $("timer").classList.toggle("crit", crit); $("timer").classList.toggle("warn", warn);
+  $("bar").classList.toggle("crit", crit);   $("bar").classList.toggle("warn", warn);
+}
+
+function loop(now){
+  if(!paused){
+    remaining -= (now - lastTick) / 1000;
+    if(remaining <= 0){ go(idx + 1); }
+  }
+  lastTick = now;
+  paintTimer();
+  if($("exam").classList.contains("on")) raf = requestAnimationFrame(loop);
+}
+
+/* ---- sonido suave al cambiar de pregunta ---- */
+let actx = null;
+function chime(){
+  if(!sound) return;
+  try{
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    const o = actx.createOscillator(), g = actx.createGain();
+    o.type = "sine"; o.frequency.value = 880;
+    g.gain.setValueAtTime(0.0001, actx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.18, actx.currentTime + 0.02);
+    g.gain.exponentialRampToValueAtTime(0.0001, actx.currentTime + 0.5);
+    o.connect(g).connect(actx.destination); o.start(); o.stop(actx.currentTime + 0.55);
+  }catch(e){}
+}
+
+/* ---- evitar que la pantalla se apague ---- */
+let lock = null;
+async function keepAwake(){ try{ if("wakeLock" in navigator) lock = await navigator.wakeLock.request("screen"); }catch(e){} }
+document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible" && $("exam").classList.contains("on")) keepAwake(); });
+
+function show(id){ document.querySelectorAll(".screen").forEach(s => s.classList.toggle("on", s.id === id)); }
+function fullscreen(on){
+  try{
+    if(on && !document.fullscreenElement) document.documentElement.requestFullscreen();
+    if(!on && document.fullscreenElement) document.exitFullscreen();
+  }catch(e){}
+}
+function start(i = 0){
+  paused = false; document.body.classList.remove("paused");
+  show("exam"); buildDots(); fullscreen(true); keepAwake();
+  go(i);
+  cancelAnimationFrame(raf); lastTick = performance.now(); raf = requestAnimationFrame(loop);
+}
+function finish(){
+  cancelAnimationFrame(raf); show("end"); chime();
+  try{ lock && lock.release(); }catch(e){}
+}
+function togglePause(){
+  paused = !paused; document.body.classList.toggle("paused", paused);
+}
+function setTheme(t){
+  document.documentElement.dataset.theme = t;
+  $("themeBtn").textContent = t === "dark" ? "Tema claro" : "Tema oscuro";
+}
+
+$("go").onclick = () => start(0);
+$("themeBtn").onclick = () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+$("backBtn").onclick = () => start(slides.length - 1);
+$("restartBtn").onclick = () => { fullscreen(false); show("start"); };
+
+document.addEventListener("keydown", e => {
+  if(e.key === "t" || e.key === "T"){ $("themeBtn").click(); return; }
+  if(!$("exam").classList.contains("on")) return;
+  switch(e.key){
+    case " ": e.preventDefault(); togglePause(); break;
+    case "ArrowRight": case "PageDown": e.preventDefault(); go(idx + 1); break;
+    case "ArrowLeft":  case "PageUp":   e.preventDefault(); go(idx - 1, true); break;
+    case "+": case "=": remaining += 10; duration = Math.max(duration, remaining); break;
+    case "-": case "_": remaining = Math.max(1, remaining - 10); break;
+    case "f": case "F": fullscreen(!document.fullscreenElement); break;
+    case "s": case "S": sound = !sound; break;
+    case "Escape": if(!paused) togglePause(); break;
+  }
+});
+
+/* ocultar cursor e indicaciones cuando no se mueve el ratón */
+let idleT;
+function wake(){ document.body.classList.remove("idle"); clearTimeout(idleT); idleT = setTimeout(() => document.body.classList.add("idle"), 3000); }
+document.addEventListener("mousemove", wake); wake();
+</script>
+</body>
+</html>

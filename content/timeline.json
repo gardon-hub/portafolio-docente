@@ -1,0 +1,150 @@
+{
+  "trayectoria": {
+    "titulo": "Trayectoria institucional documentada",
+    "nota": "La constancia del Departamento de Recursos Humanos de la UNAG, emitida el 15 de enero de 2020, acredita servicio en la institución desde el 16 de mayo de 1996 y adscripción docente al Departamento Académico de Producción Animal de la Facultad de Medicina Veterinaria y Zootecnia. El currículo actualizado al 7 de abril de 2026 complementa este historial con responsabilidades académicas y gremiales, y cierra los periodos que en la versión de 2020 quedaban abiertos.",
+    "hitos": [
+      {
+        "periodo": "Desde 1996",
+        "orden": 1996,
+        "titulo": "Catedrático y Jefe de la Sección de Avicultura de la ENA",
+        "detalle": "La sección es el origen del actual Centro Integral de Aprendizaje Avícola de la UNAG, según el currículo de 2026.",
+        "tipo": "gestion",
+        "evidencias": ["E1.4"]
+      },
+      {
+        "periodo": "Desde el 16 de mayo de 1996",
+        "orden": 1996.1,
+        "titulo": "Docente del Departamento de Producción Animal",
+        "detalle": "Según constancia de Recursos Humanos del 15 de enero de 2020.",
+        "tipo": "docencia",
+        "evidencias": ["E1.3", "E1.4"]
+      },
+      {
+        "periodo": "1998 - 2003",
+        "orden": 1998,
+        "titulo": "Subjefe del Departamento de Producción Animal",
+        "detalle": "Según el currículo de 2020.",
+        "tipo": "gestion",
+        "evidencias": ["E1.4"]
+      },
+      {
+        "periodo": "Mayo de 2003 - mayo de 2006",
+        "orden": 2003,
+        "titulo": "Jefe del Departamento de Producción Animal",
+        "detalle": "Cargo de dirección académica en la FMVZ.",
+        "tipo": "gestion",
+        "evidencias": ["E1.4"]
+      },
+      {
+        "periodo": "Junio de 2007 - junio de 2010",
+        "orden": 2007,
+        "titulo": "Secretario General de la Universidad Nacional de Agricultura",
+        "detalle": "Responsabilidad institucional de alcance universitario.",
+        "tipo": "gestion",
+        "evidencias": ["E1.4"]
+      },
+      {
+        "periodo": "2017 - 2020",
+        "orden": 2017,
+        "titulo": "Coordinador del comité de Práctica Profesional Supervisada",
+        "detalle": "Departamento Académico de Producción Animal, según el currículo de 2026.",
+        "tipo": "gestion",
+        "evidencias": ["E1.4", "E6.4"]
+      },
+      {
+        "periodo": "2019 - 2020",
+        "orden": 2019,
+        "titulo": "Miembro de la comisión de creación de la carrera de Ingeniería en Zootecnia",
+        "detalle": "Universidad Nacional de Agricultura, según el currículo de 2026.",
+        "tipo": "gestion",
+        "evidencias": ["E1.4", "E8.4"]
+      },
+      {
+        "periodo": "2020 - 2021",
+        "orden": 2020,
+        "titulo": "Director Presidente de la Junta de Dirección Universitaria de la UNAG",
+        "detalle": "Máxima responsabilidad del órgano de dirección de la universidad, según el currículo de 2026.",
+        "tipo": "gestion",
+        "evidencias": ["E1.4", "E8.4"]
+      },
+      {
+        "periodo": "2020 - 2022",
+        "orden": 2020.5,
+        "titulo": "Director de la Junta de Dirección Universitaria de la UNAG",
+        "detalle": "Según el currículo de 2026.",
+        "tipo": "gestion",
+        "evidencias": ["E1.4", "E8.4"]
+      },
+      {
+        "periodo": "Actualidad",
+        "orden": 2026,
+        "titulo": "Coordinador del Centro Integral de Aprendizaje Avícola (CIAA)",
+        "detalle": "Con responsabilidad sobre la granja avícola y la planta de incubación. El currículo de 2026 registra la Sección de Avicultura de la ENA como el origen del centro actual.",
+        "tipo": "gestion",
+        "evidencias": ["E8.1"]
+      }
+    ]
+  },
+  "formacion": {
+    "titulo": "Formación académica",
+    "nota": "Datos consignados en el expediente digital compilado en enero de 2020.",
+    "hitos": [
+      {
+        "periodo": "1985 - 1987",
+        "orden": 1987,
+        "titulo": "Maestro de Educación Primaria",
+        "detalle": "Escuela Normal Centro América, Comayagua. Título de 1987.",
+        "tipo": "formacion",
+        "evidencias": ["E1.2"]
+      },
+      {
+        "periodo": "1988 - 1990",
+        "orden": 1990,
+        "titulo": "Agrónomo",
+        "detalle": "Escuela Nacional de Agricultura, Catacamas.",
+        "tipo": "formacion",
+        "evidencias": ["E1.2"]
+      },
+      {
+        "periodo": "1993 - 1995",
+        "orden": 1995,
+        "titulo": "Ingeniero Agrónomo, especialista en Zootecnia",
+        "detalle": "Universidad Autónoma Chapingo, México. Título expedido el 11 de diciembre de 1995.",
+        "tipo": "formacion",
+        "evidencias": ["E1.2"]
+      },
+      {
+        "periodo": "2000",
+        "orden": 2000,
+        "titulo": "Diplomado en Formación Pedagógica en Educación Superior",
+        "detalle": "Universidad Pedagógica Nacional Francisco Morazán. Otorgado el 13 de diciembre de 2000.",
+        "tipo": "formacion",
+        "evidencias": ["E1.2", "E9.1"]
+      },
+      {
+        "periodo": "2003",
+        "orden": 2003,
+        "titulo": "Máster en Administración de Empresas con elección en Finanzas",
+        "detalle": "Universidad Católica de Honduras, Juticalpa. Título otorgado el 10 de junio de 2003, con reconocimiento Magna Cum Laude y segundo lugar de la maestría.",
+        "tipo": "formacion",
+        "evidencias": ["E1.2"]
+      },
+      {
+        "periodo": "2006",
+        "orden": 2006,
+        "titulo": "Formación especializada en sanidad y producción avícola",
+        "detalle": "Programa de orientación en el Egyptian International Centre for Agriculture (EICA), Egipto.",
+        "tipo": "formacion",
+        "evidencias": ["E9.1", "E9.2"]
+      },
+      {
+        "periodo": "2018 (matrícula registrada)",
+        "orden": 2018,
+        "titulo": "Doctorado en Economía y Empresa",
+        "detalle": "Universidad Tecnológica Centroamericana (UNITEC). Constancia de estudios emitida el 13 de enero de 2020; registra matrícula en el cuarto periodo del segundo semestre de 2018.",
+        "tipo": "formacion",
+        "evidencias": ["E1.2"]
+      }
+    ]
+  }
+}

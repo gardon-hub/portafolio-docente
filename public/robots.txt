@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Ajuste esta linea a la direccion real donde se publique el sitio.
+Sitemap: https://gardon-hub.github.io/portafolio-docente/sitemap.xml

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Portafolio Docente">
+  <rect width="64" height="64" rx="12" fill="#1b5436" />
+  <path d="M16 17.5A2.5 2.5 0 0 1 18.5 15H46v29H18.5A2.5 2.5 0 0 0 16 46.5z" fill="none" stroke="#eef7f1" stroke-width="3.2" stroke-linejoin="round" />
+  <path d="M16 46.5A2.5 2.5 0 0 0 18.5 49H46v-5" fill="none" stroke="#eef7f1" stroke-width="3.2" stroke-linejoin="round" />
+  <path d="M24 25h14M24 32h14M24 39h9" stroke="#77bd93" stroke-width="3" stroke-linecap="round" />
+</svg>
