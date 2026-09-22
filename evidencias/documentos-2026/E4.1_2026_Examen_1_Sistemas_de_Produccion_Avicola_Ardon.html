@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examen I · Sistemas de Producción Avícola</title>
+<style>
+:root{
+  --bg:#fbfaf6; --panel:#ffffff; --ink:#15181d; --muted:#5b6270; --line:#dcd8cc;
+  --accent:#1f5f3f; --accent-soft:#e3efe7; --warn:#b86a00; --danger:#b3261e;
+}
+[data-theme="dark"]{
+  --bg:#101312; --panel:#181c1b; --ink:#f2f1ec; --muted:#a3aaa6; --line:#2d3432;
+  --accent:#6fcf97; --accent-soft:#1d2e25; --warn:#f2b24c; --danger:#ff7b72;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}
+button{font:inherit;cursor:pointer}
+.screen{position:fixed;inset:0;display:none;flex-direction:column}
+.screen.on{display:flex}
+
+/* ---------- Inicio ---------- */
+#start{align-items:center;justify-content:center;padding:4vh 16px;overflow:auto}
+.card{width:min(860px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,4vw,48px)}
+.kicker{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+h1{font-size:clamp(28px,4vw,46px);line-height:1.1;margin:8px 0 6px}
+.sub{color:var(--muted);font-size:clamp(15px,1.6vw,19px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:28px 0}
+.field{border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.field label{display:block;color:var(--muted);font-size:14px;margin-bottom:6px}
+.field .row{display:flex;align-items:baseline;gap:8px}
+.field input{width:90px;font-size:28px;font-weight:700;border:0;border-bottom:2px solid var(--line);background:transparent;color:var(--ink);padding:2px 0}
+.field input:focus{outline:none;border-color:var(--accent)}
+.total{font-size:28px;font-weight:700}
+.keys{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:14px;margin-bottom:26px}
+kbd{display:inline-block;min-width:24px;text-align:center;border:1px solid var(--line);border-bottom-width:2px;border-radius:6px;padding:1px 6px;font-family:inherit;font-size:13px;color:var(--ink);background:var(--bg)}
+.btn{background:var(--accent);color:var(--bg);border:0;border-radius:12px;padding:16px 30px;font-size:20px;font-weight:700}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---------- Examen ---------- */
+#exam{padding:3vh 4vw 0}
+.top{display:flex;align-items:center;justify-content:space-between;gap:2vw}
+.section{font-size:clamp(14px,1.7vw,26px);font-weight:700;color:var(--accent);letter-spacing:.04em;text-transform:uppercase}
+.count{font-size:clamp(14px,1.5vw,22px);color:var(--muted);font-variant-numeric:tabular-nums}
+.timer{display:flex;align-items:center;gap:.6vw;font-variant-numeric:tabular-nums;font-weight:800;font-size:clamp(28px,4.4vw,72px);line-height:1;color:var(--ink);transition:color .3s}
+.timer small{font-size:.35em;font-weight:600;color:var(--muted)}
+.timer.warn{color:var(--warn)} .timer.crit{color:var(--danger);animation:pulse 1s infinite}
+@keyframes pulse{50%{opacity:.45}}
+.paused-tag{display:none;font-size:clamp(12px,1.2vw,18px);font-weight:700;background:var(--warn);color:var(--bg);padding:4px 10px;border-radius:6px;letter-spacing:.06em}
+body.paused .paused-tag{display:inline-block}
+
+.stage{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0;padding:2vh 0}
+.qnum{font-size:clamp(20px,2.6vw,42px);font-weight:800;color:var(--muted);margin-bottom:1.2vh}
+.qnum b{color:var(--ink)}
+.qtext{font-size:clamp(24px,3.5vw,60px);line-height:1.22;font-weight:600;max-width:78ch;text-wrap:pretty}
+.opts{list-style:none;margin-top:4.5vh;display:grid;gap:1.8vh}
+.opts li{display:flex;align-items:center;gap:1.6vw;font-size:clamp(20px,3vw,50px);line-height:1.2}
+.opts .l{flex:none;width:1.6em;height:1.6em;display:grid;place-items:center;border-radius:50%;border:3px solid var(--accent);color:var(--accent);font-weight:800;font-size:.8em}
+.vf{display:flex;gap:3vw;margin-top:5vh}
+.vf span{font-size:clamp(22px,3vw,48px);font-weight:800;border:3px solid var(--line);border-radius:14px;padding:1.2vh 2.4vw;color:var(--muted)}
+.intro .qtext{font-weight:400;color:var(--muted)}
+.intro h2{font-size:clamp(34px,5.5vw,92px);line-height:1.05;margin-bottom:3vh}
+.fade{animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.bar{height:1.4vh;min-height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:100%;background:var(--accent);transform-origin:left;transition:background .3s}
+.bar.warn i{background:var(--warn)} .bar.crit i{background:var(--danger)}
+.foot{display:flex;align-items:center;gap:1.5vw;padding:1.6vh 0 2.4vh}
+.dots{flex:1;display:flex;gap:3px}
+.dots i{flex:1;height:6px;border-radius:3px;background:var(--line)}
+.dots i.done{background:var(--accent);opacity:.45}
+.dots i.now{background:var(--accent)}
+.dots i.gap{flex:0 0 10px;background:transparent}
+.hint{font-size:13px;color:var(--muted);white-space:nowrap;transition:opacity .6s}
+body.idle .hint{opacity:0}
+body.idle{cursor:none}
+
+/* ---------- Fin ---------- */
+#end{align-items:center;justify-content:center;text-align:center;padding:16px}
+#end h2{font-size:clamp(40px,7vw,120px);line-height:1}
+#end p{font-size:clamp(20px,2.6vw,44px);color:var(--muted);margin:3vh 0 5vh}
+
+@media (max-width:700px){
+  .hint{display:none}
+  .top{flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+
+<!-- Inicio -->
+<section id="start" class="screen on">
+  <div class="card">
+    <div class="kicker">Universidad Nacional de Agricultura · CIAA</div>
+    <h1>Examen I · Sistemas de Producción Avícola</h1>
+    <p class="sub">Septiembre 2026 · 30 preguntas de selección múltiple y 20 de verdadero o falso. Las respuestas se escriben en la hoja impresa.</p>
+
+    <div class="grid">
+      <div class="field">
+        <label for="tMC">Segundos por pregunta · Selección múltiple</label>
+        <div class="row"><input id="tMC" type="number" min="5" max="600" value="45"><span>s</span></div>
+      </div>
+      <div class="field">
+        <label for="tVF">Segundos por pregunta · Verdadero o falso</label>
+        <div class="row"><input id="tVF" type="number" min="5" max="600" value="25"><span>s</span></div>
+      </div>
+      <div class="field">
+        <label>Duración total aproximada</label>
+        <div class="total" id="totalTime">—</div>
+      </div>
+    </div>
+
+    <div class="keys">
+      <span><kbd>Espacio</kbd> pausar / reanudar</span>
+      <span><kbd>←</kbd> <kbd>→</kbd> pregunta anterior / siguiente</span>
+      <span><kbd>+</kbd> <kbd>−</kbd> sumar / quitar 10 s</span>
+      <span><kbd>F</kbd> pantalla completa</span>
+      <span><kbd>S</kbd> sonido</span>
+      <span><kbd>T</kbd> tema claro / oscuro</span>
+    </div>
+
+    <div class="actions">
+      <button class="btn" id="go">Iniciar examen</button>
+      <button class="btn ghost" id="themeBtn">Tema oscuro</button>
+    </div>
+  </div>
+</section>
+
+<!-- Examen -->
+<section id="exam" class="screen">
+  <div class="top">
+    <div>
+      <div class="section" id="secLabel"></div>
+      <div class="count" id="count"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:1.2vw">
+      <span class="paused-tag">EN PAUSA</span>
+      <div class="timer" id="timer">0<small>s</small></div>
+    </div>
+  </div>
+  <div class="stage" id="stage"></div>
+  <div class="bar" id="bar"><i id="barFill"></i></div>
+  <div class="foot">
+    <div class="dots" id="dots"></div>
+    <div class="hint">Espacio pausa · ← → navegar · +/− tiempo · F pantalla completa</div>
+  </div>
+</section>
+
+<!-- Fin -->
+<section id="end" class="screen">
+  <div>
+    <h2>Fin del examen</h2>
+    <p>Revise que su nombre esté en la hoja y entréguela al docente.</p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn ghost" id="backBtn">Volver a la última pregunta</button>
+      <button class="btn ghost" id="restartBtn">Volver al inicio</button>
+    </div>
+  </div>
+</section>
+
+<script>
+const DATA = {"mc": [{"n": 1, "q": "¿Cuál de las siguientes empresas forma parte directamente del clúster de la industria avícola descrito en el material?", "o": ["Empresa minera", "Planta de incubación", "Empresa textil", "Empresa forestal"]}, {"n": 2, "q": "Una empresa reproductora tiene como función principal:", "o": ["Clasificar huevos comerciales", "Sacrificar pollos", "Producir huevos fértiles", "Elaborar medicamentos"]}, {"n": 3, "q": "En Honduras, la institución señalada como responsable de mantener el estatus sanitario de la avicultura es:", "o": ["SENASA", "UNAH", "ANAVIH", "FAO"]}, {"n": 4, "q": "Uno de los principales aportes de las universidades al clúster avícola es:", "o": ["Fijar el precio del huevo", "Importar granos", "Formar recurso humano técnico", "Comercializar pollitos"]}, {"n": 5, "q": "Según el documento, el huevo contiene aproximadamente:", "o": ["6 % de proteína", "12 % de proteína", "20.6 % de proteína", "30 % de proteína"]}, {"n": 6, "q": "El contenido de proteína señalado para la carne de pollo es aproximadamente:", "o": ["12 %", "15 %", "20.6 %", "30.5 %"]}, {"n": 7, "q": "La explotación zootécnica de codornices recibe el nombre de:", "o": ["Ansericultura", "Meleagricultura", "Coturnicultura", "Gallinicultura"]}, {"n": 8, "q": "La explotación de pavos se denomina:", "o": ["Anacultura", "Meleagricultura", "Coturnicultura", "Gallinicultura"]}, {"n": 9, "q": "¿Cuál fue uno de los factores que permitió transportar carne de ave a lugares más lejanos y conservarla durante mayor tiempo?", "o": ["Refrigeración", "Selección de plumas", "Sexaje", "Despique"]}, {"n": 10, "q": "La primera incubadora artificial comercial mencionada en el documento apareció en:", "o": ["1744", "1844", "1935", "1950"]}, {"n": 11, "q": "En la alimentación avícola, el nivel de inclusión de maíz señalado en el documento puede alcanzar aproximadamente:", "o": ["10–20 %", "30–40 %", "50–60 %", "70–80 %"]}, {"n": 12, "q": "La raza mencionada como especializada para producción de huevos es:", "o": ["Cornish", "Leghorn", "Brahma", "Plymouth Rock"]}, {"n": 13, "q": "La raza mencionada como especializada para producción de carne es:", "o": ["Leghorn", "Cornish", "Minorca", "Ancona"]}, {"n": 14, "q": "Gracias al mejoramiento genético y nutricional, una gallina moderna puede producir aproximadamente:", "o": ["80–100 huevos/año", "150–180 huevos/año", "200–250 huevos/año", "300–330 huevos/año"]}, {"n": 15, "q": "Actualmente, el pollo puede alcanzar el peso de sacrificio aproximadamente en:", "o": ["15–20 días", "33–35 días", "60–70 días", "3–5 meses"]}, {"n": 16, "q": "La conversión alimenticia señalada para los pollos modernos es aproximadamente:", "o": ["0.5–0.8", "1.5–1.6", "2.5–3.0", "4.5–5.0"]}, {"n": 17, "q": "El primer eslabón de la cadena productiva primaria del sector carne corresponde a:", "o": ["Matadero", "Reproductoras", "Granjas de engorde", "Comercialización"]}, {"n": 18, "q": "En la incubación de huevos de gallina, la temperatura ideal señalada es:", "o": ["32.0 °C", "35.5 °C", "37.5 °C", "41.0 °C"]}, {"n": 19, "q": "La humedad relativa indicada durante la incubación es:", "o": ["20–30 %", "40–50 %", "60–70 %", "80–90 %"]}, {"n": 20, "q": "El volteo de los huevos durante la incubación evita principalmente:", "o": ["La pérdida del color del cascarón", "Que el embrión se adhiera a las paredes internas del cascarón", "Que aumente el tamaño del huevo", "La pérdida de calcio de la cáscara"]}, {"n": 21, "q": "El período normal de incubación del huevo de gallina es:", "o": ["14 días", "18 días", "21 días", "28 días"]}, {"n": 22, "q": "En el sector huevo, el período comprendido entre el nacimiento y la madurez sexual se denomina:", "o": ["Incubación", "Levante", "Postura", "Industrialización"]}, {"n": 23, "q": "Las ponedoras alcanzan normalmente la madurez sexual aproximadamente entre:", "o": ["8–10 semanas", "12–14 semanas", "18–20 semanas", "25–30 semanas"]}, {"n": 24, "q": "Una caja formada por 12 bandejas de 30 huevos contiene:", "o": ["300 huevos", "330 huevos", "360 huevos", "420 huevos"]}, {"n": 25, "q": "La temperatura corporal de las aves señalada en el documento es aproximadamente:", "o": ["36 °C", "37.5 °C", "39 °C", "41 °C"]}, {"n": 26, "q": "La glándula que produce la secreción utilizada por las aves para aceitar sus plumas es:", "o": ["Tiroides", "Uropígea", "Pituitaria", "Adrenal"]}, {"n": 27, "q": "Las plumas que principalmente impulsan el vuelo reciben el nombre de:", "o": ["Filoplumas", "Timoneras", "Remeras", "Plumón"]}, {"n": 28, "q": "Las plumas de la cola que participan en la dirección del vuelo se denominan:", "o": ["Remeras", "Timoneras", "Filoplumas", "Mucetas"]}, {"n": 29, "q": "La parte de la pluma que se inserta directamente en la piel es:", "o": ["Raquis", "Barba", "Barbilla", "Cálamo"]}, {"n": 30, "q": "Las barbillas se entrelazan formando una estructura continua denominada:", "o": ["Vexilo", "Cálamo", "Folículo", "Muceta"]}], "vf": [{"n": 1, "q": "Las asociaciones avícolas participan en la capacitación de los productores y tienen un papel en la regulación del inventario nacional."}, {"n": 2, "q": "La industria avícola genera empleos directos e indirectos y contribuye al Producto Interno Bruto."}, {"n": 3, "q": "Los subproductos avícolas tienen aplicaciones en industrias como la farmacéutica, cosmética y alimentaria."}, {"n": 4, "q": "La gallinicultura es la actividad dedicada específicamente a la explotación de gansos."}, {"n": 5, "q": "El aumento en la disponibilidad de granos, especialmente maíz, favoreció el desarrollo de la producción avícola."}, {"n": 6, "q": "Antes del desarrollo de la refrigeración, la comercialización de aves vivas limitaba el volumen del comercio avícola."}, {"n": 7, "q": "Los programas de mejoramiento avícola implementados a partir de 1935 contribuyeron al desarrollo de aves genéticamente más eficientes."}, {"n": 8, "q": "El avance tecnológico ha permitido automatizar procesos como el suministro de agua, la alimentación y la recolección de huevos."}, {"n": 9, "q": "En Honduras se producen localmente los abuelos que constituyen el primer nivel de las reproductoras del sector carne."}, {"n": 10, "q": "En la incubación artificial, los huevos se voltean aproximadamente cada hora."}, {"n": 11, "q": "En la planta de sacrificio, el escaldado facilita posteriormente el proceso de desplumado."}, {"n": 12, "q": "Después del sacrificio, el enfriamiento de las canales contribuye a controlar la multiplicación de microorganismos."}, {"n": 13, "q": "La etapa primaria de la cadena productiva del sector carne finaliza cuando los pollos alcanzan el peso de sacrificio."}, {"n": 14, "q": "La industrialización del huevo puede incluir lavado, quebrado, filtrado, pasteurización, enfriado y envasado."}, {"n": 15, "q": "Los huevos industrializados únicamente pueden comercializarse en forma líquida."}, {"n": 16, "q": "Las aves de traspatio sometidas a condiciones adversas pueden alcanzar la madurez sexual más tarde que las aves manejadas en condiciones favorables."}, {"n": 17, "q": "Una capa barrada se caracteriza por presentar plumas con rayas claras y oscuras alternadas."}, {"n": 18, "q": "Las filoplumas son las plumas grandes de la cola encargadas de dirigir el vuelo."}, {"n": 19, "q": "El raquis es la estructura de la pluma de la cual se originan las barbas."}, {"n": 20, "q": "Las patas amarillas en una gallina indican, según el documento, que el pigmento del alimento se está depositando en ellas y que el ave no está poniendo huevos."}]};
+const INTRO_SECONDS = 12;
+
+/* ---- construir la secuencia ---- */
+function buildSlides(){
+  const s = [];
+  s.push({type:"intro", sec:"I. Selección múltiple", title:"I. Selección múltiple", text:"Seleccione una sola respuesta correcta para cada pregunta y márquela en la hoja de respuestas.", kind:"mc"});
+  DATA.mc.forEach(q => s.push({type:"mc", sec:"I. Selección múltiple", ...q}));
+  s.push({type:"intro", sec:"II. Verdadero o falso", title:"II. Verdadero o falso", text:"Determine si cada afirmación es verdadera o falsa y registre su respuesta únicamente en la hoja de respuestas.", kind:"vf"});
+  DATA.vf.forEach(q => s.push({type:"vf", sec:"II. Verdadero o falso", ...q}));
+  return s;
+}
+const slides = buildSlides();
+const $ = id => document.getElementById(id);
+
+let idx = 0, duration = 0, remaining = 0, lastTick = 0, paused = false, raf = null, sound = true;
+
+function secs(type){
+  if(type === "intro") return INTRO_SECONDS;
+  const v = parseInt($(type === "mc" ? "tMC" : "tVF").value, 10);
+  return Math.min(600, Math.max(5, isNaN(v) ? (type === "mc" ? 45 : 25) : v));
+}
+function fmt(t){
+  t = Math.max(0, Math.ceil(t));
+  const m = Math.floor(t/60), s = t % 60;
+  return m ? `${m}:${String(s).padStart(2,"0")}` : `${s}`;
+}
+function updateTotal(){
+  const total = slides.reduce((a,s) => a + secs(s.type), 0);
+  const m = Math.floor(total/60), s = total % 60;
+  $("totalTime").textContent = `${m} min ${s ? s + " s" : ""}`.trim();
+}
+["tMC","tVF"].forEach(id => $(id).addEventListener("input", updateTotal));
+updateTotal();
+
+/* ---- puntos de progreso ---- */
+function buildDots(){
+  const d = $("dots"); d.innerHTML = "";
+  slides.forEach((s,i) => {
+    if(s.type === "intro"){ if(i) { const g = document.createElement("i"); g.className = "gap"; d.appendChild(g); } return; }
+    const e = document.createElement("i"); e.dataset.i = i; d.appendChild(e);
+  });
+}
+function paintDots(){
+  document.querySelectorAll("#dots i[data-i]").forEach(e => {
+    const i = +e.dataset.i;
+    e.className = i < idx ? "done" : i === idx ? "now" : "";
+  });
+}
+
+/* ---- render ---- */
+function esc(t){ return t.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+function render(){
+  const s = slides[idx];
+  $("secLabel").textContent = s.sec;
+  const st = $("stage");
+  st.classList.remove("fade"); void st.offsetWidth; st.classList.add("fade");
+  st.classList.toggle("intro", s.type === "intro");
+  if(s.type === "intro"){
+    const n = s.kind === "mc" ? DATA.mc.length : DATA.vf.length;
+    $("count").textContent = `${n} preguntas · ${secs(s.kind)} s cada una`;
+    st.innerHTML = `<h2>${esc(s.title)}</h2><p class="qtext">${esc(s.text)}</p>`;
+  } else {
+    const n = s.type === "mc" ? DATA.mc.length : DATA.vf.length;
+    const overall = slides.slice(0, idx+1).filter(x => x.type !== "intro").length;
+    const all = DATA.mc.length + DATA.vf.length;
+    $("count").textContent = `Pregunta ${overall} de ${all}`;
+    let html = `<div class="qnum">Pregunta <b>${s.n}</b> <span style="font-weight:600">/ ${n}</span></div><p class="qtext">${esc(s.q)}</p>`;
+    if(s.type === "mc"){
+      html += `<ol class="opts">${s.o.map((o,k) => `<li><span class="l">${"abcd"[k]}</span><span>${esc(o)}</span></li>`).join("")}</ol>`;
+    } else {
+      html += `<div class="vf"><span>V · Verdadero</span><span>F · Falso</span></div>`;
+    }
+    st.innerHTML = html;
+  }
+  paintDots();
+}
+
+function go(i, silent){
+  if(i < 0) i = 0;
+  if(i >= slides.length){ finish(); return; }
+  idx = i;
+  duration = remaining = secs(slides[idx].type);
+  lastTick = performance.now();
+  render();
+  paintTimer();
+  if(!silent) chime();
+}
+
+function paintTimer(){
+  const frac = duration ? remaining / duration : 0;
+  $("barFill").style.transform = `scaleX(${Math.max(0, frac)})`;
+  $("timer").innerHTML = `${fmt(remaining)}<small>${remaining >= 60 ? "" : "s"}</small>`;
+  const q = slides[idx] && slides[idx].type !== "intro";
+  const crit = q && remaining <= 5, warn = q && !crit && remaining <= 10;
+  $("timer").classList.toggle("crit", crit); $("timer").classList.toggle("warn", warn);
+  $("bar").classList.toggle("crit", crit);   $("bar").classList.toggle("warn", warn);
+}
+
+function loop(now){
+  if(!paused){
+    remaining -= (now - lastTick) / 1000;
+    if(remaining <= 0){ go(idx + 1); }
+  }
+  lastTick = now;
+  paintTimer();
+  if($("exam").classList.contains("on")) raf = requestAnimationFrame(loop);
+}
+
+/* ---- sonido suave al cambiar de pregunta ---- */
+let actx = null;
+function chime(){
+  if(!sound) return;
+  try{
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    const o = actx.createOscillator(), g = actx.createGain();
+    o.type = "sine"; o.frequency.value = 880;
+    g.gain.setValueAtTime(0.0001, actx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.18, actx.currentTime + 0.02);
+    g.gain.exponentialRampToValueAtTime(0.0001, actx.currentTime + 0.5);
+    o.connect(g).connect(actx.destination); o.start(); o.stop(actx.currentTime + 0.55);
+  }catch(e){}
+}
+
+/* ---- evitar que la pantalla se apague ---- */
+let lock = null;
+async function keepAwake(){ try{ if("wakeLock" in navigator) lock = await navigator.wakeLock.request("screen"); }catch(e){} }
+document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible" && $("exam").classList.contains("on")) keepAwake(); });
+
+function show(id){ document.querySelectorAll(".screen").forEach(s => s.classList.toggle("on", s.id === id)); }
+function fullscreen(on){
+  try{
+    if(on && !document.fullscreenElement) document.documentElement.requestFullscreen();
+    if(!on && document.fullscreenElement) document.exitFullscreen();
+  }catch(e){}
+}
+function start(i = 0){
+  paused = false; document.body.classList.remove("paused");
+  show("exam"); buildDots(); fullscreen(true); keepAwake();
+  go(i);
+  cancelAnimationFrame(raf); lastTick = performance.now(); raf = requestAnimationFrame(loop);
+}
+function finish(){
+  cancelAnimationFrame(raf); show("end"); chime();
+  try{ lock && lock.release(); }catch(e){}
+}
+function togglePause(){
+  paused = !paused; document.body.classList.toggle("paused", paused);
+}
+function setTheme(t){
+  document.documentElement.dataset.theme = t;
+  $("themeBtn").textContent = t === "dark" ? "Tema claro" : "Tema oscuro";
+}
+
+$("go").onclick = () => start(0);
+$("themeBtn").onclick = () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+$("backBtn").onclick = () => start(slides.length - 1);
+$("restartBtn").onclick = () => { fullscreen(false); show("start"); };
+
+document.addEventListener("keydown", e => {
+  if(e.key === "t" || e.key === "T"){ $("themeBtn").click(); return; }
+  if(!$("exam").classList.contains("on")) return;
+  switch(e.key){
+    case " ": e.preventDefault(); togglePause(); break;
+    case "ArrowRight": case "PageDown": e.preventDefault(); go(idx + 1); break;
+    case "ArrowLeft":  case "PageUp":   e.preventDefault(); go(idx - 1, true); break;
+    case "+": case "=": remaining += 10; duration = Math.max(duration, remaining); break;
+    case "-": case "_": remaining = Math.max(1, remaining - 10); break;
+    case "f": case "F": fullscreen(!document.fullscreenElement); break;
+    case "s": case "S": sound = !sound; break;
+    case "Escape": if(!paused) togglePause(); break;
+  }
+});
+
+/* ocultar cursor e indicaciones cuando no se mueve el ratón */
+let idleT;
+function wake(){ document.body.classList.remove("idle"); clearTimeout(idleT); idleT = setTimeout(() => document.body.classList.add("idle"), 3000); }
+document.addEventListener("mousemove", wake); wake();
+</script>
+</body>
+</html>

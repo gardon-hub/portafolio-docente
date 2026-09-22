@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instrumento de examen proyectado · Demostración</title>
+<style>
+:root{
+  --bg:#fbfaf6; --panel:#ffffff; --ink:#15181d; --muted:#5b6270; --line:#dcd8cc;
+  --accent:#1f5f3f; --accent-soft:#e3efe7; --warn:#b86a00; --danger:#b3261e;
+}
+[data-theme="dark"]{
+  --bg:#101312; --panel:#181c1b; --ink:#f2f1ec; --muted:#a3aaa6; --line:#2d3432;
+  --accent:#6fcf97; --accent-soft:#1d2e25; --warn:#f2b24c; --danger:#ff7b72;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}
+button{font:inherit;cursor:pointer}
+.screen{position:fixed;inset:0;display:none;flex-direction:column}
+.screen.on{display:flex}
+
+/* ---------- Inicio ---------- */
+#start{align-items:center;justify-content:center;padding:4vh 16px;overflow:auto}
+.card{width:min(860px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,4vw,48px)}
+.kicker{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+h1{font-size:clamp(28px,4vw,46px);line-height:1.1;margin:8px 0 6px}
+.sub{color:var(--muted);font-size:clamp(15px,1.6vw,19px)}
+.aviso{margin-top:16px;border-left:4px solid var(--warn);background:var(--accent-soft);border-radius:0 10px 10px 0;padding:12px 16px;font-size:clamp(14px,1.4vw,17px);line-height:1.45}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:28px 0}
+.field{border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.field label{display:block;color:var(--muted);font-size:14px;margin-bottom:6px}
+.field .row{display:flex;align-items:baseline;gap:8px}
+.field input{width:90px;font-size:28px;font-weight:700;border:0;border-bottom:2px solid var(--line);background:transparent;color:var(--ink);padding:2px 0}
+.field input:focus{outline:none;border-color:var(--accent)}
+.total{font-size:28px;font-weight:700}
+.keys{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:14px;margin-bottom:26px}
+kbd{display:inline-block;min-width:24px;text-align:center;border:1px solid var(--line);border-bottom-width:2px;border-radius:6px;padding:1px 6px;font-family:inherit;font-size:13px;color:var(--ink);background:var(--bg)}
+.btn{background:var(--accent);color:var(--bg);border:0;border-radius:12px;padding:16px 30px;font-size:20px;font-weight:700}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---------- Examen ---------- */
+#exam{padding:3vh 4vw 0}
+.top{display:flex;align-items:center;justify-content:space-between;gap:2vw}
+.section{font-size:clamp(14px,1.7vw,26px);font-weight:700;color:var(--accent);letter-spacing:.04em;text-transform:uppercase}
+.count{font-size:clamp(14px,1.5vw,22px);color:var(--muted);font-variant-numeric:tabular-nums}
+.timer{display:flex;align-items:center;gap:.6vw;font-variant-numeric:tabular-nums;font-weight:800;font-size:clamp(28px,4.4vw,72px);line-height:1;color:var(--ink);transition:color .3s}
+.timer small{font-size:.35em;font-weight:600;color:var(--muted)}
+.timer.warn{color:var(--warn)} .timer.crit{color:var(--danger);animation:pulse 1s infinite}
+@keyframes pulse{50%{opacity:.45}}
+.paused-tag{display:none;font-size:clamp(12px,1.2vw,18px);font-weight:700;background:var(--warn);color:var(--bg);padding:4px 10px;border-radius:6px;letter-spacing:.06em}
+body.paused .paused-tag{display:inline-block}
+
+.stage{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0;padding:2vh 0}
+.qnum{font-size:clamp(20px,2.6vw,42px);font-weight:800;color:var(--muted);margin-bottom:1.2vh}
+.qnum b{color:var(--ink)}
+.qtext{font-size:clamp(24px,3.5vw,60px);line-height:1.22;font-weight:600;max-width:78ch;text-wrap:pretty}
+.opts{list-style:none;margin-top:4.5vh;display:grid;gap:1.8vh}
+.opts li{display:flex;align-items:center;gap:1.6vw;font-size:clamp(20px,3vw,50px);line-height:1.2}
+.opts .l{flex:none;width:1.6em;height:1.6em;display:grid;place-items:center;border-radius:50%;border:3px solid var(--accent);color:var(--accent);font-weight:800;font-size:.8em}
+.vf{display:flex;gap:3vw;margin-top:5vh}
+.vf span{font-size:clamp(22px,3vw,48px);font-weight:800;border:3px solid var(--line);border-radius:14px;padding:1.2vh 2.4vw;color:var(--muted)}
+.intro .qtext{font-weight:400;color:var(--muted)}
+.intro h2{font-size:clamp(34px,5.5vw,92px);line-height:1.05;margin-bottom:3vh}
+.fade{animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.bar{height:1.4vh;min-height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:100%;background:var(--accent);transform-origin:left;transition:background .3s}
+.bar.warn i{background:var(--warn)} .bar.crit i{background:var(--danger)}
+.foot{display:flex;align-items:center;gap:1.5vw;padding:1.6vh 0 2.4vh}
+.dots{flex:1;display:flex;gap:3px}
+.dots i{flex:1;height:6px;border-radius:3px;background:var(--line)}
+.dots i.done{background:var(--accent);opacity:.45}
+.dots i.now{background:var(--accent)}
+.dots i.gap{flex:0 0 10px;background:transparent}
+.hint{font-size:13px;color:var(--muted);white-space:nowrap;transition:opacity .6s}
+body.idle .hint{opacity:0}
+body.idle{cursor:none}
+
+/* ---------- Fin ---------- */
+#end{align-items:center;justify-content:center;text-align:center;padding:16px}
+#end h2{font-size:clamp(40px,7vw,120px);line-height:1}
+#end p{font-size:clamp(20px,2.6vw,44px);color:var(--muted);margin:3vh 0 5vh}
+
+@media (max-width:700px){
+  .hint{display:none}
+  .top{flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+
+<!-- Inicio -->
+<section id="start" class="screen on">
+  <div class="card">
+    <div class="kicker">Universidad Nacional de Agricultura · Portafolio Docente 2026</div>
+    <h1>Instrumento de examen proyectado</h1>
+    <p class="sub">Evidencia E4.1 del portafolio docente de Gustavo Alonso Ardón. Así se aplican las pruebas objetivas en aula presencial: una pregunta por pantalla, con cuenta atrás, y las respuestas escritas en la hoja impresa.</p>
+    <p class="aviso"><b>Esta es una demostración del instrumento.</b> Las cinco preguntas que siguen se redactaron para mostrar cómo funciona y no pertenecen a ninguna prueba aplicada. En la misma evidencia E4.1 se publican íntegras las tres pruebas del periodo; esta demostración solo sirve para ver el mecanismo en un minuto, sin recorrer un cuestionario de cincuenta preguntas.</p>
+
+    <div class="grid">
+      <div class="field">
+        <label for="tMC">Segundos por pregunta · Selección múltiple</label>
+        <div class="row"><input id="tMC" type="number" min="5" max="600" value="45"><span>s</span></div>
+      </div>
+      <div class="field">
+        <label for="tVF">Segundos por pregunta · Verdadero o falso</label>
+        <div class="row"><input id="tVF" type="number" min="5" max="600" value="25"><span>s</span></div>
+      </div>
+      <div class="field">
+        <label>Duración total aproximada</label>
+        <div class="total" id="totalTime">—</div>
+      </div>
+    </div>
+
+    <div class="keys">
+      <span><kbd>Espacio</kbd> pausar / reanudar</span>
+      <span><kbd>←</kbd> <kbd>→</kbd> pregunta anterior / siguiente</span>
+      <span><kbd>+</kbd> <kbd>−</kbd> sumar / quitar 10 s</span>
+      <span><kbd>F</kbd> pantalla completa</span>
+      <span><kbd>S</kbd> sonido</span>
+      <span><kbd>T</kbd> tema claro / oscuro</span>
+    </div>
+
+    <div class="actions">
+      <button class="btn" id="go">Iniciar examen</button>
+      <button class="btn ghost" id="themeBtn">Tema oscuro</button>
+    </div>
+  </div>
+</section>
+
+<!-- Examen -->
+<section id="exam" class="screen">
+  <div class="top">
+    <div>
+      <div class="section" id="secLabel"></div>
+      <div class="count" id="count"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:1.2vw">
+      <span class="paused-tag">EN PAUSA</span>
+      <div class="timer" id="timer">0<small>s</small></div>
+    </div>
+  </div>
+  <div class="stage" id="stage"></div>
+  <div class="bar" id="bar"><i id="barFill"></i></div>
+  <div class="foot">
+    <div class="dots" id="dots"></div>
+    <div class="hint">Espacio pausa · ← → navegar · +/− tiempo · F pantalla completa</div>
+  </div>
+</section>
+
+<!-- Fin -->
+<section id="end" class="screen">
+  <div>
+    <h2>Fin del examen</h2>
+    <p>Fin de la demostración. En el aula, aquí se pide revisar la hoja y entregarla.</p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn ghost" id="backBtn">Volver a la última pregunta</button>
+      <button class="btn ghost" id="restartBtn">Volver al inicio</button>
+    </div>
+  </div>
+</section>
+
+<script>
+const DATA = {"mc": [{"n": 1, "q": "¿Qué indica una conversión alimenticia de 1.6 en pollo de engorde?", "o": ["Que se consumieron 1.6 kg de alimento por cada kilogramo de peso vivo ganado", "Que el ave ganó 1.6 kg durante la última semana", "Que el alimento representa el 1.6 % del costo total", "Que el lote registró 1.6 % de mortalidad"]}, {"n": 2, "q": "En una granja de ponedoras, la producción diaria suele expresarse como:", "o": ["Kilogramos de alimento por galpón", "Porcentaje de postura sobre las aves alojadas", "Número de galpones en operación", "Horas de iluminación acumuladas"]}, {"n": 3, "q": "En gestión de operaciones, el punto de equilibrio de una explotación señala:", "o": ["El nivel de producción en que los ingresos igualan a los costos totales", "La producción máxima que admite la instalación", "El precio al que siempre conviene vender", "El promedio de los costos fijos del periodo"]}], "vf": [{"n": 1, "q": "La conversión alimenticia mejora cuando su valor numérico disminuye."}, {"n": 2, "q": "Los costos fijos de una explotación varían en proporción directa al volumen producido."}]};
+const INTRO_SECONDS = 12;
+
+/* ---- construir la secuencia ---- */
+function buildSlides(){
+  const s = [];
+  s.push({type:"intro", sec:"I. Selección múltiple", title:"I. Selección múltiple", text:"Seleccione una sola respuesta correcta para cada pregunta y márquela en la hoja de respuestas.", kind:"mc"});
+  DATA.mc.forEach(q => s.push({type:"mc", sec:"I. Selección múltiple", ...q}));
+  s.push({type:"intro", sec:"II. Verdadero o falso", title:"II. Verdadero o falso", text:"Determine si cada afirmación es verdadera o falsa y registre su respuesta únicamente en la hoja de respuestas.", kind:"vf"});
+  DATA.vf.forEach(q => s.push({type:"vf", sec:"II. Verdadero o falso", ...q}));
+  return s;
+}
+const slides = buildSlides();
+const $ = id => document.getElementById(id);
+
+let idx = 0, duration = 0, remaining = 0, lastTick = 0, paused = false, raf = null, sound = true;
+
+function secs(type){
+  if(type === "intro") return INTRO_SECONDS;
+  const v = parseInt($(type === "mc" ? "tMC" : "tVF").value, 10);
+  return Math.min(600, Math.max(5, isNaN(v) ? (type === "mc" ? 45 : 25) : v));
+}
+function fmt(t){
+  t = Math.max(0, Math.ceil(t));
+  const m = Math.floor(t/60), s = t % 60;
+  return m ? `${m}:${String(s).padStart(2,"0")}` : `${s}`;
+}
+function updateTotal(){
+  const total = slides.reduce((a,s) => a + secs(s.type), 0);
+  const m = Math.floor(total/60), s = total % 60;
+  $("totalTime").textContent = `${m} min ${s ? s + " s" : ""}`.trim();
+}
+["tMC","tVF"].forEach(id => $(id).addEventListener("input", updateTotal));
+updateTotal();
+
+/* ---- puntos de progreso ---- */
+function buildDots(){
+  const d = $("dots"); d.innerHTML = "";
+  slides.forEach((s,i) => {
+    if(s.type === "intro"){ if(i) { const g = document.createElement("i"); g.className = "gap"; d.appendChild(g); } return; }
+    const e = document.createElement("i"); e.dataset.i = i; d.appendChild(e);
+  });
+}
+function paintDots(){
+  document.querySelectorAll("#dots i[data-i]").forEach(e => {
+    const i = +e.dataset.i;
+    e.className = i < idx ? "done" : i === idx ? "now" : "";
+  });
+}
+
+/* ---- render ---- */
+function esc(t){ return t.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+function render(){
+  const s = slides[idx];
+  $("secLabel").textContent = s.sec;
+  const st = $("stage");
+  st.classList.remove("fade"); void st.offsetWidth; st.classList.add("fade");
+  st.classList.toggle("intro", s.type === "intro");
+  if(s.type === "intro"){
+    const n = s.kind === "mc" ? DATA.mc.length : DATA.vf.length;
+    $("count").textContent = `${n} preguntas · ${secs(s.kind)} s cada una`;
+    st.innerHTML = `<h2>${esc(s.title)}</h2><p class="qtext">${esc(s.text)}</p>`;
+  } else {
+    const n = s.type === "mc" ? DATA.mc.length : DATA.vf.length;
+    const overall = slides.slice(0, idx+1).filter(x => x.type !== "intro").length;
+    const all = DATA.mc.length + DATA.vf.length;
+    $("count").textContent = `Pregunta ${overall} de ${all}`;
+    let html = `<div class="qnum">Pregunta <b>${s.n}</b> <span style="font-weight:600">/ ${n}</span></div><p class="qtext">${esc(s.q)}</p>`;
+    if(s.type === "mc"){
+      html += `<ol class="opts">${s.o.map((o,k) => `<li><span class="l">${"abcd"[k]}</span><span>${esc(o)}</span></li>`).join("")}</ol>`;
+    } else {
+      html += `<div class="vf"><span>V · Verdadero</span><span>F · Falso</span></div>`;
+    }
+    st.innerHTML = html;
+  }
+  paintDots();
+}
+
+function go(i, silent){
+  if(i < 0) i = 0;
+  if(i >= slides.length){ finish(); return; }
+  idx = i;
+  duration = remaining = secs(slides[idx].type);
+  lastTick = performance.now();
+  render();
+  paintTimer();
+  if(!silent) chime();
+}
+
+function paintTimer(){
+  const frac = duration ? remaining / duration : 0;
+  $("barFill").style.transform = `scaleX(${Math.max(0, frac)})`;
+  $("timer").innerHTML = `${fmt(remaining)}<small>${remaining >= 60 ? "" : "s"}</small>`;
+  const q = slides[idx] && slides[idx].type !== "intro";
+  const crit = q && remaining <= 5, warn = q && !crit && remaining <= 10;
+  $("timer").classList.toggle("crit", crit); $("timer").classList.toggle("warn", warn);
+  $("bar").classList.toggle("crit", crit);   $("bar").classList.toggle("warn", warn);
+}
+
+function loop(now){
+  if(!paused){
+    remaining -= (now - lastTick) / 1000;
+    if(remaining <= 0){ go(idx + 1); }
+  }
+  lastTick = now;
+  paintTimer();
+  if($("exam").classList.contains("on")) raf = requestAnimationFrame(loop);
+}
+
+/* ---- sonido suave al cambiar de pregunta ---- */
+let actx = null;
+function chime(){
+  if(!sound) return;
+  try{
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    const o = actx.createOscillator(), g = actx.createGain();
+    o.type = "sine"; o.frequency.value = 880;
+    g.gain.setValueAtTime(0.0001, actx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.18, actx.currentTime + 0.02);
+    g.gain.exponentialRampToValueAtTime(0.0001, actx.currentTime + 0.5);
+    o.connect(g).connect(actx.destination); o.start(); o.stop(actx.currentTime + 0.55);
+  }catch(e){}
+}
+
+/* ---- evitar que la pantalla se apague ---- */
+let lock = null;
+async function keepAwake(){ try{ if("wakeLock" in navigator) lock = await navigator.wakeLock.request("screen"); }catch(e){} }
+document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible" && $("exam").classList.contains("on")) keepAwake(); });
+
+function show(id){ document.querySelectorAll(".screen").forEach(s => s.classList.toggle("on", s.id === id)); }
+function fullscreen(on){
+  try{
+    if(on && !document.fullscreenElement) document.documentElement.requestFullscreen();
+    if(!on && document.fullscreenElement) document.exitFullscreen();
+  }catch(e){}
+}
+function start(i = 0){
+  paused = false; document.body.classList.remove("paused");
+  show("exam"); buildDots(); fullscreen(true); keepAwake();
+  go(i);
+  cancelAnimationFrame(raf); lastTick = performance.now(); raf = requestAnimationFrame(loop);
+}
+function finish(){
+  cancelAnimationFrame(raf); show("end"); chime();
+  try{ lock && lock.release(); }catch(e){}
+}
+function togglePause(){
+  paused = !paused; document.body.classList.toggle("paused", paused);
+}
+function setTheme(t){
+  document.documentElement.dataset.theme = t;
+  $("themeBtn").textContent = t === "dark" ? "Tema claro" : "Tema oscuro";
+}
+
+$("go").onclick = () => start(0);
+$("themeBtn").onclick = () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+$("backBtn").onclick = () => start(slides.length - 1);
+$("restartBtn").onclick = () => { fullscreen(false); show("start"); };
+
+document.addEventListener("keydown", e => {
+  if(e.key === "t" || e.key === "T"){ $("themeBtn").click(); return; }
+  if(!$("exam").classList.contains("on")) return;
+  switch(e.key){
+    case " ": e.preventDefault(); togglePause(); break;
+    case "ArrowRight": case "PageDown": e.preventDefault(); go(idx + 1); break;
+    case "ArrowLeft":  case "PageUp":   e.preventDefault(); go(idx - 1, true); break;
+    case "+": case "=": remaining += 10; duration = Math.max(duration, remaining); break;
+    case "-": case "_": remaining = Math.max(1, remaining - 10); break;
+    case "f": case "F": fullscreen(!document.fullscreenElement); break;
+    case "s": case "S": sound = !sound; break;
+    case "Escape": if(!paused) togglePause(); break;
+  }
+});
+
+/* ocultar cursor e indicaciones cuando no se mueve el ratón */
+let idleT;
+function wake(){ document.body.classList.remove("idle"); clearTimeout(idleT); idleT = setTimeout(() => document.body.classList.add("idle"), 3000); }
+document.addEventListener("mousemove", wake); wake();
+</script>
+</body>
+</html>

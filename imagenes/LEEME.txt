@@ -1,0 +1,2 @@
+Coloque aqui la fotografia profesional y cualquier imagen del sitio.
+Despues escriba el nombre del archivo en content/profile.json (campo fotografia.archivo).

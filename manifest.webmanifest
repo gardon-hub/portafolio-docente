@@ -1,0 +1,21 @@
+{
+  "name": "Portafolio Docente 2026 - Gustavo Alonso Ardon",
+  "short_name": "Portafolio 2026",
+  "description": "Portafolio docente de Gustavo Alonso Ardon, Facultad de Medicina Veterinaria y Zootecnia, Universidad Nacional de Agricultura, Honduras.",
+  "lang": "es",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f7f8f6",
+  "theme_color": "#1b5436",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
